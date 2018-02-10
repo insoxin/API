@@ -107,11 +107,10 @@
 
 **常规用法**： 
 `https://api.isoyu.com/qr/?m=0&e=L&p=3&url=https://api.isoyu.com`
-**伪静态格式**:     
----
-**格式**:    
+**伪静态格式**:  
+**格式**:     
 `https://api.isoyu.com/qr/$m_$e_$p_$url_static.png`
-**示 例**:   
+**示 例**:     
 `https://api.isoyu.com/qr/0_l_3_https://api.isoyu.com_static.png`
 
 ## 1. 新闻模块
