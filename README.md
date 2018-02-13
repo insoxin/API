@@ -91,6 +91,8 @@
     <td>ARU_PNG_XL.php</td>
    </tr>
    </table>
+   
+   
    **调用例子:**
    ![姬长信API](https://api.isoyu.com/aru_gif_s.php)
     `//api.isoyu.com/ARU_GIF_S.php`
