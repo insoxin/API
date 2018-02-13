@@ -90,7 +90,9 @@
     <td>ARU_PNG_XL.php</td>
    </tr>
    </table>
-   **调用例子:**![姬长信API](https://api.isoyu.com/ARU_GIF_S.php)`//api.isoyu.com/ARU_GIF_S.php`
+   **调用例子:**   
+   ![姬长信API](https://api.isoyu.com/ARU_GIF_S.php)
+   `//api.isoyu.com/ARU_GIF_S.php`
 
 ### 0.7 在线二维码 
 说明：依靠phpqrcode，Version: 1.1.4 Build: 2010100721 下面是参数介绍。
