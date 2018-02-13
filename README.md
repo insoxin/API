@@ -91,7 +91,7 @@
    </tr>
    </table>
    **调用例子:**   
-   ![姬长信API](https://api.isoyu.com/ARU_GIF_S.php) 
+   ![姬长信API](https://api.isoyu.com/aru_gif_s.php) 
     `//api.isoyu.com/ARU_GIF_S.php`
 
 ### 0.7 在线二维码 
