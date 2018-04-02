@@ -43,7 +43,7 @@ ifm.height=document.documentElement.clientHeight;
 }</script>`
 
 
-   ![姬长信API](https://his.isoyu.com/down/20180228/473568/Screenshot_2018-02-28-12-14-42-0900595185_EDIT_1.png)
+   ![姬长信API](https://i.loli.net/2018/04/02/5ac1eb7a3cbc7.png)
 ## 0. 壁纸模块
 
 说明:含http与https方式，国内外CDN驱动
