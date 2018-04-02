@@ -28,10 +28,26 @@
 ### 1 宝贝回家/腾讯公益404核心数据
    **接口地址:**`https://api.isoyu.com/gy/`
 
-   **说明:**网站只需要在自己的页面中嵌入一段简单的代码，就能通过互联网来迅速传播失踪儿童信息，从而提高找回失踪儿童的概率。失踪儿童信息来自宝贝回家寻子网。静态资源支持ssl
+   **说明:**
+   网站只需要在自己的页面中嵌入一段简单的代码，就能通过互联网来迅速传播失踪儿童信息，从而提高找回失踪儿童的概率。失踪儿童信息来自宝贝回家寻子网。静态资源支持ssl
 
-   **调用例子:**
+   **调用例子:**
+   
 `<iframe src="https://api.isoyu.com/gy/" frameborder="0" scrolling="no" width="300" height="300"></iframe>`
+
+或者用onload来动态加载高度
+
+`<iframe src="https://api.isoyu.com/gy/" frameborder="0" scrolling="no" width="100%" onload="mu_changeHeight()" id="isoyu_gy"></iframe>`
+
+js部分
+
+`<script type="text/javascript">
+function mu_changeHeight(){
+var ifm= document.getElementById("isoyu_gy");
+ifm.height=document.documentElement.clientHeight;
+}</script>`
+
+
    ![姬长信API](https://his.isoyu.com/down/20180228/473568/Screenshot_2018-02-28-12-14-42-0900595185_EDIT_1.png)
 ## 0. 壁纸模块
 
@@ -42,8 +58,9 @@
    **接口地址:**`bing_images.php`
 
    **调用例子:**
-   ![姬长信API](https://api.isoyu.com/bing_images.php)
+
 `//api.isoyu.com/bing_images.php`
+
 ### 0.2 美女图片壁纸 
 说明:已经用了万象优图筛选，若遇到大尺度图片请记录图片id并admin@isoyu.com，我们会在第一时间删除
 *2017.07.31增加至2257张*
@@ -51,7 +68,9 @@
    **接口地址:**`mm_images.php`
 
    **调用例子:**
+   
 ![姬长信API](https://api.isoyu.com/mm_images.php)
+
 `//api.isoyu.com/mm_images.php`
 ### 0.3 动态IP签名图片 
 说明:可能会显cdnIP,字体<书体坊兰亭体>
