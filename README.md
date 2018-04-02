@@ -33,15 +33,10 @@
 
    **调用例子:**
    
-`<iframe src="https://api.isoyu.com/gy/" frameborder="0" scrolling="no" width="300" height="300"></iframe>`
+1.`<iframe src="https://api.isoyu.com/gy/" frameborder="0" scrolling="no" width="300" height="300"></iframe>`
 
-或者用onload来动态加载高度
-
-`<iframe src="https://api.isoyu.com/gy/" frameborder="0" scrolling="no" width="100%" onload="mu_changeHeight()" id="isoyu_gy"></iframe>`
-
-js部分
-
-`<script type="text/javascript">
+2.或者用onload来动态加载高度
+`<iframe src="https://api.isoyu.com/gy/" frameborder="0" scrolling="no" width="100%" onload="mu_changeHeight()" id="isoyu_gy"></iframe>`js部分`<script type="text/javascript">
 function mu_changeHeight(){
 var ifm= document.getElementById("isoyu_gy");
 ifm.height=document.documentElement.clientHeight;
