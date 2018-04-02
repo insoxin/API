@@ -122,7 +122,14 @@ ifm.height=document.documentElement.clientHeight;
    ![姬长信API](https://api.isoyu.com/ARU_GIF_S.php)
     `//api.isoyu.com/ARU_GIF_S.php`
 ### 0.7 在线二维码 
-说明：依靠phpqrcode，Version: 1.1.4 Build: 2010100721 下面是参数介绍。
+说明：依靠phpqrcode，Version: 1.1.4 Build: 2010100721 这是QR码2-D条码生成器的PHP实现。这是基于由Kentaro Fukuchi编写的C libqrencode的纯php-LGPL许可实现。
+支持QR码版本（大小）1-40
+数字，字母数字，8位和汉字编码。（汉字编码没有完全测试，如果你是日本编码启用，你可以通过验证:) :)）
+导出为PNG图像，并以位表形式导出
+TCPDF二维条码API集成
+数据缓存提高计算速度
+调试数据转储，错误日志记录，时间基准测试
+下面是参数介绍。
 
 **url**: *二维码对应的网址*
 
@@ -133,18 +140,14 @@ ifm.height=document.documentElement.clientHeight;
      > M水平 15%的字码可被修正
      > Q水平 25%的字码可被修正
      > H水平 30%的字码可被修正
-**p**  : *二维码尺寸，可选范围1-10(具体大小和容错级别有关)（缺省值：3）*
+**p**  : *二维码尺寸，可选范围1-40(具体大小和容错级别有关)（缺省值：3）*
 
-**常规用法**:  
+**例子**:  
+
 ![姬长信API](https://api.isoyu.com/qr/?m=0&e=L&p=5&url=https://api.isoyu.com)
+
 `https://api.isoyu.com/qr/?m=0&e=L&p=5&url=https://api.isoyu.com`
-**伪静态格式**:    
 
- `https://api.isoyu.com/qr/$m_$e_$p_$url_static.png`  
-
-**示 例**:  
-
-`https://api.isoyu.com/qr/0_l_5_https://api.isoyu.com_static.png`   
 
 ## 1. 新闻模块
 
