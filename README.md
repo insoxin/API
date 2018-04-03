@@ -22,7 +22,7 @@
 ---
 ###### 条款：姬长信API拥有所有运行权，在某些特定情况下，姬长信API有权利禁止你的网站调用。
 ---
-###### 赞助[http://fuligou.isoyu.com/yff/](http://fuligou.isoyu.com/yff/)
+###### 赞助&打赏：[http://fuligou.isoyu.com/yff/](http://fuligou.isoyu.com/yff/)
 ---
 ## GY.公益数据
 
