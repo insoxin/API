@@ -20,9 +20,9 @@
 ---
 ###### 须知：姬长信API将会记录你的域名、使用流量、调用次数等重要信息，如介意，请勿使用。管理员邮箱admin@isoyu.com
 ---
-###### 赞助小姬姬[http://fuligou.isoyu.com/yff/](http://fuligou.isoyu.com/yff/?_blank)
----
 ###### 条款：姬长信API拥有所有运行权，在某些特定情况下，姬长信API有权利禁止你的网站调用。
+---
+###### 赞助[http://fuligou.isoyu.com/yff/](http://fuligou.isoyu.com/yff/)
 ---
 ## GY.公益数据
 
