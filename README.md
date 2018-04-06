@@ -50,7 +50,7 @@ ifm.height=document.documentElement.clientHeight;
 
 说明:含http与https方式，国内外CDN驱动
 使用百度云加速专业版,腾讯万象优图。
-调用方法：以img直接调用即可。比如`<img src="https://api.isoyu.com/bing_images.php"  alt="姬长信api" />``<div id="api" style="background-image:url(https://api.isoyu.com/bing_images.php)">``body{
+调用方法：以img直接调用即可。比如`<img src="https://api.isoyu.com/bing_images.php"  alt="姬长信api" />`或`<div id="api" style="background-image:url(https://api.isoyu.com/bing_images.php)">`或`body{
     background: url("https://api.isoyu.com/bing_images.php") center/cover no-repeat;
 }`等等不限制
 ### 0.1 每日bing 
