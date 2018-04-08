@@ -48,7 +48,11 @@
 
 ```javascript
 
-<iframe src="https://api.isoyu.com/gy/" frameborder="0" scrolling="no" width="100%" onload="mu_changeHeight()" id="isoyu_gy"></iframe>`js部分`<script type="text/javascript">
+<iframe src="https://api.isoyu.com/gy/" frameborder="0" scrolling="no" width="100%" onload="mu_changeHeight()" id="isoyu_gy"></iframe>
+
+js部分
+
+<script type="text/javascript">
 function mu_changeHeight(){
 var ifm= document.getElementById("isoyu_gy");
 ifm.height=document.documentElement.clientHeight;
