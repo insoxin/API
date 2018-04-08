@@ -35,6 +35,7 @@
 
    **调用例子:**
    
+
 1.
 
 ```javascript
@@ -61,9 +62,13 @@ ifm.height=document.documentElement.clientHeight;
 说明:含http与https方式，国内外CDN驱动
 使用百度云加速专业版,腾讯万象优图。
 调用方法：以img直接调用即可。比如
+
 ```javascript
+
 <img src="https://api.isoyu.com/bing_images.php"  alt="姬长信api" />
+
 ```
+
 ### 0.1 每日bing 
 
    **接口地址:**`bing_images.php`
