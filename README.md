@@ -35,22 +35,33 @@
 
    **调用例子:**
    
-1.`<iframe src="https://api.isoyu.com/gy/" frameborder="0" scrolling="no" width="300" height="300"></iframe>`
+1.
+
+```javascript
+
+<iframe src="https://api.isoyu.com/gy/" frameborder="0" scrolling="no" width="300" height="300"></iframe>
+
+```
 
 2.或者用onload来动态加载高度
-`<iframe src="https://api.isoyu.com/gy/" frameborder="0" scrolling="no" width="100%" onload="mu_changeHeight()" id="isoyu_gy"></iframe>`js部分`<script type="text/javascript">
+
+```javascript
+
+<iframe src="https://api.isoyu.com/gy/" frameborder="0" scrolling="no" width="100%" onload="mu_changeHeight()" id="isoyu_gy"></iframe>`js部分`<script type="text/javascript">
 function mu_changeHeight(){
 var ifm= document.getElementById("isoyu_gy");
 ifm.height=document.documentElement.clientHeight;
-}</script>`
+}</script>
 
+```
 
    ![姬长信API](https://i.loli.net/2018/04/02/5ac1eb7a3cbc7.png)
 ## 0. 壁纸模块
-
+```javascript
 说明:含http与https方式，国内外CDN驱动
 使用百度云加速专业版,腾讯万象优图。
-调用方法：以img直接调用即可。比如`<img src="https://api.isoyu.com/bing_images.php"  alt="姬长信api" />`
+调用方法：以img直接调用即可。比如
+<img src="https://api.isoyu.com/bing_images.php"  alt="姬长信api" />```
 ### 0.1 每日bing 
 
    **接口地址:**`bing_images.php`
@@ -1193,12 +1204,12 @@ ifm.height=document.documentElement.clientHeight;
 
 说明: 获取招聘信息如 web开发工程师、php
 
-### 8.1 招聘
+### 9.1 招聘
 **必选参数:**
       `type`    web/php/java/
       `pageNo`  第几页
        **接口地址:**
-            `/Job/index?type=web&pageNo=1`  
+            `https://api.isoyu.com/Job/index?type=web&pageNo=1`  
         **调用例子:**
 ```javascript
 [
