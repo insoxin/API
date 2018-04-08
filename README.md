@@ -58,7 +58,6 @@ ifm.height=document.documentElement.clientHeight;
 
    ![姬长信API](https://i.loli.net/2018/04/02/5ac1eb7a3cbc7.png)
 ## 0. 壁纸模块
-```javascript
 说明:含http与https方式，国内外CDN驱动
 使用百度云加速专业版,腾讯万象优图。
 调用方法：以img直接调用即可。比如
