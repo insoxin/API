@@ -154,7 +154,7 @@ ifm.height=document.documentElement.clientHeight;
 
 说明: 包括 新闻模块banner轮播图接口、新闻分类列表分类接口、新闻详情接口、本地新闻接口 如下详情：
 
-### 1.1新闻轮播图接口
+### 1.1 新闻轮播图接口
 
    **必选参数:**
    无
@@ -162,7 +162,7 @@ ifm.height=document.documentElement.clientHeight;
    `News/banner`
 
    **调用例子:**
-   `//api.isoyu.com/demo/index.php/api/News/banner`
+   `//api.isoyu.com/index.php/api/News/banner`
 
    返回数据(每次返回是10条数据,这里就不全部列出来了)如下图:
 
@@ -202,7 +202,7 @@ ifm.height=document.documentElement.clientHeight;
    `/News/new_list?type=1&page=20`
 
    **调用例子:**
-   `//api.isoyu.com/demo/index.php/api/News/new_list?type=1&page=20`
+   `//api.isoyu.com/index.php/api/News/new_list?type=1&page=20`
 
    返回数据(每次返回是10条数据,这里就不全部列出来了)如下图:
 
@@ -218,7 +218,7 @@ ifm.height=document.documentElement.clientHeight;
   `/index.php/api/News/new_detail?postid=CLJN5K2M000181KT`
 
   **调用例子:**
-  `//api.isoyu.com/demo//index.php/api/News/new_detail?postid=CLJN5K2M000181KT`
+  `//api.isoyu.com/index.php/api/News/new_detail?postid=CLJN5K2M000181KT`
 
   返回数据(每次返回是10条数据,这里就不全部列出来了)如下图:
 ```javascript
@@ -332,7 +332,7 @@ ifm.height=document.documentElement.clientHeight;
   `/News/local_news?name=广东省_深圳市&page=0`
 
   **调用例子:**
-  `//api.isoyu.com/demo/index.php/api/News/local_news?name=广东省_深圳市&page=0`
+  `//api.isoyu.com/index.php/api/News/local_news?name=广东省_深圳市&page=0`
 
   返回数据(每次返回是10条数据,这里就不全部列出来了)如下图:
   ```
@@ -353,7 +353,7 @@ ifm.height=document.documentElement.clientHeight;
   **接口地址:**
       `/Video/index`
       
- **调用例子:**  `//api.isoyu.com/demo/index.php/api/Video/index`
+ **调用例子:**  `http://localhost/index.php/api/Video/index`
       
       返回数据(每次返回是10条数据,这里就不全部列出来了)如下图:
       ```
@@ -386,7 +386,7 @@ ifm.height=document.documentElement.clientHeight;
   `/Video/video_type?type=2&page=10`
   **调用例子:** 
   
-   `//api.isoyu.com/demo//index.php/api/Video/video_type?type=2&page=10`
+   `//api.isoyu.com/index.php/api/Video/video_type?type=2&page=10`
    返回数据(每次返回是10条数据,这里就不全部列出来了)如下图:
 ``` javascript
 {
@@ -439,7 +439,7 @@ ifm.height=document.documentElement.clientHeight;
 `/Video/video_detail?vid=VEKKO9TJP`
 
 **调用例子:**
- `//api.isoyu.com/demo/index.php/api/Video/video_detail?vid=VEKKO9TJP`
+ `//api.isoyu.com/index.php/api/Video/video_detail?vid=VEKKO9TJP`
  返回数据(每次返回是10条数据,这里就不全部列出来了)如下图:
  
 ```javascript
@@ -483,7 +483,7 @@ ifm.height=document.documentElement.clientHeight;
       `/Joke/index?page=10`
       
  **调用例子:**
-      `//api.isoyu.com/demo/index.php/api/joke/index?page=10`
+      `//api.isoyu.com/index.php/api/joke/index?page=10`
       返回数据(每次返回是10条数据,这里就不全部列出来了)如下图:
 ```javascript
 {
@@ -529,7 +529,7 @@ ifm.height=document.documentElement.clientHeight;
       `/Picture/index?page=20` 
       
   **调用例子:**
-      `//api.isoyu.com/demo/index.php/api/picture/index?page=20`
+      `//api.isoyu.com/index.php/api/picture/index?page=20`
       
 返回数据(每次返回是10条数据,这里就不全部列出来了)如下图:
 ```javascript
@@ -595,7 +595,7 @@ ifm.height=document.documentElement.clientHeight;
       `/Picture/hua_ban` 
       
   **调用例子:**
-      `//api.isoyu.com/demo/index.php/api/Picture/hua_ban`
+      `http://api.isoyu.com/index.php/api/Picture/hua_ban`
       
 返回数据(每次返回是20条数据,这里就不全部列出来了)如下图:
 ```javascript
@@ -632,7 +632,7 @@ ifm.height=document.documentElement.clientHeight;
       `/Weather/get_weather?city=广州市` 
       
   **调用例子:**
-      `//api.isoyu.com/demo/index.php/api/Weather/get_weather?city=广州市`
+      `http://www.xxx.com/index.php/api/Weather/get_weather?city=广州市`
       
 返回数据(每次返回是10条数据,这里就不全部列出来了)如下图:
 ```javascript
@@ -729,7 +729,7 @@ ifm.height=document.documentElement.clientHeight;
       `/Web/web_daily_list?page=1` 
       
   **调用例子:**
-      `//api.isoyu.com/demo/index.php/api/Web/web_daily_list?page=1`
+      `http://api.isoyu.com/index.php/api/Web/web_daily_list?page=1`
       
 返回数据(每次返回是10条数据,这里就不全部列出来了)如下图:
 ```javascript
@@ -812,7 +812,7 @@ ifm.height=document.documentElement.clientHeight;
       `/Web/every_daily_list?$daily_id=20170520` 
       
   **调用例子:**
-      `//api.isoyu.com/demo/index.php/api/Web/every_daily_list?$daily_id=20170520`
+      `http://api.isoyu.com/index.php/api/Web/every_daily_list?$daily_id=20170520`
       
 返回数据(每次返回是10条数据,这里就不全部列出来了)如下图:
 ```javascript
@@ -879,12 +879,12 @@ ifm.height=document.documentElement.clientHeight;
         {
             "title": "canvas 图像旋转与翻转姿势解锁",
             "url": "http://t.cn/RSzpxck",
-            "desc": "《canvas 图像旋转与翻转姿势解锁》从一个游戏需求说起：“可乐瓶”里有多个“气泡”，需要设置不同的动画效果，且涉及 deviceOrientation 的交互，需要有大量计算改变元素状态……  （by 凹凸实验室） "
+            "desc": "《canvas 图像旋转与翻转姿势解锁》从一个游戏需求说起：“可乐瓶”里有多个“气泡”，需要设置不同的动画效果，且涉及 deviceOrientation 的交互，需要有大量计算改变元素状态……  （by 凹凸实验室） ​​​"
         },
         {
             "title": "如何瘦身 Git 仓库",
             "url": "http://t.cn/RSqz6LY",
-            "desc": "如何瘦身 Git 仓库 » 译者:zhousiyu325 对 Git 仓库的维护通常是为了减少仓库的大小。如果你从另外一个版本控制系统导入了一个仓库，你可能需要在导入后清除掉不必要的文件。 "
+            "desc": "如何瘦身 Git 仓库 » 译者:zhousiyu325 对 Git 仓库的维护通常是为了减少仓库的大小。如果你从另外一个版本控制系统导入了一个仓库，你可能需要在导入后清除掉不必要的文件。 ​​​"
         }
     ]
 }
@@ -904,7 +904,7 @@ ifm.height=document.documentElement.clientHeight;
       `/Zhihu/zhihu_daily` 
       
   **调用例子:**
-      `//api.isoyu.com/demo/index.php/api/Zhihu/zhihu_daily`
+      `http://api.isoyu.com/index.php/api/Zhihu/zhihu_daily`
       
 返回数据(每次返回是18条数据,这里就不全部列出来了)如下图:
 ```
@@ -946,7 +946,7 @@ ifm.height=document.documentElement.clientHeight;
       `/Zhihu/news?id=9454551` 
       
   **调用例子:**
-      `//api.isoyu.com/demo/index.php/api/Zhihu/news?id=9454551`
+      `http://api.isoyu.com/index.php/api/Zhihu/news?id=9454551`
       
 返回数据()如下图:
 ```
@@ -987,7 +987,7 @@ ifm.height=document.documentElement.clientHeight;
       `/Zhihu/new_comment?id=9454551` 
       
   **调用例子:**
-      `//api.isoyu.com/demo/index.php/api/Zhihu/new_comment?id=9454551`
+      `http://api.isoyu.com/index.php/api/Zhihu/new_comment?id=9454551`
       
 返回数据(最多返回20条数据)如下图:
 ```
@@ -1049,7 +1049,7 @@ ifm.height=document.documentElement.clientHeight;
       `/Movie/playing_movie_list?start=0&count=9` 
       
   **调用例子:**
-      `//api.isoyu.com/demo/index.php/api//Movie/playing_movie_list?start=0&count=9`
+      `http://api.isoyu.com/index.php/api//Movie/playing_movie_list?start=0&count=9`
       
 返回数据(每次返回数据,这里就不全部列出来了)如下图:
 ```json
@@ -1184,6 +1184,84 @@ ifm.height=document.documentElement.clientHeight;
       `/Movie/movie_info?id=6311303` 
       
   **调用例子:**
-      `//api.isoyu.com/demo/index.php/api/Movie/movie_info?id=6311303`
+      `http://api.isoyu.com/index.php/api/Movie/movie_info?id=6311303`
       
 返回数据(每次返回数据,这里就不全部列出来了)如下图:
+
+
+## 9. 招聘信息
+
+说明: 获取招聘信息如 web开发工程师、php
+
+### 8.1 招聘
+**必选参数:**
+      `type`    web/php/java/
+      `pageNo`  第几页
+       **接口地址:**
+            `/Job/index?type=web&pageNo=1`  
+        **调用例子:**
+```javascript
+[
+    {
+        "logger": {
+            "traceCapable": true,
+            "name": "com.lagou.entity.mobile.MobilePosition"
+        },
+        "positionId": 3640855,
+        "positionName": "C#高级程序员",
+        "city": "深圳",
+        "createTime": "今天 21:30",
+        "salary": "12k-24k",
+        "companyId": 78807,
+        "companyLogo": "i/image/M00/54/9A/CgpEMll5Y4mAJauzAAAMiJRL3j8068.png",
+        "companyName": "牛日科技",
+        "companyFullName": "深圳牛日科技有限公司"
+    },
+    {
+        "logger": {
+            "traceCapable": true,
+            "name": "com.lagou.entity.mobile.MobilePosition"
+        },
+        "positionId": 3640847,
+        "positionName": "android APP 开发",
+        "city": "深圳",
+        "createTime": "今天 21:22",
+        "salary": "10K-12K",
+        "companyId": 262842,
+        "companyLogo": "images/logo_default.png",
+        "companyName": "视通技术",
+        "companyFullName": "深圳市易联视通技术有限公司"
+    },
+    {
+        "logger": {
+            "traceCapable": true,
+            "name": "com.lagou.entity.mobile.MobilePosition"
+        },
+        "positionId": 3203178,
+        "positionName": "PHP 高级工程师",
+        "city": "深圳",
+        "createTime": "今天 21:20",
+        "salary": "20k-35k",
+        "companyId": 7628,
+        "companyLogo": "image1/M00/00/10/Cgo8PFTUWC2AORIjAABLYZ6NxjQ933.png",
+        "companyName": "点指传媒",
+        "companyFullName": "武汉点指文化传播有限公司"
+    },
+    {
+        "logger": {
+            "traceCapable": true,
+            "name": "com.lagou.entity.mobile.MobilePosition"
+        },
+        "positionId": 2922125,
+        "positionName": "客服",
+        "city": "深圳",
+        "createTime": "今天 21:14",
+        "salary": "4k-6k",
+        "companyId": 108831,
+        "companyLogo": "i/image/M00/01/0C/Cgp3O1ZenZ6AefB-AAAFVRgugjY295.jpg",
+        "companyName": "爱易收",
+        "companyFullName": "深圳市易收电子商务有限公司"
+    }
+    ]
+
+```
