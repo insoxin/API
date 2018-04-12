@@ -378,7 +378,7 @@ ifm.height=document.documentElement.clientHeight;
   **接口地址:**
       `/Video/index`
       
- **调用例子:**  `http://localhost/index.php/api/Video/index`
+ **调用例子:**  `//api.isoyu.com/index.php/api/Video/index`
       
       返回数据(每次返回是10条数据,这里就不全部列出来了)如下图:
       ```
@@ -620,7 +620,7 @@ ifm.height=document.documentElement.clientHeight;
       `/Picture/hua_ban` 
       
   **调用例子:**
-      `http://api.isoyu.com/index.php/api/Picture/hua_ban`
+      `https://api.isoyu.com/index.php/api/Picture/hua_ban`
       
 返回数据(每次返回是20条数据,这里就不全部列出来了)如下图:
 ```javascript
@@ -657,7 +657,7 @@ ifm.height=document.documentElement.clientHeight;
       `/Weather/get_weather?city=广州市` 
       
   **调用例子:**
-      `http://www.xxx.com/index.php/api/Weather/get_weather?city=广州市`
+      `//api.isoyu.comm/index.php/api/Weather/get_weather?city=广州市`
       
 返回数据(每次返回是10条数据,这里就不全部列出来了)如下图:
 ```javascript
@@ -754,7 +754,7 @@ ifm.height=document.documentElement.clientHeight;
       `/Web/web_daily_list?page=1` 
       
   **调用例子:**
-      `http://api.isoyu.com/index.php/api/Web/web_daily_list?page=1`
+      `https://api.isoyu.com/index.php/api/Web/web_daily_list?page=1`
       
 返回数据(每次返回是10条数据,这里就不全部列出来了)如下图:
 ```javascript
@@ -837,7 +837,7 @@ ifm.height=document.documentElement.clientHeight;
       `/Web/every_daily_list?$daily_id=20170520` 
       
   **调用例子:**
-      `http://api.isoyu.com/index.php/api/Web/every_daily_list?$daily_id=20170520`
+      `https://api.isoyu.com/index.php/api/Web/every_daily_list?$daily_id=20170520`
       
 返回数据(每次返回是10条数据,这里就不全部列出来了)如下图:
 ```javascript
@@ -929,7 +929,7 @@ ifm.height=document.documentElement.clientHeight;
       `/Zhihu/zhihu_daily` 
       
   **调用例子:**
-      `http://api.isoyu.com/index.php/api/Zhihu/zhihu_daily`
+      `https://api.isoyu.com/index.php/api/Zhihu/zhihu_daily`
       
 返回数据(每次返回是18条数据,这里就不全部列出来了)如下图:
 ```
@@ -971,7 +971,7 @@ ifm.height=document.documentElement.clientHeight;
       `/Zhihu/news?id=9454551` 
       
   **调用例子:**
-      `http://api.isoyu.com/index.php/api/Zhihu/news?id=9454551`
+      `https//api.isoyu.com/index.php/api/Zhihu/news?id=9454551`
       
 返回数据()如下图:
 ```
@@ -1012,7 +1012,7 @@ ifm.height=document.documentElement.clientHeight;
       `/Zhihu/new_comment?id=9454551` 
       
   **调用例子:**
-      `http://api.isoyu.com/index.php/api/Zhihu/new_comment?id=9454551`
+      `https://api.isoyu.com/index.php/api/Zhihu/new_comment?id=9454551`
       
 返回数据(最多返回20条数据)如下图:
 ```
@@ -1074,7 +1074,7 @@ ifm.height=document.documentElement.clientHeight;
       `/Movie/playing_movie_list?start=0&count=9` 
       
   **调用例子:**
-      `http://api.isoyu.com/index.php/api//Movie/playing_movie_list?start=0&count=9`
+      `https://api.isoyu.com/index.php/api//Movie/playing_movie_list?start=0&count=9`
       
 返回数据(每次返回数据,这里就不全部列出来了)如下图:
 ```json
@@ -1209,7 +1209,7 @@ ifm.height=document.documentElement.clientHeight;
       `/Movie/movie_info?id=6311303` 
       
   **调用例子:**
-      `http://api.isoyu.com/index.php/api/api/Movie/movie_info?id=6311303`
+      `https://api.isoyu.com/index.php/api/api/Movie/movie_info?id=6311303`
       
 返回数据(每次返回数据,这里就不全部列出来了)如下图:
 
