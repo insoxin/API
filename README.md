@@ -29,7 +29,9 @@
 
 说明:公益中国🇨🇳
 ### 1 宝贝回家/腾讯公益404核心数据
-   **接口地址:**`https://api.isoyu.com/gy/`
+   **接口地址:**
+   `https://api.isoyu.com/gy/`
+   `https://api.isoyu.com/gy/data.js`
 
    **说明:**
    腾讯公益404应该很多人都知道，这个公益页面不应该是404，而是广告位类单独板块。这才是真正的公益行为!所以做了这个,网站只需要在自己的页面中嵌入一段简单的代码，就能通过互联网来迅速传播失踪儿童信息，从而提高找回失踪儿童的概率。失踪儿童信息来自宝贝回家寻子网。静态资源支持ssl.
@@ -63,8 +65,10 @@ ifm.height=document.documentElement.clientHeight;
 }</script>
 
 ```
+3.json，不作多描述
 
-   ![姬长信API](https://i.loli.net/2018/04/02/5ac1eb7a3cbc7.png)
+![姬长信API](https://i.loli.net/2018/04/02/5ac1eb7a3cbc7.png)
+
 ## 0. 壁纸模块
 说明:含http与https方式，国内外CDN驱动
 使用百度云加速专业版,腾讯万象优图。
