@@ -50,7 +50,12 @@
 
 ```
 
-2.或者用onload来动态加载高度
+2.
+```javascript
+<iframe src="https://api.isoyu.com/gy/" allowTransparency="true"  frameborder="0" scrolling="no" width="100%" height="100%"></iframe>
+
+```
+或者用onload来动态加载高度
 
 ```javascript
 
