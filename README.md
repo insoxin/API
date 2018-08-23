@@ -666,7 +666,7 @@ ifm.height=document.documentElement.clientHeight;
       `/Weather/get_weather?city=广州市` 
       
   **调用例子:**
-      `//api.isoyu.comm/index.php/api/Weather/get_weather?city=广州市`
+      `//api.isoyu.com/index.php/api/Weather/get_weather?city=广州市`
       
 返回数据(每次返回是10条数据,这里就不全部列出来了)如下图:
 ```javascript
