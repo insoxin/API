@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>{$title}</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="http://apps.bdimg.com/libs/bootstrap/3.3.4/css/bootstrap.css" />
+    <script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script type="text/javascript" src="http://apps.bdimg.com/libs/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="javascript:void(0);">Think Angular</a>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li php-repeat="$navs as $nav" class="{$nav.title == $title ? 'active' : ''}">
+                        <a href="{$nav.url}">{$nav.title}</a>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="javascript:void(0);">退出</a></li>
+                    <li class="dropdown">
+                        <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button">用户 <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="javascript:void(0);">我的消息</a></li>
+                            <li><a href="javascript:void(0);">我的关注</a></li>
+                            <li><a href="javascript:void(0);">我的文章</a></li>
+                            <li><a href="javascript:void(0);">个人设置</a></li>
+                            <li><a href="javascript:void(0);">退出登录</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div php-block="main"></div>
+    <div class="well">
+        版权所有 zhaishuaigan@qq.com, 运行时间: {:microtime(true) - $start_time} s
+    </div>
+</body>
+
+</html>

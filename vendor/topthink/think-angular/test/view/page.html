@@ -1,0 +1,28 @@
+<nav php-show="$pagecount > 1">
+    <ul class="pagination">
+        <li php-show="$p > 1">
+            <a href="{:$page(1)}">首页</a>
+        </li>
+        <li php-show="$p > 1">
+            <a href="{:$page($p - 1)}">上一页</a>
+        </li>
+        <li php-show="$p - 4 > 2">
+            <!-- 这里是 往前十页, 如果第一页显示了, 就隐藏这个'...' 按钮 -->
+            <a href="{:$page($p - 10 < 1 ? 1 : $p - 10)}"><span>...</span></a>
+        </li>
+        <li php-for="$i = $p - 4; $i <= $p + 4; $i++" php-show="$i > 0 && $i <= $pagecount" class="{$p == $i ?= 'disabled'}">
+            <a php-show="$p != $i" href="{:$page($i)}">{$i}</a>
+            <span php-show="$p == $i">{$i}</span>
+        </li>
+        <li php-show="$p + 4 < $pagecount">
+            <!-- 这里是 后十页, 如果最后一页显示了, 就隐藏这个'...' 按钮 -->
+            <a href="{:$page($p + 10 > $pagecount ? $pagecount : $p + 10)}"><span>...</span></a>
+        </li>
+        <li php-show="$p < $pagecount">
+            <a href="{:$page($p + 1)}">下一页</a>
+        </li>
+        <li php-show="$p < $pagecount">
+            <a href="{:$page($pagecount)}">尾页 {$pagecount}</a>
+        </li>
+    </ul>
+</nav>

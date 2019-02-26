@@ -1,0 +1,1 @@
+<script language="JavaScript" src="gy/index.html">

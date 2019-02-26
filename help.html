@@ -1,0 +1,140 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="">
+<!--<![endif]-->
+
+<head>
+<meta charset="utf-8">
+<link rel="shortcut icon" href="favicon.ico">
+<meta name="keywords" content="姬长信的API,随机美女API,宠物壁纸图片API,随机动漫壁纸图片,随机抱枕图壁纸API,卡通图片壁纸API,二次元图片壁纸API,IP图片壁纸API">
+<meta name="description" content="姬长信的API列表-随机图片API使用方法帮助页面">
+<meta name="author" content="姬长信API " />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>姬长信API使用说明与调用-给予每次不一样</title>
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/flexslider.css">
+<link rel="stylesheet" href="css/jquery.fancybox.css">
+<link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="css/responsive.css">
+<link rel="stylesheet" href="css/animate.min.css">
+<link rel="stylesheet" href="css/font-icon.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+</head>
+
+<body>
+<!-- header section -->
+<section class="banner" role="banner">
+<!--header navigation -->
+  <header id="header">
+    <div class="header-content clearfix"> <a class="logo" href="index.html"><img src="images/logo.png" alt=""></a>
+      <nav class="navigation" role="navigation">
+        <ul class="primary-nav">
+          <li><a href="help.html">Help</a></li>
+          <li><a href="https://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=admin@isoyu.com">Contact</a></li>
+        </ul>
+      </nav>
+      <a href="#" class="nav-toggle">Menu<span></span></a> </div>
+  </header>
+  <!--header navigation -->
+</section>
+<!-- header section --> 
+<!-- title section -->
+<section id="banner" class="banner no-padding">
+  <div class="container-fluid">
+    <div class="row no-gutter">
+      <ul class="slides">
+        <li>
+          <div class="col-md-12">
+            <blockquote>
+              <p>食用方法</p>
+            </blockquote>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+<!-- title section --> 
+<!-- About section -->
+<section id="teams" class="section teams">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-5 col-sm-5">
+        <div class="bio"> <img src="https://i.loli.net/2017/07/28/597ae778a941b.png" alt="" class="img-responsive"> </div>
+      </div>
+      <div class="col-md-7 col-sm-7">
+        <div class="bio"> <img src="https://ooo.0o0.ooo/2017/07/08/59602488569a1.png" alt="姬长信" class="img-responsive">
+          <div class="bio-content">
+            <h4>食用说明</h4>
+            <h5>
+壁纸均为1080P，含http与https方式，国内外CDN驱动<br>须知：姬长信API将会记录你的域名、使用流量、调用次数等重要信息，如不介意，请使用<br>条款：姬长信API拥有所有运行权，在某些特定情况下，姬长信API有权利禁止你的网站调用</h5>
+				<p>每日bing API调用格式：</p>
+				<pre>https://api.isoyu.com/bing_images.php</pre>
+<p>复制上面的地址到你需要显示图片的地方
+例如:</p><pre>background:url(//api.isoyu.com/bing_images.php);</pre>
+				<p>类型：</p>
+				<pre>301 = 301跳转(301 Moved Permanently)；<br>302 = 302跳转；<br>json = JSON数据</pre>
+				<p>专辑：</p>
+				<pre>dfproject = 东方16:9壁纸(495张)<br>dfzh = 东方竖图(6239张)<br>ecyzh = 二次元综合(1991张)<br>不填 = 全部图片随机</pre>
+<h2>其他目前开放的壁纸接口</h2><strong><g-emoji alias="warning" fallback-src="https://assets-cdn.github.com/images/icons/emoji/unicode/26a0.png" ios-version="6.0">⚠️</g-emoji></strong> <code>高斯模糊</code>接口目前只支持指定分辨率(<code>w,h</code>)的图片，具体分辨率如下：</h3>
+<div class="highlight highlight-source-js"><pre><span class="pl-c"><span class="pl-c">/**</span></span>
+<span class="pl-c"> * 已知分辨率</span>
+<span class="pl-c"> <span class="pl-c">*/</span></span>
+resolutions<span class="pl-k">:</span> [
+    <span class="pl-s"><span class="pl-pds">'</span>1920x1200<span class="pl-pds">'</span></span>,
+    <span class="pl-s"><span class="pl-pds">'</span>1920x1080<span class="pl-pds">'</span></span>,
+    <span class="pl-s"><span class="pl-pds">'</span>1366x768<span class="pl-pds">'</span></span>,
+    <span class="pl-s"><span class="pl-pds">'</span>1280x768<span class="pl-pds">'</span></span>,
+    <span class="pl-s"><span class="pl-pds">'</span>1024x768<span class="pl-pds">'</span></span>,
+    <span class="pl-s"><span class="pl-pds">'</span>800x600<span class="pl-pds">'</span></span>,
+    <span class="pl-s"><span class="pl-pds">'</span>800x480<span class="pl-pds">'</span></span>,
+    <span class="pl-s"><span class="pl-pds">'</span>768x1280<span class="pl-pds">'</span></span>,
+    <span class="pl-s"><span class="pl-pds">'</span>720x1280<span class="pl-pds">'</span></span>,
+    <span class="pl-s"><span class="pl-pds">'</span>640x480<span class="pl-pds">'</span></span>,
+    <span class="pl-s"><span class="pl-pds">'</span>480x800<span class="pl-pds">'</span></span>,
+    <span class="pl-s"><span class="pl-pds">'</span>400x240<span class="pl-pds">'</span></span>,
+    <span class="pl-s"><span class="pl-pds">'</span>320x240<span class="pl-pds">'</span></span>,
+    <span class="pl-s"><span class="pl-pds">'</span>240x320<span class="pl-pds">'</span></span>
+]</pre></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- About section --> 
+<!-- footer -->
+<footer class="section footer">
+  <div class="footer-bottom">
+    <div class="container">
+      <div class="col-md-12">
+        <p>
+        <ul class="footer-share">
+          <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+          <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+          <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+          <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+          <li><a href="#"><i class="fa fa-pinterest-p"></i></a></li>
+          <li><a href="#"><i class="fa fa-vimeo"></i></a></li>
+        </ul>
+        </p>
+        <p>© 2017 All rights reserved. All Rights Reserved<a href="https://blog.isoyu.com/" title="姬长信" target="_blank">姬长信</a></p>
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- footer -->
+<!-- JS FILES --> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> 
+<script src="js/bootstrap.min.js"></script> 
+<script src="js/jquery.flexslider-min.js"></script> 
+<script src="js/jquery.fancybox.pack.js"></script> 
+<script src="js/jquery.waypoints.min.js"></script> 
+<script src="js/retina.min.js"></script> 
+<script src="js/modernizr.js"></script> 
+<script src="js/main.js"></script>
+</body>
+</html>

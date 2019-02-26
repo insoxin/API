@@ -1,0 +1,156 @@
+@media screen and (max-width: 1024px) {
+ #header .header-content {
+ width: 90%;
+}
+#header .header-content {
+ padding: 30px 0;
+}
+ #header.fixed .header-content {
+ padding: 17px 0;
+}
+ .nav-toggle {
+ display: block;
+}
+ .navigation {
+ position: fixed;
+ background-color: #fff;
+ width: 100%;
+ height: 100%;
+ top: 0;
+ left: 0;
+ z-index: 99999;
+ visibility: hidden;
+ opacity: 0;
+ -webkit-transition: opacity 0.5s, visibility 0s 0.5s;
+ transition: opacity 0.5s, visibility 0s 0.5s;
+}
+ .navigation .primary-nav {
+ position: relative;
+ top: 45%;
+ -moz-transform: translateY(-45%);
+ -ms-transform: translateY(-45%);
+ -webkit-transform: translateY(-45%);
+ transform: translateY(-45%);
+}
+ .navigation li {
+ display: block;
+ margin-bottom: 20px;
+}
+ .navigation a {
+ display: block;
+ font-size: 25px;
+ margin: 0;
+ text-align: center;
+}
+ .person {
+ margin: 0 auto 50px;
+}
+ .person-content {
+ text-align: center;
+}
+ .person .social-icons li {
+ display: inline-block;
+ float: none;
+ margin-bottom: 5px;
+}
+ .banner blockquote {
+ padding: 15% 5%;
+}
+ .banner p {
+ font-size: 26px;
+}
+ .flex-control-nav {
+ bottom: 20px;
+}
+}
+@media screen and (max-width: 768px) {
+ #header .header-content {
+ padding: 30px 0%;
+}
+ #header.fixed .header-content {
+ padding: 17px 0;
+}
+ .banner blockquote {
+ padding-top: 15%;
+}
+ .banner h1 {
+ font-size: 24px;
+ letter-spacing: -1px;
+}
+ .banner p {
+ font-size: 24px;
+ letter-spacing: -1px;
+}
+ .flexslider {
+ padding-bottom: 80px;
+}
+ .flex-control-nav {
+ width: 100%;
+}
+ .footer .footer-col {
+ margin-bottom: 50px;
+}
+}
+@media screen and (max-width: 640px) {
+ #header .header-content {
+ padding: 30px 0;
+}
+ #header.fixed .header-content {
+ padding: 17px 0;
+}
+ .banner blockquote {
+ padding: 15% 5% 5% 5%;
+}
+ .bio h4 {
+ font-size:24px;
+ font-weight: 700;
+}
+ .contact {
+ margin-top:50px;
+}
+}
+@media screen and (max-width: 480px) {
+ #header .header-content {
+ padding: 30px 0;
+}
+ #header.fixed .header-content {
+ padding: 17px 0;
+}
+ .banner blockquote {
+ padding-top: 25%;
+}
+ .banner h1 {
+ font-size: 24px;
+ letter-spacing: -1px;
+}
+ .banner p {
+ font-size: 24px;
+ letter-spacing: -1px;
+}
+ .bio h4 {
+ font-size:18px;
+ font-weight: 700;
+}
+ .contact {
+ margin-top:50px;
+}
+}
+@media screen and (max-width: 320px) {
+ #header .header-content {
+ padding: 30px 2%;
+}
+ #header.fixed .header-content {
+ padding: 17px 0;
+}
+ .banner blockquote {
+ padding-top: 35%;
+}
+ .banner h1 {
+ font-size: 24px;
+ letter-spacing: -1px;
+}
+ .banner p {
+ font-size: 24px;
+ letter-spacing: -1px;
+}
+}

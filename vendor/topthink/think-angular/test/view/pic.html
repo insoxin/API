@@ -1,0 +1,23 @@
+<div php-extends="base"></div>
+<div php-block="main" class="container">
+    <div class="row">
+        <div class="col-md-8">
+            <div class="item" php-repeat="$list as $pic">
+                <h2>{$pic.title}</h2>
+                <p>
+                    <img src="{$pic.pic}" style=" max-width: 80%;" alt="">
+                </p>
+                <hr />
+            </div>
+            <nav php-include="page"></nav>
+        </div>
+        <div class="col-md-4">
+        	<h4>图片分类</h4>
+            <ul>
+                <li php-repeat="$category as $cate">
+                    <a href="#cate={$cate.id}">{$cate.title}</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>

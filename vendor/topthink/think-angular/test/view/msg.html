@@ -1,0 +1,58 @@
+<div php-extends="base"></div>
+<div php-block="main" class="container">
+    <div class="jumbotron">
+        <p>
+            如果对Think Angular有好的建议, 可以在此处直接提交, 我将会收到一封邮件, 将根据建议优化模板引擎.
+        </p>
+        <form action="" onsubmit="return false">
+            <div class="form-group">
+                <label for="exampleInputEmail1">你的名字</label>
+                <input type="text" name="name" class="form-control" id="exampleInputEmail1" placeholder="Name" />
+            </div>
+            <div class="form-group">
+                <label for="exampleInputEmail1">你的邮箱</label>
+                <input type="email" name="email" class="form-control" id="exampleInputEmail1" placeholder="Email" />
+            </div>
+            <div class="form-group">
+                <label for="exampleInputPassword1">建议</label>
+                <textarea name="msg" class="form-control" cols="30" rows="10" placeholder="在这里输入你的建议"></textarea>
+            </div>
+            <a class="btn btn-primary btn-lg" target="_blank" href="javascript:submit()">提交建议</a>
+        </form>
+        <script>
+        function submit() {
+            var name = $('input[name=name]').val();
+            var email = $('input[name=email]').val();
+            var msg = $('textarea[name=msg]').val();
+            if (!name) {
+                alert('请输入你的名字');
+                return false;
+            }
+            if (!email) {
+                alert('请输入你的邮箱');
+                return false;
+            }
+            if (!msg) {
+                alert('请输入你的建议');
+                return false;
+            }
+            var data = {
+                name: name,
+                email: email,
+                msg: msg
+            };
+            $.post('http://app.zhaishuaigan.cn/api/feedback/add', data, function(result) {
+                if (result.code === 0) {
+                    alert('反馈成功');
+                    $('input[name=name]').val('');
+                    $('input[name=email]').val('');
+                    $('textarea[name=msg]').val('');
+                } else {
+                    alert(result.msg);
+                }
+            });
+            return false;
+        }
+        </script>
+    </div>
+</div>

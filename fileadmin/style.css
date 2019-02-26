@@ -1,0 +1,53 @@
+.like {
+    padding: 3px;
+    color: #000000;
+    font-size: 18px;
+    background-color: #00BFFF;
+    border-bottom: 3px solid #1E90FF;
+}
+
+.love {
+    padding: 2px;
+    color: #000000;
+    word-wrap: break-word;
+    border-left: 1px solid #B0E0B6;
+    border-right: 1px solid #B0E0B6;
+    border-bottom: 1px dotted #6495ED;
+}
+
+.error {
+    color: red;
+    padding: 2px;
+    word-wrap: break-word;
+    border: 1px solid red;
+}
+
+#header {
+    padding: 4px;
+    color: #000000;
+    font-size: 18px;
+    background-color: #3CB369;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom: 3px solid #008080;
+}
+
+#footer {
+    padding: 4px;
+    color: #000000;
+    font-size: 18px;
+    background-color: #3CB369;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-bottom: 3px solid #008080;
+}
+
+#footer a:link {
+    color: #000000;
+    text-decoration: none;
+}
+
+#footer a:visited {
+    color: #000000;
+    text-decoration: none;
+}

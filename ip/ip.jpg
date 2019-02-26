@@ -1,0 +1,51 @@
+<?php 
+//处理要显示的相关信息 
+if(!(strpos(,"zh-cn")===false)){ 
+="Chinese"; 
+} 
+else 
+{ 
+=; 
+} 
+=explode(";",); 
+if(count()>2){ 
+=trim(str_replace("MSIE","Internet Explorer",)); 
+if(trim()=="U"){ 
+="Mozilla"; 
+} 
+=str_replace(")","",); 
+=str_replace("NT 5.2","2003",); 
+=str_replace("NT 5.1","XP",); 
+=str_replace("NT 5.0","2000",); 
+=trim(str_replace("9x","Me",)); 
+} 
+else 
+{ 
+="Unknown"; 
+="Unknown"; 
+} 
+header ("Content-type: image/png"); 
+//定义图片宽高 
+=250; 
+=105; 
+ =  (,) or die ("Cannot Initialize new GD image stream"); 
+//图片色彩设置 
+ = imagecolorallocate (, 235, 235, 240); 
+ = imagecolorallocate (, 200, 14, 91); 
+ = imagecolorallocate (, 0, 0, 0); 
+ = imagecolorallocate (, 0, 0, 255); 
+ = imagecolorallocate (, 0, 160, 0); 
+ = imagecolorallocate (, 255, 127, 80); 
+//绘制图片边框 
+imagefilledrectangle(, 0, 0,  - 1,  - 1, ); 
+imagerectangle(, 0, 0,  - 1,  - 1, ); 
+//生成图片文字 
+imagestring (, 3, 6, 6, "Your IP : " . , ); 
+imagestring (, 3, 6, 26, "Language : " . , ); 
+imagestring (, 3, 6, 46, "Your OS : " . , ); 
+imagestring (, 3, 6, 66, "Browser : " . , ); 
+imagestring (, 3, 50, 86, "Ads By www.joyren.net", ); 
+//产生图片 
+imagepng (); 
+imagedestroy (); 
+?> 

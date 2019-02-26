@@ -1,0 +1,21 @@
+<div php-extends="base"></div>
+<div php-block="main" class="container">
+    <div class="row">
+        <div class="col-md-8">
+            <div class="item" php-repeat="$list as $article">
+                <h2>{$article.title}</h2>
+                <div>{$article.content}</div>
+                <hr />
+            </div>
+            <nav php-include="page"></nav>
+        </div>
+        <div class="col-md-4">
+        	<h4>文章分类</h4>
+            <ul>
+                <li php-repeat="$category as $cate">
+                    <a href="#cate={$cate.id}">{$cate.title}</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
