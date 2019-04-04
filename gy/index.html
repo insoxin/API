@@ -13,10 +13,10 @@ align:center;
 		var more = ' <a href="' + moreUrl + '" target="_blank">详细情况</a>|<a href="https://api.isoyu.com/" target="_blank">姬长信API</a>';
 		var name = '<strong>' + jsondata.data[num].name + '</strong>';
 		var sex = '（' + jsondata.data[num].sex + "）" + '，';
-		var birthTime = '出生日期：' + jsondata.data[num].birth_time + '，';
-		var lostTime = '失踪时间：' + jsondata.data[num].lost_time + '，';
-		var lostPlace = '失踪地点：' + jsondata.data[num].lost_place + '，';
-		var childFeature = '失踪人特征描述：' + jsondata.data[num].child_feature;
+		var birthTime = '<br/><b>出生日期：</b>' + jsondata.data[num].birth_time + '，';
+		var lostTime = '<br/><b>失踪时间：</b>' + jsondata.data[num].lost_time + '，';
+		var lostPlace = '<br/><b>失踪地点：</b>' + jsondata.data[num].lost_place + '，';
+		var childFeature = '<br/><b>失踪人特征描述：</b>' + jsondata.data[num].child_feature;
 
 		$('h2').text("");
 		$('.api-isoyu-com').attr("src", picUrl);
