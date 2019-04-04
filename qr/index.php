@@ -1,8 +1,5 @@
 <?php
-/**
-* 姬长信API
-**/
-
+header("Access-Control-Allow-Origin: *");
 //载入qrcode类
 include "./phpqrcode.php";
 

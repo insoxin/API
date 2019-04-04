@@ -1,0 +1,73 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>生成短网址、还原短网址,t.cn,126.am,dwz.cn短网址供你选择！</title>
+<link href="style/index.css" type="text/css" rel="stylesheet"/>
+</head>
+
+<body>
+<div class="container">
+	<div class="main">
+    	<div class="header">
+        	<h3>短网址服务</h3>
+        </div>
+        <div class="search">
+            <div class="tab">
+                <ul>
+                    <li>
+                        <a href="javascript:;" class="selected">生成</a>                        
+                    </li>
+                    <li>
+                         <a href="expand.html" style="margin-left:10px;">还原</a>
+                    </li>
+                </ul>                
+            </div>
+            <div class="ad">
+            	<a href="http://kandianying.la" target="_blank" title="看电影啦，发现属于你的电影！">发现属于你的电影?</a>
+            </div>
+            <div class="query">
+                <input type="text" id="search" name="long_url"/>
+                <input type="button" value="生成" id="create_btn"/>
+            </div>
+        </div>
+
+        <div class="select">
+			选择类型：
+			<label title="新浪旗下短网址"><input name="type" type="radio" value="t.cn" id="tcn" checked="checked"/>t.cn</label>
+			<label title="网易旗下短网址"><input name="type" type="radio"  value="126.am" id="am126" />126.am</label>
+			<label title="百度旗下短网址"><input name="type" type="radio" value="dwz.cn" id="dwzcn"/>dwz.cn</label>
+			<!-- <label><input type="radio" name="type" value="goo.gl" id="googl">goo.gl</label>-->
+            <label><input type="radio" name="type" value="is.gd" id="isgd"/>is.gd</label>
+			<!-- <label><input type="radio" name="type" value="tinyurl.com" id="tinyurl">tinyurl.com</label> -->
+           </div>
+        <div class="result">
+	       	<div class="short_url">
+	        	<input type="text" id="o_short_url"/>
+	            <input type="button" value="复制链接" id="copy_btn"/> <br/> 
+	         </div>
+			<div id="mess">
+				可压缩所有网址包括图片、flash、mp3、rar等所有互联网地址，稳定，永久有效！
+			</div>
+			<span id="error_mesg" style="display:none;"></span>
+        </div>
+		<div class="bottom">
+            <span class="left">
+                如果某类型网址一直处于等待状态，可以更换其他网址类型！
+            </span>  
+
+            <span class="right">
+               &copy;2013<a href="http://www.ttzxnet.com"  target="_blank">&nbsp; 漫步旅行者博客</a>
+            </span>  
+            <div class="clearfix">
+        </div>
+    </div>
+</div>
+</div>
+<script src="style/jquery-1.8.2.min.js" language="javascript" type="text/javascript"></script>
+<script src="style/index.js" language="javascript" type="text/javascript"></script>
+<div style="display:none">
+</div>
+</body>
+</html>
+

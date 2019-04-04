@@ -1,10 +1,10 @@
 # 姬长信API
-一个免费提供公益数据和随机妹子生活照抱枕图动漫壁纸背景图的API https://api.isoyu.com/
+一个免费提供壁纸模块,新闻模块,视频模块,笑话段子 图片相册,天气预报,前端开发资讯日报,知乎日报数据, 豆瓣热播电影,招聘信息和公益数据的API https://api.isoyu.com/
 ===============
 食用方法
 
- 基于Thinkphp完善整理API接口。始于2017
- + 公益中国:宝贝回家核心数据(ssl)
+ 基于Thinkphp完善整理API接口。始于2017 采用 REST 风格设计。所有接口请求地址都是可预期的以及面向资源的。使用规范的 HTTP 响应代码来表示请求结果的正确或错误信息。使用 HTTP 内置的特性，如 HTTP Authentication 和 HTTP 请求方法让接口易于理解。所有的 API 请求都会以规范友好的 JSON 对象格式返回（包括错误信息）。
+ + 公益中国:宝贝回家核心数据 /全国通缉令数据 (ssl)
  + 新闻分类(头条/军事/娱乐/体育/科技/艺术/教育/要闻)数据接口
  + 视频分类(精品视频/搞笑视频/美女视频/体育视频/新闻现场)接口
  + 图片(cosplay)接口,花瓣相册接口
@@ -12,7 +12,7 @@
  + IT资讯前端开发日报、知乎日报等
  + 招聘信息
  + bing每日图片壁纸
- + 二维码在线生成(phpqrcode)
+ + 二维码生成与解码(phpqrcode)
  + ARU(阿鲁)表情包[作者授权]
  + 内置动漫二次元美女图片壁纸随机美女,宠物图片,随机动漫图片,随机抱枕图,卡通图片,二次元图片,IP图片
  + 各种精品美图，美术基础，游戏原画设定，插画，漫画，动画造型设定，
@@ -23,7 +23,7 @@
 ---
 ###### 条款：姬长信API拥有所有运行权，在某些特定情况下，姬长信API有权利禁止你的网站调用。
 ---
-###### 赞助&打赏：[http://fuligou.isoyu.com/yff/](http://fuligou.isoyu.com/yff/)
+###### 赞助&打赏：[https://api.isoyu.com/pay/](https://api.isoyu.com/pay/)
 ---
 ## GY.公益数据
 
@@ -46,7 +46,7 @@
 
 ```javascript
 
-<iframe src="https://api.isoyu.com/gy/" frameborder="0" scrolling="no" width="300" height="300"></iframe>
+<iframe src="https://api.isoyu.com/gy/" frameborder="0" scrolling="no" width="300" height="500"></iframe>
 
 ```
 
@@ -73,7 +73,51 @@ ifm.height=document.documentElement.clientHeight;
 3.解析json https://api.isoyu.com/gy/data.js 不作多描述（浏览器直接访问会乱码，可以下载查看。charset为UTF-8）
 
 ![姬长信API](https://i.loli.net/2018/04/02/5ac1eb7a3cbc7.png)
+### 2 全网通缉令数据
+   **接口地址:**
+   `https://api.isoyu.com/gy/tj.html`
+   `https://api.isoyu.com/gy/tj.js`
 
+   **说明:**
+  数据全部来自官方媒体,政府新闻,在上海警察叔叔的指导下完善.静态资源支持ssl
+
+   **附:**
+   如果您想在您的网站添加一个类似的效果，出于公益性质，我可以无偿为您提供技术支持
+
+   **调用例子:**
+   
+
+1.
+
+```javascript
+
+<iframe src="https://api.isoyu.com/gy/tj.html" frameborder="0" scrolling="no" width="300" height="500"></iframe>
+
+```
+
+2.
+```javascript
+<iframe src="https://api.isoyu.com/gy/tj.html" allowTransparency="true"  frameborder="0" scrolling="no" width="100%" height="100%"></iframe>
+
+```
+或者用onload来动态加载高度
+
+```javascript
+
+<iframe src="https://api.isoyu.com/gy/tj.html" frameborder="0" scrolling="no" width="100%" onload="mu_changeHeight()" id="isoyu_tj"></iframe>
+
+js部分
+
+<script type="text/javascript">
+function mu_changeHeight(){
+var ifm= document.getElementById("isoyu_tj");
+ifm.height=document.documentElement.clientHeight;
+}</script>
+
+```
+3.解析json https://api.isoyu.com/gy/tj.js 不作多描述（浏览器直接访问会乱码，可以下载查看。charset为UTF-8）
+
+![姬长信API](https://ws3.sinaimg.cn/large/005BYqpgly1g1qmmrayd3j30hu0d6t9k.jpg)
 ## 0. 壁纸模块
 说明:含http与https方式，国内外CDN驱动
 使用百度云加速专业版,腾讯万象优图。
@@ -158,8 +202,8 @@ ifm.height=document.documentElement.clientHeight;
    **调用例子:**
    ![姬长信API](https://api.isoyu.com/ARU_GIF_S.php)
     `//api.isoyu.com/ARU_GIF_S.php`
-### 0.7 在线二维码 
-说明：依靠phpqrcode，Version: 1.1.4 Build: 2010100721 这是QR码2-D条码生成器的PHP实现。这是基于由Kentaro Fukuchi编写的C libqrencode的纯php-LGPL许可实现。
+### 0.7 二维码生成与解码 
+说明：依靠phpqrcode，Version: 1.1.4 Build: 2010100721 这是QR码2-D条码生成器的PHP实现。支持跨域,这是基于由Kentaro Fukuchi编写的C libqrencode的纯php-LGPL许可实现。
 
 支持数字，字母数字，8位和汉字编码。（汉字编码没有完全测试，如果你是日本编码启用，你可以通过验证:) :)）
 导出为PNG图像，并以位表形式导出数据缓存提高计算速度.
@@ -175,13 +219,29 @@ ifm.height=document.documentElement.clientHeight;
      > M水平 15%的字码可被修正
      > Q水平 25%的字码可被修正
      > H水平 30%的字码可被修正
-**p**  : *二维码尺寸，可选范围1-40(递增值为25.1=25x25,2=50x50...最大1000。具体大小和容错级别有关)（缺省值：3）*
+**p**  : *二维码尺寸，可选范围1-40(递增值为25.1=25x25,2=50x50...最大40=1000x1000。具体大小和容错级别有关)（缺省值：3）*
 
-**例子**:  
+**生成例子**:  
 
 ![姬长信API](https://api.isoyu.com/qr/?m=0&e=L&p=5&url=https://api.isoyu.com)
 
 `https://api.isoyu.com/qr/?m=0&e=L&p=5&url=https://api.isoyu.com`
+  
+  
+  **解码例子**:  
+
+  
+`https://api.isoyu.com/qr/deqr.php?imgurl=https://ws3.sinaimg.cn/large/005BYqpgly1g1qmzrwfckj303h03h09u.jpg`
+  
+  
+返回
+  
+  
+`{
+	"status": 1,
+	"msg": "解析成功",
+	"qrurl": "https://api.isoyu.com"
+}`
 
 
 ## 1. 新闻模块

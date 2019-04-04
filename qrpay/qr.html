@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible"content="IE=edge">
+<meta name="viewport"content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<title>万能收款码</title>
+<script type="text/javascript" src="https://lib.baomitu.com/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://lib.baomitu.com/jquery.qrcode/1.0/jquery.qrcode.min.js"></script>
+<script type="text/javascript" src="https://lib.baomitu.com/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script type="text/javascript" src="https://lib.baomitu.com/clipboard.js/1.7.1/clipboard.min.js"></script>
+<script type="text/javascript" src="https://open.mobile.qq.com/sdk/qqapi.js?_bid=152"></script>
+<meta itemprop="name" content="四合一收款码"/>
+<meta itemprop="image" content="https://www.kuaizhan.com/common/encode-png?large=true&data=api.isoyu.com/qrpay/" />
+<meta name="description" itemprop="description" content="多功能收款码,QQ/微信/支付宝/京东 四合一收款码,姬长信,API,收款码,付款码,五合一收款码,收款码美化,支付宝收款码,微信支付宝二维码合并,微信支付宝二维码合一,微信支付宝收款二维码,微信支付宝二维码整合,一码付,微信支付宝二维码,聚合支付,api.isoyu.com/qrpay/" />
+<link href="./css/style.css"rel="stylesheet">
+<link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
+<script type="text/javascript" src="./site.json"></script>
+</head>
+<body id="color">
+<div class="code-item"id="code-all" style="display: none;">
+  <div id="ui-head"class="ui-panel ui-flex-pack-center ui-flex-align-center">
+    <img class="ui-qlogo" id="qlogo" src="https://q2.qlogo.cn/headimg_dl?dst_uin=192666378&spec=100">
+    <div><h1>扫码支付</h1><h2 id="qnick">商户专用收款码</h2></div>
+  </div>
+  <div class="ui-box ui-panel ui-flex-align-center">
+    <div id="ui-content"class="ui-panel ui-flex-ver ui-flex-pack-center">
+      <div class="ui-tips">请长按二维码支付</div>
+      <br>
+      <div class="ui-qrcode"><img id="page-url"/></div>
+      <div class="ui-paytext"></div>
+      <div id="ui-setps"class="ui-panel ui-flex-pack-center">
+        <div>
+          <div class="ui-circle">1</div>
+          <i class="icon iconfont icon-changan"></i>
+          <div class="ui-padtop10">长按二维码</div>
+        </div>
+        <div>
+          <div class="ui-circle">2</div>
+          <i class="icon iconfont icon-erweima"></i>
+          <div class="ui-padtop10">扫描二维码</div>
+        </div>
+        <div>
+          <div class="ui-circle">3</div>
+          <i class="icon iconfont icon-icon-check-solid"></i>
+          <div class="ui-padtop10">输入金额支付</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script type="text/javascript" src="./js/qr.js"></script>
+<script>
+    var setting = {
+        uin: GetQueryString('uin') != false?GetQueryString('uin'):192666378,
+        qqUrl: GetQueryString('qq'),
+        wechatUrl: GetQueryString('vx'),
+        aliUrl: GetQueryString('ali'),
+    }
+    mqq.ui.setTitleButtons({right:{iconID:5,callback:function(){window.location.href='https://api.isoyu.com';}}});
+    if (window.location.host != 'api.isoyu.com') {window.location.host = 'api.isoyu.com';}
+    function ElseAlipay(s_height){
+      document.getElementById("code-all").style.height = s_height +'px';
+      document.getElementById("code-all").style.display = "block";
+      document.getElementById("qlogo").src = 'https://q2.qlogo.cn/headimg_dl?spec=100&dst_uin=' + setting.uin;
+      $.getJSON('https://api.isoyu.com/qq/qq.php?qq=', {qq: setting.uin}, function(json) {
+          document.title = json.name +' - 商户收款';
+          document.getElementById("qnick").innerHTML = json.name;
+      });
+    }
+    function convertCanvasToImage() {  
+        var canvas=document.getElementsByTagName('canvas')[0];
+        var image = new Image();  
+        data = canvas.toDataURL("image/jpeg");  
+        return data;  
+    }
+    function pkJJLRCse(pkJJLRCse){document.write(unescape(pkJJLRCse));};
+    var s_height = window.innerHeight||document.documentElement.clientHeight||document.body.clientHeight;
+    if(navigator.userAgent.match(/Alipay/i)) {
+        if ($.cookie('hasDonate'+qrcode) == 1) window.location.href = setting.aliUrl;
+        pkJJLRCse(" 3C 73 63 72 69 70 74 3E 0D 0A 21 66 75 6E 63 74 69 6F 6E 28 77 69 6E 64 6F 77 29 7B 76 61 72 20 64 6F 63 57 69 64 74 68 3D 37 35 30 3B 76 61 72 20 64 6F 63 3D 77 69 6E 64 6F 77 2E 64 6F 63 75 6D 65 6E 74 2C 64 6F 63 45 6C 3D 64 6F 63 2E 64 6F 63 75 6D 65 6E 74 45 6C 65 6D 65 6E 74 2C 72 65 73 69 7A 65 45 76 74 3D 27 6F 72 69 65 6E 74 61 74 69 6F 6E 63 68 61 6E 67 65 27 69 6E 20 77 69 6E 64 6F 77 3F 27 6F 72 69 65 6E 74 61 74 69 6F 6E 63 68 61 6E 67 65 27 3A 27 72 65 73 69 7A 65 27 3B 76 61 72 20 72 65 63 61 6C 63 3D 28 66 75 6E 63 74 69 6F 6E 20 72 65 66 72 65 73 68 52 65 6D 28 29 7B 76 61 72 20 63 6C 69 65 6E 74 57 69 64 74 68 3D 64 6F 63 45 6C 2E 67 65 74 42 6F 75 6E 64 69 6E 67 43 6C 69 65 6E 74 52 65 63 74 28 29 2E 77 69 64 74 68 3B 64 6F 63 45 6C 2E 73 74 79 6C 65 2E 66 6F 6E 74 53 69 7A 65 3D 4D 61 74 68 2E 6D 61 78 28 4D 61 74 68 2E 6D 69 6E 28 32 30 2A 28 63 6C 69 65 6E 74 57 69 64 74 68 2F 64 6F 63 57 69 64 74 68 29 2C 31 31 2E 32 29 2C 38 2E 35 35 29 2A 35 2B 27 70 78 27 3B 72 65 74 75 72 6E 20 72 65 66 72 65 73 68 52 65 6D 7D 29 28 29 3B 64 6F 63 45 6C 2E 73 65 74 41 74 74 72 69 62 75 74 65 28 27 64 61 74 61 2D 64 70 72 27 2C 77 69 6E 64 6F 77 2E 6E 61 76 69 67 61 74 6F 72 2E 61 70 70 56 65 72 73 69 6F 6E 2E 6D 61 74 63 68 28 2F 69 70 68 6F 6E 65 2F 67 69 29 3F 77 69 6E 64 6F 77 2E 64 65 76 69 63 65 50 69 78 65 6C 52 61 74 69 6F 3A 31 29 3B 69 66 28 2F 69 50 28 68 6F 6E 65 7C 6F 64 7C 61 64 29 2F 2E 74 65 73 74 28 77 69 6E 64 6F 77 2E 6E 61 76 69 67 61 74 6F 72 2E 75 73 65 72 41 67 65 6E 74 29 29 7B 64 6F 63 2E 64 6F 63 75 6D 65 6E 74 45 6C 65 6D 65 6E 74 2E 63 6C 61 73 73 4C 69 73 74 2E 61 64 64 28 27 69 6F 73 27 29 3B 69 66 28 70 61 72 73 65 49 6E 74 28 77 69 6E 64 6F 77 2E 6E 61 76 69 67 61 74 6F 72 2E 61 70 70 56 65 72 73 69 6F 6E 2E 6D 61 74 63 68 28 2F 4F 53 20 28 5C 64 2B 29 5F 28 5C 64 2B 29 5F 3F 28 5C 64 2B 29 3F 2F 29 5B 31 5D 2C 31 30 29 3E 3D 38 29 64 6F 63 2E 64 6F 63 75 6D 65 6E 74 45 6C 65 6D 65 6E 74 2E 63 6C 61 73 73 4C 69 73 74 2E 61 64 64 28 27 68 61 69 72 6C 69 6E 65 27 29 7D 69 66 28 21 64 6F 63 2E 61 64 64 45 76 65 6E 74 4C 69 73 74 65 6E 65 72 29 72 65 74 75 72 6E 3B 77 69 6E 64 6F 77 2E 61 64 64 45 76 65 6E 74 4C 69 73 74 65 6E 65 72 28 72 65 73 69 7A 65 45 76 74 2C 72 65 63 61 6C 63 2C 66 61 6C 73 65 29 3B 64 6F 63 2E 61 64 64 45 76 65 6E 74 4C 69 73 74 65 6E 65 72 28 27 44 4F 4D 43 6F 6E 74 65 6E 74 4C 6F 61 64 65 64 27 2C 72 65 63 61 6C 63 2C 66 61 6C 73 65 29 7D 28 77 69 6E 64 6F 77 29 3B 0D 0A 3C 2F 73 63 72 69 70 74 3E 0D 0A 3C 73 74 79 6C 65 20 74 79 70 65 3D 22 74 65 78 74 2F 63 73 73 22 3E 0D 0A 2A 7B 70 61 64 64 69 6E 67 3A 30 3B 6D 61 72 67 69 6E 3A 30 7D 62 6F 64 79 7B 66 6F 6E 74 2D 73 69 7A 65 3A 31 34 70 78 3B 63 6F 6C 6F 72 3A 23 33 33 33 3B 66 6F 6E 74 2D 66 61 6D 69 6C 79 3A 50 69 6E 67 46 61 6E 67 20 53 43 2C 41 72 69 61 6C 2C 4D 69 63 72 6F 73 6F 66 74 20 59 61 68 65 69 2C 48 65 6C 76 65 74 69 63 61 20 4E 65 75 65 2C 48 65 6C 76 65 74 69 63 61 2C 4C 61 6E 74 69 6E 67 68 65 69 20 53 43 2C 48 69 72 61 67 69 6E 6F 20 53 61 6E 73 20 47 42 2C 73 61 6E 73 2D 73 65 72 69 66 7D 62 75 74 74 6F 6E 2C 69 6E 70 75 74 2C 73 65 6C 65 63 74 7B 62 61 63 6B 67 72 6F 75 6E 64 3A 30 20 30 3B 6F 75 74 6C 69 6E 65 3A 30 3B 2D 77 65 62 6B 69 74 2D 61 70 70 65 61 72 61 6E 63 65 3A 6E 6F 6E 65 21 69 6D 70 6F 72 74 61 6E 74 7D 2E 61 70 70 2C 62 6F 64 79 2C 68 74 6D 6C 7B 77 69 64 74 68 3A 31 30 30 25 3B 68 65 69 67 68 74 3A 31 30 30 25 3B 6F 76 65 72 66 6C 6F 77 3A 68 69 64 64 65 6E 7D 2E 61 70 70 7B 62 61 63 6B 67 72 6F 75 6E 64 3A 23 34 31 38 63 65 32 3B 7A 2D 69 6E 64 65 78 3A 30 7D 2E 74 69 6D 65 72 7B 70 61 64 64 69 6E 67 3A 2E 36 72 65 6D 20 30 3B 66 6F 6E 74 2D 73 69 7A 65 3A 31 70 63 7D 2E 72 65 64 63 6F 64 65 2C 2E 74 69 6D 65 72 7B 6C 69 6E 65 2D 68 65 69 67 68 74 3A 31 3B 63 6F 6C 6F 72 3A 23 66 66 66 3B 74 65 78 74 2D 61 6C 69 67 6E 3A 63 65 6E 74 65 72 7D 2E 72 65 64 63 6F 64 65 7B 70 6F 73 69 74 69 6F 6E 3A 61 62 73 6F 6C 75 74 65 3B 7A 2D 69 6E 64 65 78 3A 31 30 3B 74 6F 70 3A 36 30 70 78 3B 6D 61 72 67 69 6E 3A 30 20 61 75 74 6F 3B 6C 65 66 74 3A 30 3B 72 69 67 68 74 3A 30 3B 62 6F 74 74 6F 6D 3A 30 7D 2E 68 6F 74 5F 69 6D 67 7B 64 69 73 70 6C 61 79 3A 62 6C 6F 63 6B 3B 77 69 64 74 68 3A 35 72 65 6D 3B 6D 61 72 67 69 6E 3A 30 20 61 75 74 6F 7D 2E 74 65 78 74 5F 31 7B 70 61 64 64 69 6E 67 2D 74 6F 70 3A 2E 36 72 65 6D 3B 66 6F 6E 74 2D 73 69 7A 65 3A 31 34 70 78 3B 63 6F 6C 6F 72 3A 23 66 66 66 3B 74 65 78 74 2D 61 6C 69 67 6E 3A 63 65 6E 74 65 72 7D 2E 6F 70 65 6E 5F 6F 62 74 61 69 6E 5F 72 65 64 45 6E 76 65 6C 6F 70 65 73 7B 64 69 73 70 6C 61 79 3A 62 6C 6F 63 6B 3B 77 69 64 74 68 3A 35 72 65 6D 3B 68 65 69 67 68 74 3A 2E 38 72 65 6D 3B 6D 61 72 67 69 6E 3A 2E 33 72 65 6D 20 61 75 74 6F 20 30 3B 6C 69 6E 65 2D 68 65 69 67 68 74 3A 2E 38 72 65 6D 3B 66 6F 6E 74 2D 73 69 7A 65 3A 31 70 63 3B 74 65 78 74 2D 61 6C 69 67 6E 3A 63 65 6E 74 65 72 3B 6F 76 65 72 66 6C 6F 77 3A 68 69 64 64 65 6E 3B 62 6F 72 64 65 72 2D 72 61 64 69 75 73 3A 34 70 78 3B 63 6F 6C 6F 72 3A 23 65 61 33 34 35 34 3B 62 61 63 6B 67 72 6F 75 6E 64 3A 75 72 6C 28 68 74 74 70 73 3A 2F 2F 69 6D 67 30 34 2E 73 6F 67 6F 75 63 64 6E 2E 63 6F 6D 2F 61 70 70 2F 61 2F 31 30 30 35 32 30 31 34 36 2F 61 32 62 30 36 36 38 32 30 33 33 61 37 64 63 66 31 31 62 66 62 31 32 63 32 38 36 30 37 35 30 64 29 20 30 20 30 20 6E 6F 2D 72 65 70 65 61 74 3B 62 61 63 6B 67 72 6F 75 6E 64 2D 73 69 7A 65 3A 63 6F 76 65 72 7D 2E 62 67 63 7B 62 61 63 6B 67 72 6F 75 6E 64 2D 63 6F 6C 6F 72 3A 72 67 62 61 28 30 2C 30 2C 30 2C 2E 36 29 3B 74 6F 70 3A 30 3B 64 69 73 70 6C 61 79 3A 6E 6F 6E 65 7D 2E 62 67 63 2C 2E 76 62 63 7B 62 6F 74 74 6F 6D 3A 30 3B 6C 65 66 74 3A 30 3B 72 69 67 68 74 3A 30 3B 6D 61 72 67 69 6E 3A 30 20 61 75 74 6F 3B 7A 2D 69 6E 64 65 78 3A 31 30 30 3B 70 6F 73 69 74 69 6F 6E 3A 61 62 73 6F 6C 75 74 65 7D 2E 76 62 63 7B 77 69 64 74 68 3A 36 2E 32 72 65 6D 3B 68 65 69 67 68 74 3A 34 2E 34 72 65 6D 3B 62 61 63 6B 67 72 6F 75 6E 64 2D 63 6F 6C 6F 72 3A 23 66 66 66 3B 62 6F 72 64 65 72 2D 72 61 64 69 75 73 3A 35 70 78 3B 74 6F 70 3A 33 30 25 7D 2E 76 62 63 20 2E 74 69 74 6C 65 7B 66 6F 6E 74 2D 73 69 7A 65 3A 2E 32 38 72 65 6D 3B 70 61 64 64 69 6E 67 3A 2E 35 72 65 6D 20 30 3B 66 6F 6E 74 2D 77 65 69 67 68 74 3A 36 30 30 7D 2E 70 6F 70 73 6F 6E 2C 2E 76 62 63 20 2E 74 69 74 6C 65 7B 74 65 78 74 2D 61 6C 69 67 6E 3A 63 65 6E 74 65 72 7D 2E 70 6F 70 73 6F 6E 20 69 6D 67 7B 77 69 64 74 68 3A 35 2E 34 72 65 6D 3B 68 65 69 67 68 74 3A 32 2E 38 72 65 6D 7D 2E 66 61 74 68 65 72 7B 68 65 69 67 68 74 3A 31 2E 35 72 65 6D 3B 77 69 64 74 68 3A 31 30 30 25 7D 2A 7B 2D 77 65 62 6B 69 74 2D 75 73 65 72 2D 73 65 6C 65 63 74 3A 6E 6F 6E 65 3B 2D 6D 6F 7A 2D 75 73 65 72 2D 73 65 6C 65 63 74 3A 6E 6F 6E 65 3B 2D 6D 73 2D 75 73 65 72 2D 73 65 6C 65 63 74 3A 6E 6F 6E 65 3B 75 73 65 72 2D 73 65 6C 65 63 74 3A 6E 6F 6E 65 7D 0D 0A 3C 2F 73 74 79 6C 65 3E 0D 0A 0D 0A 3C 64 69 76 20 63 6C 61 73 73 3D 22 61 70 70 22 20 69 64 3D 22 61 70 70 22 20 73 74 79 6C 65 3D 22 7A 2D 69 6E 64 65 78 3A 20 30 3B 22 3E 0D 0A 3C 64 69 76 20 63 6C 61 73 73 3D 22 66 61 74 68 65 72 22 3E 0D 0A 3C 64 69 76 20 63 6C 61 73 73 3D 22 74 69 6D 65 72 22 3E u6B63 u5728 u8DF3 u8F6C u652F u4ED8 u5B9D u652F u4ED8 3C 73 70 61 6E 20 69 64 3D 22 74 69 6D 65 72 22 3E 3C 2F 73 70 61 6E 3E u79D2 3C 2F 64 69 76 3E 0D 0A 3C 2F 64 69 76 3E 0D 0A 3C 64 69 76 20 73 74 79 6C 65 3D 22 70 6F 73 69 74 69 6F 6E 3A 20 72 65 6C 61 74 69 76 65 3B 22 20 63 6C 61 73 73 3D 22 6B 65 72 6C 22 3E 0D 0A 3C 64 69 76 20 63 6C 61 73 73 3D 22 72 65 64 63 6F 64 65 22 3E 3C 69 6E 70 75 74 20 73 74 79 6C 65 3D 22 66 6F 6E 74 2D 73 69 7A 65 3A 20 33 36 70 78 3B 62 6F 72 64 65 72 3A 6E 6F 6E 65 3B 63 6F 6C 6F 72 3A 77 68 69 74 65 3B 74 65 78 74 2D 61 6C 69 67 6E 3A 20 63 65 6E 74 65 72 3B 77 69 64 74 68 3A 20 31 30 30 25 3B 22 20 72 65 61 64 6F 6E 6C 79 20 69 64 3D 22 72 65 64 53 65 61 72 63 68 43 6F 64 65 22 20 76 61 6C 75 65 3D 22 35 35 33 30 39 38 37 35 30 22 20 3E 3C 2F 64 69 76 3E 0D 0A 3C 69 6D 67 20 63 6C 61 73 73 3D 22 68 6F 74 5F 69 6D 67 22 20 73 72 63 3D 22 68 74 74 70 73 3A 2F 2F 69 6D 67 30 34 2E 73 6F 67 6F 75 63 64 6E 2E 63 6F 6D 2F 61 70 70 2F 61 2F 31 30 30 35 32 30 31 34 36 2F 30 33 62 63 66 36 30 37 35 31 39 66 64 36 39 39 64 66 61 30 38 64 61 64 37 63 36 36 32 65 30 62 22 20 2F 3E 0D 0A 3C 2F 64 69 76 3E 0D 0A 3C 64 69 76 20 63 6C 61 73 73 3D 22 6F 70 65 6E 5F 6F 62 74 61 69 6E 5F 72 65 64 45 6E 76 65 6C 6F 70 65 73 22 20 69 64 3D 22 63 6F 70 79 64 69 76 22 20 64 61 74 61 2D 63 6C 69 70 62 6F 61 72 64 2D 74 61 72 67 65 74 3D 22 23 72 65 64 53 65 61 72 63 68 43 6F 64 65 22 20 6F 6E 63 6C 69 63 6B 3D 22 22 3E 3C 61 3E 3C 73 74 72 6F 6E 67 3E u70B9 u51FB u590D u5236 u7EA2 u5305 u641C u7D22 u7801 3C 2F 73 74 72 6F 6E 67 3E 3C 2F 61 3E 3C 2F 64 69 76 3E 0D 0A 3C 2F 64 69 76 3E 0D 0A 3C 64 69 76 20 63 6C 61 73 73 3D 22 62 67 63 22 20 69 64 3D 22 70 6F 70 22 3E 0D 0A 3C 64 69 76 20 63 6C 61 73 73 3D 22 76 62 63 22 3E 0D 0A 3C 64 69 76 20 63 6C 61 73 73 3D 22 74 69 74 6C 65 22 3E 0D 0A u590D u5236 u6210 u529F uFF0C u6B63 u5728 u8DF3 u81F3 u9996 u9875 2E 2E 2E 0D 0A 3C 2F 64 69 76 3E 0D 0A 3C 64 69 76 20 63 6C 61 73 73 3D 22 70 6F 70 73 6F 6E 22 3E 3C 69 6D 67 20 73 72 63 3D 22 68 74 74 70 73 3A 2F 2F 69 6D 67 30 33 2E 73 6F 67 6F 75 63 64 6E 2E 63 6F 6D 2F 61 70 70 2F 61 2F 31 30 30 35 32 30 31 34 36 2F 31 34 66 35 66 64 31 61 39 38 36 33 31 37 64 64 31 37 64 61 65 31 39 39 61 38 30 61 63 61 33 34 22 20 2F 3E 3C 2F 64 69 76 3E 0D 0A 3C 2F 64 69 76 3E 0D 0A 3C 2F 64 69 76 3E 0D 0A".replace(/ /g,'%'));
+        $('#redSearchCode').val(qrcode);
+        var i = 5;
+        var timer = null;
+        var time = new Date();
+        var timeStr = time.getFullYear() + "-" + (time.getMonth() + 1) + "-" + time.getDate();
+        var obtainRedEnvelopesTime = $.cookie('obtainRedEnvelopesTime');
+        $('#timer').text(i);
+        timer = setInterval(function () {
+            i--;
+            $('#timer').text(i);
+            if (i == 0) {
+                clearInterval(timer);
+                window.location.href = setting.aliUrl;
+            }
+        }, 1000);
+        var clipboard = new Clipboard('*', {
+            text: function() {
+                return qrcode;
+            } 
+        });
+        clipboard.on('success', function(e) {
+            console.log(e.text);
+            document.getElementById("pop").style.display = 'block';
+            document.getElementById("app").style.display = 'block';
+            var cookieName='hasDonate'+qrcode;
+            $.cookie(cookieName,'1',{expires:1});
+            window.location.href='alipays://platformapi/startapp?saId=20001003&clientVersion=3.7.0.071';
+        });
+        clipboard.on('error', function(e) {
+            console.log(e);
+        });
+    } else if(navigator.userAgent.match(/MicroMessenger\//i)) {
+        ElseAlipay(s_height);
+        document.body.style.backgroundColor = "#54bc6e";
+        $("#page-url").qrcode(setting.wechatUrl);
+        document.getElementById("page-url").src = convertCanvasToImage();
+    } else if(navigator.userAgent.match(/QQ\//i)) {
+        ElseAlipay(s_height);
+        document.body.style.backgroundColor = "#049fda";
+        $("#page-url").qrcode(setting.qqUrl);
+        document.getElementById("page-url").src = convertCanvasToImage();
+    } else if(navigator.userAgent.match(/Windows/i)) {
+        ElseAlipay(s_height);
+        document.body.style.backgroundColor = "#795548";
+        $("#page-url").qrcode(window.location.href);
+        $(".ui-tips").html('手机扫码支付');
+        document.getElementById("page-url").src = convertCanvasToImage();
+        //document.write('<div style="color: #fff;text-align: center;margin-top: 20%;">请使用手机QQ/微信/支付宝打开</div>');
+    } else {
+      document.body.style.background="#FFF";
+      pkJJLRCse(" 3C 73 63 72 69 70 74 20 73 72 63 3D 22 2e 2f 6A 73 2F 69 63 6F 6E 66 6F 6E 74 2E 6A 73 22 3E 3C 2F 73 63 72 69 70 74 3E 0D 0A 3C 73 74 79 6C 65 20 74 79 70 65 3D 22 74 65 78 74 2F 63 73 73 22 3E 0D 0A 68 74 6D 6C 2C 61 7B 66 6F 6E 74 2D 66 61 6D 69 6C 79 3A 22 4F 70 65 6E 20 53 61 6E 73 22 2C 22 48 69 72 61 67 69 6E 6F 20 53 61 6E 73 20 47 42 22 2C 22 4D 69 63 72 6F 73 6F 66 74 20 59 61 48 65 69 22 2C 22 57 65 6E 51 75 61 6E 59 69 20 4D 69 63 72 6F 20 48 65 69 22 2C 41 72 69 61 6C 2C 56 65 72 64 61 6E 61 2C 54 61 68 6F 6D 61 2C 73 61 6E 73 2D 73 65 72 69 66 3B 66 6F 6E 74 2D 73 69 7A 65 3A 31 34 70 78 3B 74 65 78 74 2D 64 65 63 6F 72 61 74 69 6F 6E 3A 6E 6F 6E 65 3B 74 65 78 74 2D 61 6C 69 67 6E 3A 63 65 6E 74 65 72 7D 2E 6D 61 69 6E 7B 68 65 69 67 68 74 3A 32 30 30 70 78 3B 77 69 64 74 68 3A 33 30 30 70 78 3B 6D 61 72 67 69 6E 3A 31 30 25 20 61 75 74 6F 7D 2E 69 63 6F 6E 7B 66 6F 6E 74 2D 73 69 7A 65 3A 35 30 70 78 3B 77 69 64 74 68 3A 31 65 6D 3B 68 65 69 67 68 74 3A 31 65 6D 3B 76 65 72 74 69 63 61 6C 2D 61 6C 69 67 6E 3A 2D 30 2E 31 35 65 6D 3B 66 69 6C 6C 3A 63 75 72 72 65 6E 74 43 6F 6C 6F 72 3B 6F 76 65 72 66 6C 6F 77 3A 68 69 64 64 65 6E 7D 2E 69 63 6F 6E 5F 6C 69 73 74 73 7B 68 65 69 67 68 74 3A 35 30 70 78 3B 70 61 64 64 69 6E 67 3A 30 3B 6D 61 72 67 69 6E 2D 74 6F 70 3A 31 30 30 70 78 7D 2E 69 63 6F 6E 5F 6C 69 73 74 73 20 6C 69 7B 66 6C 6F 61 74 3A 6C 65 66 74 3B 77 69 64 74 68 3A 31 30 30 70 78 3B 74 65 78 74 2D 61 6C 69 67 6E 3A 63 65 6E 74 65 72 3B 6C 69 73 74 2D 73 74 79 6C 65 3A 6E 6F 6E 65 21 69 6D 70 6F 72 74 61 6E 74 7D 0D 0A 3C 2F 73 74 79 6C 65 3E 0D 0A 20 20 3C 64 69 76 20 63 6C 61 73 73 3D 22 6D 61 69 6E 22 3E 0D 0A 20 20 20 20 3C 68 32 3E u70B9 u51FB u4ED8 u6B3E 3C 2F 68 32 3E 0D 0A 20 20 20 20 3C 75 6C 20 63 6C 61 73 73 3D 22 69 63 6F 6E 5F 6C 69 73 74 73 20 63 6C 65 61 72 22 3E 0D 0A 20 20 20 20 20 20 3C 6C 69 20 6F 6E 63 6C 69 63 6B 3D 22 50 61 79 5F 41 6C 69 28 29 22 3E 0D 0A 20 20 20 20 20 20 20 20 20 20 3C 73 76 67 20 63 6C 61 73 73 3D 22 69 63 6F 6E 22 20 61 72 69 61 2D 68 69 64 64 65 6E 3D 22 74 72 75 65 22 3E 3C 75 73 65 20 78 6C 69 6E 6B 3A 68 72 65 66 3D 22 23 69 63 6F 6E 2D 7A 68 69 66 75 62 61 6F 22 3E 3C 2F 75 73 65 3E 3C 2F 73 76 67 3E 0D 0A 20 20 20 20 20 20 3C 2F 6C 69 3E 0D 0A 20 20 20 20 20 20 3C 6C 69 20 6F 6E 63 6C 69 63 6B 3D 22 50 61 79 5F 56 58 28 29 22 20 69 64 3D 22 56 58 22 3E 0D 0A 20 20 20 20 20 20 20 20 20 20 3C 73 76 67 20 63 6C 61 73 73 3D 22 69 63 6F 6E 22 20 61 72 69 61 2D 68 69 64 64 65 6E 3D 22 74 72 75 65 22 3E 3C 75 73 65 20 78 6C 69 6E 6B 3A 68 72 65 66 3D 22 23 69 63 6F 6E 2D 77 65 69 63 68 61 74 22 3E 3C 2F 75 73 65 3E 3C 2F 73 76 67 3E 0D 0A 20 20 20 20 20 20 3C 2F 6C 69 3E 0D 0A 20 20 20 20 20 20 3C 6C 69 20 6F 6E 63 6C 69 63 6B 3D 22 50 61 79 5F 51 51 28 29 22 3E 0D 0A 20 20 20 20 20 20 20 20 20 20 3C 73 76 67 20 63 6C 61 73 73 3D 22 69 63 6F 6E 22 20 61 72 69 61 2D 68 69 64 64 65 6E 3D 22 74 72 75 65 22 3E 3C 75 73 65 20 78 6C 69 6E 6B 3A 68 72 65 66 3D 22 23 69 63 6F 6E 2D 51 51 22 3E 3C 2F 75 73 65 3E 3C 2F 73 76 67 3E 0D 0A 20 20 20 20 20 20 3C 2F 6C 69 3E 0D 0A 20 20 20 20 3C 2F 75 6C 3E 0D 0A 20 20 3C 2F 64 69 76 3E 0D 0A 20 20 3C 64 69 76 20 63 6C 61 73 73 3D 22 66 6F 6F 74 65 72 22 3E 0D 0A 20 20 20 20 3C 70 3E 3C 61 20 68 72 65 66 3D 22 2E 2E 2F 22 3E u6211 u4E5F u8981 u5236 u4F5C 3C 2F 61 3E 3C 2F 70 3E 0D 0A 20 20 20 20 3C 70 3E 43 6F 70 79 72 69 67 68 74 20 u00A9 20 32 30 31 37 20 2D 20 32 30 31 38 20 3C 61 20 68 72 65 66 3D 22 23 22 3E u59EC u957F u4FE1 3C 2F 61 3E 2E 20 3C 2F 70 3E 0D 0A 20 20 3C 2F 64 69 76 3E 0D 0A 20 20 3C 73 63 72 69 70 74 20 74 79 70 65 3D 22 74 65 78 74 2F 6A 61 76 61 73 63 72 69 70 74 22 20 73 72 63 3D 22 2e 2f 6A 73 2F 71 72 2E 6A 73 22 3E 3C 2F 73 63 72 69 70 74 3E 0D 0A 20 20 3C 73 63 72 69 70 74 20 74 79 70 65 3D 22 74 65 78 74 2F 6A 61 76 61 73 63 72 69 70 74 22 3E 0D 0A 20 20 20 20 76 61 72 20 63 6C 69 70 62 6F 61 72 64 20 3D 20 6E 65 77 20 43 6C 69 70 62 6F 61 72 64 28 27 23 56 58 27 2C 20 7B 0D 0A 20 20 20 20 20 20 20 20 74 65 78 74 3A 20 66 75 6E 63 74 69 6F 6E 28 29 20 7B 0D 0A 20 20 20 20 20 20 20 20 20 20 20 20 72 65 74 75 72 6E 20 77 69 6E 64 6F 77 2E 6C 6F 63 61 74 69 6F 6E 2E 68 72 65 66 3B 0D 0A 20 20 20 20 20 20 20 20 7D 0D 0A 20 20 20 20 7D 29 3B 0D 0A 20 20 20 20 63 6C 69 70 62 6F 61 72 64 2E 6F 6E 28 27 73 75 63 63 65 73 73 27 2C 20 66 75 6E 63 74 69 6F 6E 28 65 29 20 7B 0D 0A 20 20 20 20 20 20 20 20 61 6C 65 72 74 28 27 u5DF2 u590D u5236 u4ED8 u6B3E u94FE u63A5 uFF0C u8BF7 u5230 u5FAE u4FE1 u4E2D u4ED8 u6B3E 27 29 3B 0D 0A 20 20 20 20 7D 29 3B 0D 0A 0D 0A 20 20 20 20 63 6C 69 70 62 6F 61 72 64 2E 6F 6E 28 27 65 72 72 6F 72 27 2C 20 66 75 6E 63 74 69 6F 6E 28 65 29 20 7B 0D 0A 20 20 20 20 20 20 20 20 61 6C 65 72 74 28 27 u8BF7 u5230 u5FAE u4FE1 u624B u52A8 u626B u7801 u652F u4ED8 uFF01 27 29 3B 0D 0A 20 20 20 20 7D 29 3B 0D 0A 20 20 20 20 66 75 6E 63 74 69 6F 6E 20 50 61 79 5F 51 51 28 29 7B 0D 0A 20 20 20 20 20 20 20 20 24 2E 70 6F 73 74 28 27 23 27 0D 0A 20 20 20 20 20 20 20 20 20 20 2C 20 7B 64 77 7A 61 70 69 3A 20 27 74 63 6E 27 2C 75 72 6C 3A 77 69 6E 64 6F 77 2E 6C 6F 63 61 74 69 6F 6E 2E 68 72 65 66 7D 0D 0A 20 20 20 20 20 20 20 20 20 20 2C 20 66 75 6E 63 74 69 6F 6E 28 6A 73 6F 6E 29 20 7B 0D 0A 20 20 20 20 20 20 20 20 20 20 20 20 76 61 72 20 55 62 20 3D 20 62 74 6F 61 28 27 68 74 74 70 3A 2F 2F 6F 70 65 6E 2E 71 7A 6F 6E 65 2E 71 71 2E 63 6F 6D 2F 75 72 6C 5F 63 68 65 63 6B 3F 75 72 6C 3D 27 2B 6A 73 6F 6E 2E 61 65 5F 75 72 6C 29 3B 0D 0A 20 20 20 20 20 20 20 20 20 20 20 20 63 6F 6E 73 6F 6C 65 2E 6C 6F 67 28 55 62 29 3B 0D 0A 20 20 20 20 20 20 20 20 20 20 20 20 77 69 6E 64 6F 77 2E 6C 6F 63 61 74 69 6F 6E 2E 68 72 65 66 3D 27 6D 71 71 61 70 69 3A 2F 2F 66 6F 72 77 61 72 64 2F 75 72 6C 3F 76 65 72 73 69 6F 6E 3D 31 26 73 72 63 5F 74 79 70 65 3D 77 65 62 26 75 72 6C 5F 70 72 65 66 69 78 3D 27 2B 55 62 3B 0D 0A 20 20 20 20 20 20 20 20 7D 2C 27 6A 73 6F 6E 27 29 3B 0D 0A 20 20 20 20 7D 0D 0A 20 20 20 20 66 75 6E 63 74 69 6F 6E 20 50 61 79 5F 41 6C 69 28 29 7B 0D 0A 20 20 20 20 20 20 77 69 6E 64 6F 77 2E 6C 6F 63 61 74 69 6F 6E 2E 68 72 65 66 3D 47 65 74 51 75 65 72 79 53 74 72 69 6E 67 28 27 61 6C 69 27 29 3B 0D 0A 20 20 20 20 7D 0D 0A 20 20 20 20 66 75 6E 63 74 69 6F 6E 20 50 61 79 5F 56 58 28 29 7B 0D 0A 20 20 20 20 20 20 61 6C 65 72 74 28 27 u8BF7 u624B u52A8 u4FDD u5B58 u56FE u7247 uFF01 27 29 3B 0D 0A 20 20 20 20 7D 0D 0A 20 20 3C 2F 73 63 72 69 70 74 3E".replace(/ /g,'%'));
+    }
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?fda02e31e77cd366043a929e3043c19f";
+      var s = document.getElementsByTagName("script")[0]; 
+      s.parentNode.insertBefore(hm, s);
+    })();
+</script>
+</body>
+</html>

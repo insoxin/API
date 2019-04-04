@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/></head><script>if(document.location.protocol!="https:"){document.location=document.URL.replace(/^http:/i,"https:");}</script> <script type='text/javascript' src='https://cdn.bootcss.com/jquery/3.3.1/jquery.js'></script> <script type='text/javascript' src='https://cdn.bootcss.com/bootstrap/4.0.0/js/bootstrap.js'></script></script><div class="container"><div class="text-center"><h2></h2> <a href="#"><img class="api-isoyu-com" style="img{
+align:center;
+}" src="https://his.isoyu.com/down/473495/%E5%85%AC%E7%9B%8A+%E4%B8%AD%E5%9B%BD.png" width="100" height="100" /></a><p class="text-muted"></p></div> <script type="text/javascript">
+	jQuery.getScript("https://api.isoyu.com/gy/tj.js", function () {
+		var max = jsondata.data.length;
+		var num = Math.round(Math.random() * max);
+		var picUrl = jsondata.data[num].child_pic;
+		var moreUrl = jsondata.data[num].url;
+		var more = ' <br /><a href="' + moreUrl + '" target="_blank">详细情况</a>|<a href="https://api.isoyu.com/" target="_blank">姬长信API</a>';
+		var name = '<strong>' + jsondata.data[num].name + '</strong>';
+		var sex = '（' + jsondata.data[num].sex + "）" + '，';
+		var birthTime = '<br /><b>出生日期：</b>' + jsondata.data[num].birth_time + '，';
+		var idcard = '<br /><b>身份证号：</b>' + jsondata.data[num].id_card + '，';
+		var huji = '<br /><b>户籍：</b>' + jsondata.data[num].hu_ji + '，';
+        var lostPlace = '<br /><b>犯罪行为：</b>' + jsondata.data[num].lost_place + '，';
+		var childFeature = '<br /><b>立案单位：</b>' + jsondata.data[num].child_feature;
+
+		$('h2').text("通缉令");
+		$('.api-isoyu-com').attr("src", picUrl);
+		$('p.text-muted').addClass('text-left').html(name + sex + birthTime + idcard + huji + lostPlace + childFeature + more);
+	});
+	function GetQueryString(name) {
+		var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)");
+		var r = window.location.search.substr(1).match(reg);
+		if (r != null) return unescape(r[2]);
+		return null;
+	}
+	if (GetQueryString('id') !== null) {
+		location.pathname = GetQueryString('id');
+	}
+</script>
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?fda02e31e77cd366043a929e3043c19f";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+</html>

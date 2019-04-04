@@ -440,9 +440,9 @@
     <?php } ?>
 
     <div class="copyright">
-        <a title="官方网站" href="http://www.thinkphp.cn">ThinkPHP</a> 
-        <span>V<?php echo THINK_VERSION; ?></span> 
-        <span>{ 十年磨一剑-为API开发设计的高性能框架 }</span>
+        <a title="官方网站" href="/">姬长信API</a> 
+        <span></span> 
+        <span><a target="_blank" href="https://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=2_ri6e3t7ejs45uqqvW4tLY" style="text-decoration:none;"><img src="https://rescdn.qqmail.com/zh_CN/htmledition/images/function/qm_open/ico_mailme_12.png"/></span>
     </div>
     <?php if(\think\App::$debug) { ?>
     <script>

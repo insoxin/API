@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<title>选修课</title>
+<meta name="keywords" content="姬长信,学习强国" />
+<meta name="description" content="姬长信" />
+<link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" href="css/lz_index.css">
+<style>
+.demo{width:300px; margin:60px auto 10px auto}
+@media only screen and (min-width: 420px) {
+	.demo{width:500px; margin:60px auto 10px auto}
+}
+.demo p{line-height:36px}
+.button {
+	display: inline-block;
+	cursor:pointer;
+	outline: none;
+	text-align: center;
+	text-decoration: none;
+	font: 16px/100% 'Microsoft yahei',Arial, Helvetica, sans-serif;
+	padding: .5em 2em .55em;
+	-webkit-border-radius: .5em; 
+	-moz-border-radius: .5em;
+	border-radius: .5em;
+	color: #606060;
+	border: solid 1px #b7b7b7;
+	background: #ededed;
+}
+.button:hover {
+	text-decoration: none;
+	background: #fff;
+}
+.button:active {
+	position: relative;
+	top: 1px;
+	color: #999;
+}
+
+</style>
+</head>
+
+<body>
+<div id="header">
+
+
+</div>
+<p><b><u>在使用我们的产品或服务前，请您务必仔细阅读并透彻理解本隐私政策，在确认充分理解并同意后使用相关产品或服务。如果您不同意本隐私政策任何内容，您应立即停止使用我们平台服务。一旦您开始使用我们的各项产品或服务，即表示您已充分理解并同意本隐私政策。</u></b></p><br>
+
+<iframe src="https://blog.isoyu.com/privacy.html" name="iframe_a"  width="100%" height="500" ></iframe>	<br/>
+
+	<br/>
+	<br/>
+	<form action="https://blog.isoyu.com/go.php?url=https://pc.xuexi.cn/points/login.html" method="post" name="agree">
+		<input type="submit" class="button" value="请全屏认真查看隐私政策 (300)" id="agree_btn" name="agreeb">
+	</form>
+	<br/>
+
+	<br/>
+	<br/>
+<script>
+var secs = 30;
+document.agree.agreeb.disabled=true;
+for(var i=1;i<=secs;i++) {
+	window.setTimeout("update(" + i + ")", i * 1000);
+}
+function update(num) {
+	if(num == secs) {
+		document.agree.agreeb.value =" 我 同 意 ";
+		document.agree.agreeb.disabled=false;
+	}
+	else {
+		var printnr = secs-num;
+		document.agree.agreeb.value = "请全屏认真查看<隐私政策> (" + printnr +")秒可以进行下一步";
+	}
+}
+
+function showtime(t){
+	document.myform.phone.disabled=true;
+	for(i=1;i<=t;i++) {
+		window.setTimeout("update_p(" + i + ","+t+")", i * 1000);
+	}
+
+}
+
+function update_p(num,t) {
+	if(num == t) {
+		document.myform.phone.value =" 重新发送 ";
+		document.myform.phone.disabled=false;
+	}
+	else {
+		printnr = t-num;
+		document.myform.phone.value = " (" + printnr +")秒后重新发送";
+	}
+}
+
+</script>
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?fda02e31e77cd366043a929e3043c19f";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+<div id="footer">
+</div>
+    <div class="warbox">
+        <div class="fixedbox">
+            <h4 class="area">
+                <span class="area_title" data-id='1'></span>
+                <div class="area_img">
+                    <img src="img/top.png" alt="">
+                </div>
+                <span class="area_namber"></span>
+            </h4>
+        </div>
+        <div class="container"> 
+            <div class="box">
+                <h4 class="area">
+                    <span class="area_title" data-id='1'>每日妹子</span>
+                    <div class="area_img">
+                        <img src="img/top.png" alt="">
+                    </div>
+                    <span class="area_namber">打赏</span>
+                </h4>
+                <h2 class="picture_list none">
+                    <div><a href="https://pc.xuexi.cn/points/login.html"><img src="//api.isoyu.com/mm_images.php" alt=""></a></div>
+                    <div><a href="https://api.isoyu.com/pay/"><img src="//api.isoyu.com/pay/pay.jpg" alt=""></a></div>
+
+                </h2>
+            </div>
+
+    </div>
+    <script src="js/jquery-1.11.0.min.js"></script>
+    <script src="js/mscroll.js"></script>
+		
+
+</body>
+</html>
