@@ -35,7 +35,7 @@
 	if(!$tinyurl){
 		responseMesg(0,$tu->error);
 	}else{
-		responseMesg(1,'成功',$tinyurl);
+		responseMesg(1,'success',$tinyurl);
 	}
 	
 	//返回json信息
