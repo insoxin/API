@@ -1453,6 +1453,7 @@ ifm.height=document.documentElement.clientHeight;
 **效果:**
         
 ![姬长信API](https://ww3.sinaimg.cn/large/005ucgoIly1g20wpq7dp6j30g101yglg.jpg)
+
 **实时热门搜索排行接口地址:**
 
         http://isoyu.com/?a=code&type=top  
