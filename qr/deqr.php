@@ -6,7 +6,7 @@ header("Content-type: text/html; charset=utf-8");
 include_once('./lib/QrReader.php');
 
 $data = Array();
-$data['status'] = 0;
+$data['code'] = 0;
 $gstatus = true;
 
 if( count($_GET)==0 && count($_POST)==0 ){
@@ -41,8 +41,8 @@ if( count($_GET)==0 && count($_POST)==0 ){
 		if(!$text){
 			$data['msg'] = "解析失败";
 		}else{
-			$data['status'] = 1;
-			$data['msg'] = "解析成功";
+			$data['code'] = 1;
+			$data['msg'] = "success";
 			$data['qrurl'] = $text;
 		}
 	}
