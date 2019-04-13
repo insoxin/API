@@ -1,5 +1,6 @@
 # 姬长信API
-一个免费提供壁纸模块,新闻模块,视频模块,笑话段子 图片相册,天气预报,前端开发资讯日报,知乎日报数据, 豆瓣热播电影,招聘信息和公益数据的API https://api.isoyu.com/
+姬长信API一个开源免费不限制提供生活常用,出行服务,开发工具,金融服务,通讯服务和公益大数据的平台
+https://api.isoyu.com/
 ===============
 食用方法
 
@@ -17,7 +18,9 @@
  + 内置动漫二次元美女图片壁纸随机美女,宠物图片,随机动漫图片,随机抱枕图,卡通图片,二次元图片,IP图片
  + 各种精品美图，美术基础，游戏原画设定，插画，漫画，动画造型设定，
 动画学习教程，动漫教程，画集，画册，UI，场景，3D模型素材，三次元艺用模特图片，二次元萝莉，萌图福利，可爱美少女壁纸，CG资源素材
-
+ + 开发杂类
+ + QQ昵称和头像接口
+ + 长网址缩短与还原
 ---
 ###### 须知：姬长信API将会记录你的域名、使用流量、调用次数等重要信息，如介意，请勿使用。管理员邮箱admin@isoyu.com
 ---
@@ -183,6 +186,7 @@ ifm.height=document.documentElement.clientHeight;
 *2018.01.06更新*
 *2018.01.09ARU(阿鲁)表情包。表情包作者:`@_SiC_ `已免费授权，会长期更新。*
    **接口地址:**
+   
    <table>
    <tr>
     <td>GIF</td>
@@ -201,6 +205,7 @@ ifm.height=document.documentElement.clientHeight;
    
    **调用例子:**
    ![姬长信API](https://api.isoyu.com/ARU_GIF_S.php)
+   
     `//api.isoyu.com/ARU_GIF_S.php`
 ### 0.7 二维码生成与解码 
 说明：依靠phpqrcode，Version: 1.1.4 Build: 2010100721 这是QR码2-D条码生成器的PHP实现。支持跨域,这是基于由Kentaro Fukuchi编写的C libqrencode的纯php-LGPL许可实现。
@@ -219,6 +224,7 @@ ifm.height=document.documentElement.clientHeight;
      > M水平 15%的字码可被修正
      > Q水平 25%的字码可被修正
      > H水平 30%的字码可被修正
+     
 **p**  : *二维码尺寸，可选范围1-40(递增值为25.1=25x25,2=50x50...最大40=1000x1000。具体大小和容错级别有关)（缺省值：3）*
 
 **生成例子**:  
@@ -237,11 +243,13 @@ ifm.height=document.documentElement.clientHeight;
 返回
   
   
-`{
-	"status": 1,
-	"msg": "解析成功",
+```javascript
+{
+	"code": 1,
+	"msg": "success",
 	"qrurl": "https://api.isoyu.com"
-}`
+}
+```
 
 
 ## 1. 新闻模块
@@ -1358,4 +1366,67 @@ ifm.height=document.documentElement.clientHeight;
     }
     ]
 
+```
+## 10. 开发杂类
+
+说明: 一些杂七杂八的都在这里
+
+### 10.1 QQ昵称和头像
+数据来源http://r.qzone.qq.com/fcg-bin/cgi_get_portrait.fcg
+
+**必选参数:**
+      `qq`    qq账号
+
+
+        **接口地址:**
+       
+        `https://api.isoyu.com/qq/qq.php?qq=`  
+            
+        **调用例子:**
+        
+        `https://api.isoyu.com/qq/qq.php?qq=10001`  
+        
+        **返回:**
+```javascript
+{
+"name":"pony",
+"img":"http://qlogo2.store.qq.com/qzone/10001/10001/100"
+}
+```
+### 10.2 长网址缩短与还原
+可压缩所有网址包括图片、flash、mp3、rar等所有互联网地址，稳定，永久有效！
+
+**必选参数:**
+      `type`    t.cn  126.am  dwz.cn  is.gd
+      `url`    需要操作的值
+
+
+        **接口地址:**
+        
+        长网址缩短:`https://api.isoyu.com/url/create.php`
+        短网址还原:`https://api.isoyu.com/url/expand.php`  
+            
+        **长网址缩短例子:**
+        
+        `https://api.isoyu.com/url/create.php?type=t.cn&url=https://api.isoyu.com/`  
+        
+        **返回:**
+```javascript
+{
+"code":1,
+"message":"success",
+"data":"http://t.cn/R9erV1d"
+}
+```
+        **短网址还原例子:**
+        
+        `https://api.isoyu.com/url/expand.php?type=t.cn&url=http://t.cn/R9erV1d`  
+        
+        **返回:**
+```javascript
+{
+"code":1,
+"message":"success",
+"data":"https://api.isoyu.com/"
+}
 ```
