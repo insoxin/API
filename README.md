@@ -1398,8 +1398,10 @@ ifm.height=document.documentElement.clientHeight;
 可压缩所有网址包括图片、flash、mp3、rar等所有互联网地址，稳定，永久有效！
 
 **必选参数:**
-      `type`    t.cn  126.am  dwz.cn  is.gd
-      `url`    需要操作的值
+
+`type`    t.cn  126.am  dwz.cn  is.gd
+
+`url`    需要操作的值
 
 
 **接口地址:**
