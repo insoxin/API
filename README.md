@@ -1,5 +1,5 @@
 # 姬长信API
-姬长信API一个开源免费不限制提供生活常用,出行服务,开发工具,金融服务,通讯服务和公益大数据的平台
+姬长信API一个开源免费不限制提供生活常用,出行服务,开发工具,金融服务,通讯服务,搜索服务和公益大数据的平台.
 https://api.isoyu.com/
 ===============
 食用方法
@@ -21,6 +21,7 @@ https://api.isoyu.com/
  + 开发杂类
  + QQ昵称和头像接口
  + 长网址缩短与还原
+ + 实时热搜(来源百度)
 ---
 ###### 须知：姬长信API将会记录你的域名、使用流量、调用次数等重要信息，如介意，请勿使用。管理员邮箱admin@isoyu.com
 ---
@@ -1378,15 +1379,15 @@ ifm.height=document.documentElement.clientHeight;
       `qq`    qq账号
 
 
-        **接口地址:**
+**接口地址:**
        
-        `https://api.isoyu.com/qq/qq.php?qq=`  
+        https://api.isoyu.com/qq/qq.php?qq=  
             
-        **调用例子:**
+**调用例子:**
         
-        `https://api.isoyu.com/qq/qq.php?qq=10001`  
+        https://api.isoyu.com/qq/qq.php?qq=10001  
         
-        **返回:**
+**返回:**
 ```javascript
 {
 "name":"pony",
@@ -1401,16 +1402,16 @@ ifm.height=document.documentElement.clientHeight;
       `url`    需要操作的值
 
 
-        **接口地址:**
+**接口地址:**
         
         长网址缩短:`https://api.isoyu.com/url/create.php`
         短网址还原:`https://api.isoyu.com/url/expand.php`  
             
-        **长网址缩短例子:**
+**长网址缩短例子:**
         
-        `https://api.isoyu.com/url/create.php?type=t.cn&url=https://api.isoyu.com/`  
+        https://api.isoyu.com/url/create.php?type=t.cn&url=https://api.isoyu.com/ 
         
-        **返回:**
+**返回:**
 ```javascript
 {
 "code":1,
@@ -1418,11 +1419,11 @@ ifm.height=document.documentElement.clientHeight;
 "data":"http://t.cn/R9erV1d"
 }
 ```
-        **短网址还原例子:**
+**短网址还原例子:**
         
-        `https://api.isoyu.com/url/expand.php?type=t.cn&url=http://t.cn/R9erV1d`  
+        https://api.isoyu.com/url/expand.php?type=t.cn&url=http://t.cn/R9erV1d  
         
-        **返回:**
+**返回:**
 ```javascript
 {
 "code":1,
@@ -1430,3 +1431,56 @@ ifm.height=document.documentElement.clientHeight;
 "data":"https://api.isoyu.com/"
 }
 ```
+### 10.3 搜索服务
+搜索框引用和实时热门搜索排行
+
+**必选参数:**
+无
+
+
+**搜索框引用接口地址:**
+
+        http://isoyu.com/?a=code&type=search  
+
+**调用例子:**
+        
+        
+```javascript
+        <iframe src="http://isoyu.com/?a=code&type=search" frameborder="0" scrolling="no" width="500" height="34"></iframe>
+        
+```  
+        
+**效果:**
+        
+![姬长信API](https://ww3.sinaimg.cn/large/005ucgoIly1g20wpq7dp6j30g101yglg.jpg)
+**实时热门搜索排行接口地址:**
+
+        http://isoyu.com/?a=code&type=top  
+
+**调用例子:**
+        
+        
+```javascript
+        <iframe src="http://isoyu.com/?a=code&type=top" frameborder="0" scrolling="no" width="300" height="300"></iframe>
+        
+```  
+        
+**效果:**
+        
+![姬长信API](https://ww3.sinaimg.cn/large/005ucgoIly1g20wv3j2puj308n095jrl.jpg)
+
+**其他代码:**
+说明:如果要把搜索集成到其他网站，通过以下接口可以实现搜索
+**例子:**
+        
+        
+```javascript
+utf8编码的页面URL接口： http://isoyu.com/?q={$q} 
+
+gb2312编码的页面URL接口： http://isoyu.com/?q={$q}&cr=gb2312 
+
+gbk编码的页面URL接口： http://isoyu.com/?q={$q}&cr=gbk 
+
+接口URL中的{$q}代码搜索词
+        
+```  
