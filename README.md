@@ -1455,7 +1455,7 @@ ifm.height=document.documentElement.clientHeight;
         
 **效果:**
         
-![姬长信API](https://ww4.sinaimg.cn/large/005ucgoIly1g20wpq7dp6j30g101yglg.jpg)
+![姬长信API](https://ww2.sinaimg.cn/large/005ucgoIly1g20wpq7dp6j30g101yglg.jpg)
 
 **实时热门搜索排行接口地址:**
 
@@ -1471,7 +1471,7 @@ ifm.height=document.documentElement.clientHeight;
         
 **效果:**
         
-![姬长信API](https://ww4.sinaimg.cn/large/005ucgoIly1g20wv3j2puj308n095jrl.jpg)
+![姬长信API](https://ww2.sinaimg.cn/large/005ucgoIly1g20wv3j2puj308n095jrl.jpg)
 
 **其他代码:**
 说明:如果要把搜索集成到其他网站，通过以下接口可以实现搜索
