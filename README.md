@@ -207,7 +207,8 @@ ifm.height=document.documentElement.clientHeight;
    **调用例子:**
    ![姬长信API](https://api.isoyu.com/ARU_GIF_S.php)
    
-    `//api.isoyu.com/ARU_GIF_S.php`
+`//api.isoyu.com/ARU_GIF_S.php`
+
 ### 0.7 二维码生成与解码 
 说明：依靠phpqrcode，Version: 1.1.4 Build: 2010100721 这是QR码2-D条码生成器的PHP实现。支持跨域,这是基于由Kentaro Fukuchi编写的C libqrencode的纯php-LGPL许可实现。
 
@@ -1454,7 +1455,7 @@ ifm.height=document.documentElement.clientHeight;
         
 **效果:**
         
-![姬长信API](https://ww3.sinaimg.cn/large/005ucgoIly1g20wpq7dp6j30g101yglg.jpg)
+![姬长信API](https://ww4.sinaimg.cn/large/005ucgoIly1g20wpq7dp6j30g101yglg.jpg)
 
 **实时热门搜索排行接口地址:**
 
@@ -1470,7 +1471,7 @@ ifm.height=document.documentElement.clientHeight;
         
 **效果:**
         
-![姬长信API](https://ww3.sinaimg.cn/large/005ucgoIly1g20wv3j2puj308n095jrl.jpg)
+![姬长信API](https://ww4.sinaimg.cn/large/005ucgoIly1g20wv3j2puj308n095jrl.jpg)
 
 **其他代码:**
 说明:如果要把搜索集成到其他网站，通过以下接口可以实现搜索
