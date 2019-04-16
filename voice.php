@@ -1,11 +1,7 @@
 <?php
 /*	百度语音合成api接口
-	通过URL，直接把文字变语音输出
-	更多请参看readme.md
-	gethub https://github.com/qcomdd/hi-voice	
 	调用方式./voice.php?t=要合成语音的文字 
 	百度token有效期30天，缓存在文本文件（对目录有写要求）15天一更换
-	by it0512
 	2017-6补充
 	修改了一些不合理逻辑判断，
 	百度语音每天1W次，如果不够用请升级或是多注册几个key轮询。这个功能我就不加了。
