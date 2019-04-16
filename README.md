@@ -1455,7 +1455,7 @@ ifm.height=document.documentElement.clientHeight;
         
 **效果:**
         
-![姬长信API](https://ww4.sinaimg.cn/large/005ucgoIly1g20wpq7dp6j30g101yglg.jpg)
+![姬长信API](https://ww3.sinaimg.cn/large/005ucgoIly1g20wpq7dp6j30g101yglg.jpg)
 
 **实时热门搜索排行接口地址:**
 
@@ -1471,7 +1471,7 @@ ifm.height=document.documentElement.clientHeight;
         
 **效果:**
         
-![姬长信API](https://ww4.sinaimg.cn/large/005ucgoIly1g20wv3j2puj308n095jrl.jpg)
+![姬长信API](https://ww3.sinaimg.cn/large/005ucgoIly1g20wv3j2puj308n095jrl.jpg)
 
 **其他代码:**
 说明:如果要把搜索集成到其他网站，通过以下接口可以实现搜索
@@ -1488,3 +1488,21 @@ gbk编码的页面URL接口： http://isoyu.com/?q={$q}&cr=gbk
 接口URL中的{$q}代码搜索词
         
 ```  
+### 10.1 VIP视频解析
+支持:腾讯,爱奇艺,优酷,乐视,芒果,搜狐,PPTV,华数TV,1905,咪咕,m3u8,mp4直连
+播放器ckplayer
+
+**必选参数:**
+      `url`    视频解析地址
+
+
+**接口地址:**
+       
+        https://api.isoyu.com/ckplayer/index.php?url=  
+            
+**调用例子:**
+        
+        https://api.isoyu.com/ckplayer/index.php?url=https://v.qq.com/x/cover/nilk5fd4bkqdk3a.html  
+        
+**效果:**
+![姬长信API](https://ww3.sinaimg.cn/large/005ucgoIly1g24i3e1pwjj311y0lc4qp.jpg)
