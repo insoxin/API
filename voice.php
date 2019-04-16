@@ -14,7 +14,7 @@ define( 'DS' , DIRECTORY_SEPARATOR );
 define( 'AROOT' , dirname( __FILE__ ) . DS  );
 //************逻辑功能	
 	$o = new OA2();
-	$text = !empty($_GET['t'])?$_GET['t']:"姬长信";
+	$text = !empty($_GET['t'])?$_GET['t']:"姬长信API";
 	$bb = $o->getVoice($text);
 	echo ($bb);
 
@@ -25,8 +25,8 @@ define( 'AROOT' , dirname( __FILE__ ) . DS  );
 ****************/
 class OA2
 {
-	private $appid= '10190540',
-	$secret= '6hjheXdl0fIltmmyxUsu6GA4zwqMwffI',
+	private $appid= '',
+	$secret= '',
 	$Open_url = 'https://openapi.baidu.com/oauth/2.0/token?',
 	$url_voice = 'http://tsn.baidu.com/text2audio?',
 	$_logname='bd_log.txt',$_filename='bd_token.txt',
@@ -41,8 +41,8 @@ class OA2
 		'tok' => $this->getToken(),
 		'spd' =>5,//语速，取值 0-9，默认为 5 
 		'pit' =>5,//音调，取值 0-9，默认为 5 
-		'vol' =>9,//音量，取值 0-9，默认为 5
-		'per' =>1,//取值 0-1 ；0 为女声，1 为男声，默认为女声
+		'vol' =>9,//音量，取值 0-9，默认为9
+		'per' =>1,//取值 0-1 ；0 为女声，1 为男声，默认男声
 		
 		'cuid' => 'api.isoyu.comt',
 		'ctp' =>1,
