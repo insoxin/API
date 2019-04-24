@@ -738,11 +738,11 @@ ifm.height=document.documentElement.clientHeight;
   **调用例子:**
       `//api.isoyu.comm/index.php/api/Weather/get_weather?city=广州市`
   
-     ![](https://i.loli.net/2019/04/23/5cbeac07a9927.png) 
+
   
 返回数据(每次返回是10条数据,这里就不全部列出来了)如下图:
   
-  ![](https://i.loli.net/2019/04/23/5cbeac07a9927.png) 
+ ![](https://i.loli.net/2019/04/23/5cbeac07a9927.png) 
   
 ```javascript
 {
