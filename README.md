@@ -27,7 +27,7 @@ https://api.isoyu.com/
 ---
 ###### 条款：姬长信API拥有所有运行权，在某些特定情况下，姬长信API有权利禁止你的网站调用。
 ---
-###### 赞助&打赏：[https://api.isoyu.com/pay/](https://api.isoyu.com/pay/)
+###### 本站托管在腾讯云COS中！[赞助&打赏](https://api.isoyu.com/pay/)
 ---
 ## GY.公益数据
 
