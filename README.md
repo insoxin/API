@@ -15,6 +15,7 @@ https://api.isoyu.com/
  + bing每日图片壁纸
  + 二维码生成与解码(phpqrcode)
  + ARU(阿鲁)表情包[作者授权]
+ + 图片反代(解决新浪图床反盗链)
  + 内置动漫二次元美女图片壁纸随机美女,宠物图片,随机动漫图片,随机抱枕图,卡通图片,二次元图片,IP图片
  + 各种精品美图，美术基础，游戏原画设定，插画，漫画，动画造型设定，
 动画学习教程，动漫教程，画集，画册，UI，场景，3D模型素材，三次元艺用模特图片，二次元萝莉，萌图福利，可爱美少女壁纸，CG资源素材
@@ -121,7 +122,7 @@ ifm.height=document.documentElement.clientHeight;
 ```
 3.解析json https://api.isoyu.com/gy/tj.js 不作多描述（浏览器直接访问会乱码，可以下载查看。charset为UTF-8）
 
-![姬长信API](https://ws3.sinaimg.cn/large/005BYqpgly1g1qmmrayd3j30hu0d6t9k.jpg)
+![姬长信API](https://api.isoyu.com/img-Proxy.php?url=https://ww4.sinaimg.cn/large/005BYqpgly1g1qmmrayd3j30hu0d6t9k.jpg)
 ## 0. 壁纸模块
 说明:含http与https方式，国内外CDN驱动
 使用百度云加速专业版,腾讯万象优图。
@@ -253,6 +254,17 @@ ifm.height=document.documentElement.clientHeight;
 }
 ```
 
+### 0.8 图片反代 
+说明:为了解决新浪图床防盗链
+
+   **必选参数:**
+   `url`图片链接
+   
+   **接口地址:**`img-Proxy.php`
+
+   **调用例子:**
+![姬长信API](https://api.isoyu.com/img-Proxy.php?url=https://ww4.sinaimg.cn/large/ce575088ly4g2g98s9kc6j20k00f0q4s.jpg)
+`//api.isoyu.com/img-Proxy.php?url=https://ww4.sinaimg.cn/large/ce575088ly4g2g98s9kc6j20k00f0q4s.jpg`
 
 ## 1. 新闻模块
 
@@ -1460,7 +1472,7 @@ ifm.height=document.documentElement.clientHeight;
         
 **效果:**
         
-![姬长信API](https://ww4.sinaimg.cn/large/005ucgoIly1g20wpq7dp6j30g101yglg.jpg)
+![姬长信API](https://api.isoyu.com/img-Proxy.php?url=https://ww4.sinaimg.cn/large/005ucgoIly1g20wpq7dp6j30g101yglg.jpg)
 
 **实时热门搜索排行接口地址:**
 
@@ -1478,7 +1490,7 @@ ifm.height=document.documentElement.clientHeight;
         
 **效果:**
         
-![姬长信API](https://ww4.sinaimg.cn/large/005ucgoIly1g20wv3j2puj308n095jrl.jpg)
+![姬长信API](https://api.isoyu.com/img-Proxy.php?url=https://ww4.sinaimg.cn/large/005ucgoIly1g20wv3j2puj308n095jrl.jpg)
 
 **其他代码:**
 说明:如果要把搜索集成到其他网站，通过以下接口可以实现搜索
@@ -1515,4 +1527,4 @@ gbk编码的页面URL接口： http://isoyu.com/?q={$q}&cr=gbk
         https://api.isoyu.com/ckplayer/index.php?url=https://v.qq.com/x/cover/nilk5fd4bkqdk3a.html  
         
 **效果:**
-![姬长信API](https://api.isoyu.com/img.php?cache=https://ww4.sinaimg.cn/large/005ucgoIly1g24wv89dh1j30v90gmtne.jpg)
+![姬长信API](https://api.isoyu.com/img-Proxy.php?url=https://ww4.sinaimg.cn/large/005ucgoIly1g24wv89dh1j30v90gmtne.jpg)
