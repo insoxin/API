@@ -255,16 +255,20 @@ ifm.height=document.documentElement.clientHeight;
 ```
 
 ### 0.8 图片反代 
-说明:为了解决新浪图床防盗链
+说明:为了解决新浪图床防盗链 字体<书体坊兰亭体>
 
    **必选参数:**
-   `url`图片链接
-   
+
+   `url` 图片链接
+
    **接口地址:**`img-Proxy.php`
 
    **调用例子:**
+   
 ![姬长信API](https://api.isoyu.com/img-Proxy.php?url=https://ww4.sinaimg.cn/large/ce575088ly4g2g98s9kc6j20k00f0q4s.jpg)
+
 `//api.isoyu.com/img-Proxy.php?url=https://ww4.sinaimg.cn/large/ce575088ly4g2g98s9kc6j20k00f0q4s.jpg`
+
 
 ## 1. 新闻模块
 
