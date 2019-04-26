@@ -1515,4 +1515,4 @@ gbk编码的页面URL接口： http://isoyu.com/?q={$q}&cr=gbk
         https://api.isoyu.com/ckplayer/index.php?url=https://v.qq.com/x/cover/nilk5fd4bkqdk3a.html  
         
 **效果:**
-![姬长信API](https://ww4.sinaimg.cn/large/005ucgoIly1g24wv89dh1j30v90gmtne.jpg)
+![姬长信API](http://ww4.sinaimg.cn/large/005ucgoIly1g24wv89dh1j30v90gmtne.jpg)
