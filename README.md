@@ -22,6 +22,7 @@ https://api.isoyu.com/
  + 开发杂类
  + QQ昵称和头像接口
  + 长网址缩短与还原
+ + 抖音去水印
  + 实时热搜(来源百度)
 ---
 ###### 须知：姬长信API将会记录你的域名、使用流量、调用次数等重要信息，如介意，请勿使用。管理员邮箱admin@isoyu.com
@@ -1511,7 +1512,7 @@ gbk编码的页面URL接口： http://isoyu.com/?q={$q}&cr=gbk
 接口URL中的{$q}代码搜索词
         
 ```  
-### 10.1 VIP视频解析
+### 10.4 VIP视频解析
 
 基于DASH优化的P2P流媒体视频播放.支持:腾讯,爱奇艺,优酷,乐视,芒果,搜狐,PPTV,华数TV，M1905电影网，暴风影音，风行，CCTV，咪咕视频，天天看看，音悦台，哔哩哔哩，AcFun，美拍，秒拍，土豆，bilibili，龙珠，虎牙直播，NOW直播，YY神曲，一直播，映客直播，360短视频，27盘等资源站，2MM恋恋影视，糖豆，梨视频，FLV，M3U8，MP4
 
@@ -1532,3 +1533,29 @@ gbk编码的页面URL接口： http://isoyu.com/?q={$q}&cr=gbk
         
 **效果:**
 ![姬长信API](https://api.isoyu.com/img-Proxy.php?url=https://ww4.sinaimg.cn/large/005ucgoIly1g24wv89dh1j30v90gmtne.jpg)
+
+### 10.5 抖音去水印
+请注意时间戳,视频不定期失效
+
+**必选参数:**
+
+      `url`    视频链接
+
+
+**接口地址:**
+       
+        https://api.isoyu.com/ckplayer/douyin.php?url= 
+            
+**调用例子:**
+        
+        https://api.isoyu.com/ckplayer/douyin.php?url=http://v.douyin.com/2CoDUQ
+        
+**返回:**
+```javascript
+{
+	"code": 0,
+	"message": "success",
+	"videoUrl": "http://v9-dy.ixigua.com/dd889feab2e8116222b52ae684d45752/5ccad1d2/video/m/2200cdd9ab610d84c63854d21774c14e6851161aaade0000341693e2e587/?rc=ajZyeGQ6cHFwbDMzaWkzM0ApQHRAbzs1MzUzNTszNDo6OzU4PDNAKXUpQGczdylAZmxkamV6aGhkZjs0QDQyL3Ffb2BoNl8tLTEtMHNzLW8jbyNDNDAxMy0uLS0vLi4tLS4vaTpiLW8jOmAtbyNtbCtiK2p0OiMvLl4%3D",
+	"time": 1556792247
+}
+```
