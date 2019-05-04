@@ -1,4 +1,4 @@
-1.伪静态要做好
-2.所有我的域名(https://api.isoyu.com/)要替换为你域名
+1.伪静态
+2.public/index.php内我的域名(https://api.isoyu.com/)替换为你的域名本地调试为800端口
 3.runtime给777权限
 4.不附带图片,数据等,请根据代码自行添加图片
