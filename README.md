@@ -154,6 +154,19 @@ ifm.height=document.documentElement.clientHeight;
 ![姬长信API](https://api.isoyu.com/mm_images.php)
 
 `//api.isoyu.com/mm_images.php`
+
+### 0.2.1 网红专栏壁纸 
+说明:网红@蓓蓓梅,投稿 已经用了万象优图筛选，若遇到大尺度图片请记录图片id并admin@isoyu.com，我们会在第一时间删除
+*2019.05.09增加至672张*
+
+   **接口地址:**`beibei_images.php`
+
+   **调用例子:**
+   
+![姬长信API](https://api.isoyu.com/beibei_images.php)
+
+`//api.isoyu.com/beibei_images.php`
+
 ### 0.3 动态IP签名图片 
 说明:可能会显cdnIP,字体<书体坊兰亭体>
    **可选参数:**
@@ -187,6 +200,7 @@ ifm.height=document.documentElement.clientHeight;
 说明:格式为png，gif 大小为s，l，xl ARU(阿鲁)表情包。表情包作者:`@_SiC_ `创意：＠YDXX丶（室友）
 
 *2018.01.06更新*
+
 *2018.01.09ARU(阿鲁)表情包。表情包作者:`@_SiC_ `已免费授权，会长期更新。*
    **接口地址:**
    
