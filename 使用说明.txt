@@ -1,4 +1,4 @@
-1.伪静态
-2.public/index.php内我的域名(https://api.isoyu.com/)替换为你的域名本地调试为800端口
+1.伪静态 自带apache
+2.public/index.php内我的域名(https://api.isoyu.com/)替换为你的域名,本地调试为800端口,建议使用notepad++等工具批量替换我的域名(https://api.isoyu.com/)为你的域名
 3.runtime给777权限
 4.不附带图片,数据等,请根据代码自行添加图片
