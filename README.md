@@ -1471,7 +1471,7 @@ ifm.height=document.documentElement.clientHeight;
 }
 ```
 ### 10.3 搜索服务
-搜索框引用和实时热门搜索排行
+搜索框引用和实时热门搜索排行,默认http,支持ssl
 
 **必选参数:**
 无
