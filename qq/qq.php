@@ -11,9 +11,8 @@ if ($_GET['qq']) {
     if($name and $qq){ 
         $txUrl = 'https://q.qlogo.cn/headimg_dl?dst_uin='.$qq.'&spec=100';
         $arr = array(
-            'code' => 1,
-            'imgurl' => $txUrl,
-            'name' => urlencode($name[$qq][6])
+            'name' => urlencode($name[$qq][6]),
+            'img' => $txUrl
         );
       exit(stripslashes(urldecode(json_encode($arr))));
      }else{
