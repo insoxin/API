@@ -1418,13 +1418,22 @@ ifm.height=document.documentElement.clientHeight;
 
 **接口地址:**
        
-        https://api.isoyu.com/qq/qq.php?qq=  
+        https://api.isoyu.com/qq/qq.php?qq=               (头像来源qlogo.cn)
+        https://api.isoyu.com/qq/qq2.php?qq=              (头像来源qq.com)
             
 **调用例子:**
         
-        https://api.isoyu.com/qq/qq.php?qq=10001  
+        https://api.isoyu.com/qq/qq.php?qq=10001
+        https://api.isoyu.com/qq/qq2.php?qq=10001
         
 **返回:**
+```javascript
+{
+	"name": "pony",
+	"img": "https://q.qlogo.cn/headimg_dl?dst_uin=10001&spec=100"
+}
+```
+
 ```javascript
 {
 "name":"pony",
