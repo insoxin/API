@@ -4,7 +4,7 @@ https://api.isoyu.com/
 ===============
 食用方法
 
- 基于Thinkphp完善整理API接口。始于2017 采用 REST 风格设计。所有接口请求地址都是可预期的以及面向资源的。使用规范的 HTTP 响应代码来表示请求结果的正确或错误信息。使用 HTTP 内置的特性，如 HTTP Authentication 和 HTTP 请求方法让接口易于理解。所有的 API 请求都会以规范友好的 JSON 对象格式返回（包括错误信息）。
+ 基于Thinkphp等完善整理API接口。始于2017 采用 REST 风格设计。所有接口请求地址都是可预期的以及面向资源的。使用规范的 HTTP 响应代码来表示请求结果的正确或错误信息。使用 HTTP 内置的特性，如 HTTP Authentication 和 HTTP 请求方法让接口易于理解。所有的 API 请求都会以规范友好的 JSON 对象格式返回（包括错误信息）。
  + 公益中国:宝贝回家核心数据 /全国通缉令数据 (ssl)
  + 新闻分类(头条/军事/娱乐/体育/科技/艺术/教育/要闻)数据接口
  + 视频分类(精品视频/搞笑视频/美女视频/体育视频/新闻现场)接口
@@ -24,6 +24,7 @@ https://api.isoyu.com/
  + 长网址缩短与还原
  + 抖音去水印
  + 实时热搜(来源百度)
+ 
 ---
 ###### 须知：姬长信API将会记录你的域名、使用流量、调用次数等重要信息，如介意，请勿使用。管理员邮箱admin@isoyu.com
 ---
@@ -137,47 +138,101 @@ ifm.height=document.documentElement.clientHeight;
 
 ### 0.1 每日bing 
 
-   **接口地址:**`bing_images.php`
+   **接口地址:**
+```javascript
+bing_images.asp
+bing_images.jsp
+bing_images.php
+
+```
 
    **调用例子:**
 
-`//api.isoyu.com/bing_images.php`
+```javascript
+//api.isoyu.com/bing_images.asp
+//api.isoyu.com/bing_images.jsp
+//api.isoyu.com/bing_images.php
+
+```
 
 ### 0.2 美女图片壁纸 
 说明:已经用了万象优图筛选，若遇到大尺度图片请记录图片id并admin@isoyu.com，我们会在第一时间删除
 *2017.07.31增加至2257张*
 
-   **接口地址:**`mm_images.php`
+   **接口地址:**
+```javascript
+mm_images.asp
+mm_images.jsp
+mm_images.php
 
+```
    **调用例子:**
-   
-![姬长信API](https://api.isoyu.com/mm_images.php)
+```javascript
+//api.isoyu.com/mm_images.asp
+//api.isoyu.com/mm_images.jsp
+//api.isoyu.com/mm_images.php
 
-`//api.isoyu.com/mm_images.php`
+```
+![姬长信API](https://api.isoyu.com/mm_images.php)
 
 ### 0.2.1 网红专栏壁纸 
 说明:网红@蓓蓓梅,投稿 已经用了万象优图筛选，若遇到大尺度图片请记录图片id并admin@isoyu.com，我们会在第一时间删除
 *2019.05.09增加至672张*
 
-   **接口地址:**`beibei_images.php`
+   **接口地址:**
 
+```javascript
+beibei_images.asp
+beibei_images.jsp
+beibei_images.php
+
+```
    **调用例子:**
-   
+```javascript
+//api.isoyu.com/beibei_images.asp
+//api.isoyu.com/beibei_images.jsp
+//api.isoyu.com/beibei_images.php
+
+```
 ![姬长信API](https://api.isoyu.com/beibei_images.php)
 
-`//api.isoyu.com/beibei_images.php`
 
 ### 0.3 动态IP签名图片 
 说明:可能会显cdnIP,字体<书体坊兰亭体>
    **可选参数:**
    `signature`自定义文本
    **接口地址:**
+```javascript
+ip_images.asp
+ip_images.jsp
+ip_images.php
 
-`ip_images.php`或`ip_images.php?signature=早安`
+```
+或
+```javascript
+ip_images.asp?signature=早安
+ip_images.jsp?signature=早安
+ip_images.php?signature=早安
+
+```
+
 
    **调用例子:**
+```javascript
+//api.isoyu.com/ip_images.asp
+//api.isoyu.com/ip_images.jsp
+//api.isoyu.com/ip_images.php
+
+```
+或
+```javascript
+//api.isoyu.com/ip_images.asp?signature=早安
+//api.isoyu.com/ip_images.jsp?signature=早安
+//api.isoyu.com/ip_images.php?signature=早安
+
+```
 ![姬长信API](https://api.isoyu.com/ip_images.php?signature=早安)
-`//api.isoyu.com/ip_images.php`或`//api.isoyu.com/ip_images.php?signature=早安`
+
 
 ### 0.4 动态图 
 说明:资源还是有点少
@@ -203,7 +258,35 @@ ifm.height=document.documentElement.clientHeight;
 
 *2018.01.09ARU(阿鲁)表情包。表情包作者:`@_SiC_ `已免费授权，会长期更新。*
    **接口地址:**
-   
+   <table>
+   <tr>
+    <td>GIF</td>
+    <td>ARU_GIF_S.asp</td>
+    <td>ARU_GIF_L.asp</td>
+    <td>ARU_GIF_XL.asp</td>
+   </tr>
+   <tr>
+    <td>PNG</td>
+    <td>ARU_PNG_S.asp</td>
+    <td>ARU_PNG_L.asp</td>
+    <td>ARU_PNG_XL.asp</td>
+   </tr>
+   </table>
+   <table>
+   <tr>
+    <td>GIF</td>
+    <td>ARU_GIF_S.jsp</td>
+    <td>ARU_GIF_L.jsp</td>
+    <td>ARU_GIF_XL.jsp</td>
+   </tr>
+   <tr>
+    <td>PNG</td>
+    <td>ARU_PNG_S.jsp</td>
+    <td>ARU_PNG_L.jsp</td>
+    <td>ARU_PNG_XL.jsp</td>
+   </tr>
+   </table>
+
    <table>
    <tr>
     <td>GIF</td>
@@ -218,12 +301,16 @@ ifm.height=document.documentElement.clientHeight;
     <td>ARU_PNG_XL.php</td>
    </tr>
    </table>
-   
-   
    **调用例子:**
    ![姬长信API](https://api.isoyu.com/ARU_GIF_S.php)
    
-`//api.isoyu.com/ARU_GIF_S.php`
+
+```javascript
+//api.isoyu.com/ARU_GIF_S.asp
+//api.isoyu.com/ARU_GIF_S.jsp
+//api.isoyu.com/ARU_GIF_S.php
+
+```
 
 ### 0.7 二维码生成与解码 
 说明：依靠phpqrcode，Version: 1.1.4 Build: 2010100721 这是QR码2-D条码生成器的PHP实现。支持跨域,这是基于由Kentaro Fukuchi编写的C libqrencode的纯php-LGPL许可实现。
@@ -233,17 +320,22 @@ ifm.height=document.documentElement.clientHeight;
 
 下面是参数介绍。
 
-**url**: *二维码对应的网址*
+**url**: 
+*二维码对应的网址*
 
-**m**  : *二维码白色边框尺寸,缺省值: 0px*
+**m**  : 
+*二维码白色边框尺寸,缺省值: 0px*
 
-**e**  : *容错级别(errorLevel)，可选参数如下(缺省值 L)*：
+**e**  : 
+*容错级别(errorLevel)，可选参数如下(缺省值 L)*：
+
      > L水平 7%的字码可被修正
      > M水平 15%的字码可被修正
      > Q水平 25%的字码可被修正
      > H水平 30%的字码可被修正
-     
-**p**  : *二维码尺寸，可选范围1-40(递增值为25.1=25x25,2=50x50...最大40=1000x1000。具体大小和容错级别有关)（缺省值：3）*
+
+**p**  : 
+*二维码尺寸，可选范围1-40(递增值为25.1=25x25,2=50x50...最大40=1000x1000。具体大小和容错级别有关)（缺省值：3）*
 
 **生成例子**:  
 
@@ -254,9 +346,12 @@ ifm.height=document.documentElement.clientHeight;
   
   **解码例子**:  
 
-  
-`https://api.isoyu.com/qr/deqr.php?imgurl=https://ws3.sinaimg.cn/large/005BYqpgly1g1qmzrwfckj303h03h09u.jpg`
-  
+```javascript
+https://api.isoyu.com/qr/deqr.asp?imgurl=https://ws3.sinaimg.cn/large/005BYqpgly1g1qmzrwfckj303h03h09u.jpg
+https://api.isoyu.com/qr/deqr.jsp?imgurl=https://ws3.sinaimg.cn/large/005BYqpgly1g1qmzrwfckj303h03h09u.jpg
+https://api.isoyu.com/qr/deqr.php?imgurl=https://ws3.sinaimg.cn/large/005BYqpgly1g1qmzrwfckj303h03h09u.jpg
+
+```
   
 返回
   
@@ -276,13 +371,23 @@ ifm.height=document.documentElement.clientHeight;
 
    `url` 图片链接
 
-   **接口地址:**`img-Proxy.php`
+   **接口地址:**
+```javascript
+img-Proxy.asp
+img-Proxy.jsp
+img-Proxy.php
 
+```
    **调用例子:**
-   
+```javascript
+//api.isoyu.com/img-Proxy.asp?url=https://ww4.sinaimg.cn/large/ce575088ly4g2g98s9kc6j20k00f0q4s.jpg
+//api.isoyu.com/img-Proxy.jsp?url=https://ww4.sinaimg.cn/large/ce575088ly4g2g98s9kc6j20k00f0q4s.jpg
+//api.isoyu.com/img-Proxy.php?url=https://ww4.sinaimg.cn/large/ce575088ly4g2g98s9kc6j20k00f0q4s.jpg
+
+```
 ![姬长信API](https://api.isoyu.com/img-Proxy.php?url=https://ww4.sinaimg.cn/large/ce575088ly4g2g98s9kc6j20k00f0q4s.jpg)
 
-`//api.isoyu.com/img-Proxy.php?url=https://ww4.sinaimg.cn/large/ce575088ly4g2g98s9kc6j20k00f0q4s.jpg`
+
 
 
 ## 1. 新闻模块
@@ -297,7 +402,7 @@ ifm.height=document.documentElement.clientHeight;
    `News/banner`
 
    **调用例子:**
-   `//api.isoyu.com/index.php/api/News/banner`
+   `//api.isoyu.com/api/News/banner`
 
    返回数据(每次返回是10条数据,这里就不全部列出来了)如下图:
 
@@ -337,7 +442,7 @@ ifm.height=document.documentElement.clientHeight;
    `/News/new_list?type=1&page=20`
 
    **调用例子:**
-   `//api.isoyu.com/index.php/api/News/new_list?type=1&page=20`
+   `//api.isoyu.com/api/News/new_list?type=1&page=20`
 
    返回数据(每次返回是10条数据,这里就不全部列出来了)如下图:
 
@@ -350,10 +455,10 @@ ifm.height=document.documentElement.clientHeight;
     `postid` 新闻列表下的 postid
 
   **接口地址:**
-  `/index.php/api/News/new_detail?postid=CLJN5K2M000181KT`
+  `/api/News/new_detail?postid=CLJN5K2M000181KT`
 
   **调用例子:**
-  `//api.isoyu.com/index.php/api/News/new_detail?postid=CLJN5K2M000181KT`
+  `//api.isoyu.com/api/News/new_detail?postid=CLJN5K2M000181KT`
 
   返回数据(每次返回是10条数据,这里就不全部列出来了)如下图:
 ```javascript
@@ -467,7 +572,7 @@ ifm.height=document.documentElement.clientHeight;
   `/News/local_news?name=广东省_深圳市&page=0`
 
   **调用例子:**
-  `//api.isoyu.com/index.php/api/News/local_news?name=广东省_深圳市&page=0`
+  `//api.isoyu.com/api/News/local_news?name=广东省_深圳市&page=0`
 
   返回数据(每次返回是10条数据,这里就不全部列出来了)如下图:
   ```
@@ -488,7 +593,7 @@ ifm.height=document.documentElement.clientHeight;
   **接口地址:**
       `/Video/index`
       
- **调用例子:**  `//api.isoyu.com/index.php/api/Video/index`
+ **调用例子:**  `//api.isoyu.com/api/Video/index`
       
       返回数据(每次返回是10条数据,这里就不全部列出来了)如下图:
       ```
@@ -521,7 +626,7 @@ ifm.height=document.documentElement.clientHeight;
   `/Video/video_type?type=2&page=10`
   **调用例子:** 
   
-   `//api.isoyu.com/index.php/api/Video/video_type?type=2&page=10`
+   `//api.isoyu.com/api/Video/video_type?type=2&page=10`
    返回数据(每次返回是10条数据,这里就不全部列出来了)如下图:
 ``` javascript
 {
@@ -574,7 +679,7 @@ ifm.height=document.documentElement.clientHeight;
 `/Video/video_detail?vid=VEKKO9TJP`
 
 **调用例子:**
- `//api.isoyu.com/index.php/api/Video/video_detail?vid=VEKKO9TJP`
+ `//api.isoyu.com/api/Video/video_detail?vid=VEKKO9TJP`
  返回数据(每次返回是10条数据,这里就不全部列出来了)如下图:
  
 ```javascript
@@ -618,7 +723,7 @@ ifm.height=document.documentElement.clientHeight;
       `/Joke/index?page=10`
       
  **调用例子:**
-      `//api.isoyu.com/index.php/api/joke/index?page=10`
+      `//api.isoyu.com/api/joke/index?page=10`
       返回数据(每次返回是10条数据,这里就不全部列出来了)如下图:
 ```javascript
 {
@@ -664,7 +769,7 @@ ifm.height=document.documentElement.clientHeight;
       `/Picture/index?page=20` 
       
   **调用例子:**
-      `//api.isoyu.com/index.php/api/picture/index?page=20`
+      `//api.isoyu.com/api/picture/index?page=20`
       
 返回数据(每次返回是10条数据,这里就不全部列出来了)如下图:
 ```javascript
@@ -730,7 +835,7 @@ ifm.height=document.documentElement.clientHeight;
       `/Picture/hua_ban` 
       
   **调用例子:**
-      `https://api.isoyu.com/index.php/api/Picture/hua_ban`
+      `https://api.isoyu.com/api/Picture/hua_ban`
       
 返回数据(每次返回是20条数据,这里就不全部列出来了)如下图:
 ```javascript
@@ -767,7 +872,7 @@ ifm.height=document.documentElement.clientHeight;
       `/Weather/get_weather?city=广州市` 
       
   **调用例子:**
-      `//api.isoyu.comm/index.php/api/Weather/get_weather?city=广州市`
+      `//api.isoyu.comm/api/Weather/get_weather?city=广州市`
   
 
   
@@ -869,7 +974,7 @@ ifm.height=document.documentElement.clientHeight;
       `/Web/web_daily_list?page=1` 
       
   **调用例子:**
-      `https://api.isoyu.com/index.php/api/Web/web_daily_list?page=1`
+      `https://api.isoyu.com/api/Web/web_daily_list?page=1`
       
 返回数据(每次返回是10条数据,这里就不全部列出来了)如下图:
 ```javascript
@@ -952,7 +1057,7 @@ ifm.height=document.documentElement.clientHeight;
       `/Web/every_daily_list?$daily_id=20170520` 
       
   **调用例子:**
-      `https://api.isoyu.com/index.php/api/Web/every_daily_list?$daily_id=20170520`
+      `https://api.isoyu.com/api/Web/every_daily_list?$daily_id=20170520`
       
 返回数据(每次返回是10条数据,这里就不全部列出来了)如下图:
 ```javascript
@@ -1044,7 +1149,7 @@ ifm.height=document.documentElement.clientHeight;
       `/Zhihu/zhihu_daily` 
       
   **调用例子:**
-      `https://api.isoyu.com/index.php/api/Zhihu/zhihu_daily`
+      `https://api.isoyu.com/api/Zhihu/zhihu_daily`
       
 返回数据(每次返回是18条数据,这里就不全部列出来了)如下图:
 ```
@@ -1086,7 +1191,7 @@ ifm.height=document.documentElement.clientHeight;
       `/Zhihu/news?id=9454551` 
       
   **调用例子:**
-      `https//api.isoyu.com/index.php/api/Zhihu/news?id=9454551`
+      `https//api.isoyu.com/api/Zhihu/news?id=9454551`
       
 返回数据()如下图:
 ```
@@ -1127,7 +1232,7 @@ ifm.height=document.documentElement.clientHeight;
       `/Zhihu/new_comment?id=9454551` 
       
   **调用例子:**
-      `https://api.isoyu.com/index.php/api/Zhihu/new_comment?id=9454551`
+      `https://api.isoyu.com/api/Zhihu/new_comment?id=9454551`
       
 返回数据(最多返回20条数据)如下图:
 ```
@@ -1189,7 +1294,7 @@ ifm.height=document.documentElement.clientHeight;
       `/Movie/playing_movie_list?start=0&count=9` 
       
   **调用例子:**
-      `https://api.isoyu.com/index.php/api//Movie/playing_movie_list?start=0&count=9`
+      `https://api.isoyu.com/api//Movie/playing_movie_list?start=0&count=9`
       
 返回数据(每次返回数据,这里就不全部列出来了)如下图:
 ```json
@@ -1324,7 +1429,7 @@ ifm.height=document.documentElement.clientHeight;
       `/Movie/movie_info?id=6311303` 
       
   **调用例子:**
-      `https://api.isoyu.com/index.php/api/api/Movie/movie_info?id=6311303`
+      `https://api.isoyu.com/api/api/Movie/movie_info?id=6311303`
       
 返回数据(每次返回数据,这里就不全部列出来了)如下图:
 
@@ -1417,24 +1522,32 @@ ifm.height=document.documentElement.clientHeight;
 
 
 **接口地址:**
-       
-        https://api.isoyu.com/qq/qq.php?qq=               (头像来源qlogo.cn)
-        https://api.isoyu.com/qq/qq2.php?qq=              (头像来源qq.com)
-            
-**调用例子:**
-        
-        https://api.isoyu.com/qq/qq.php?qq=10001
-        https://api.isoyu.com/qq/qq2.php?qq=10001
-        
-**返回:**
 ```javascript
+        https://api.isoyu.com/qq/qq.asp?qq=               (头像来源qlogo.cn)
+        https://api.isoyu.com/qq/qq.jsp?qq=               (头像来源qlogo.cn)
+        https://api.isoyu.com/qq/qq.php?qq=               (头像来源qlogo.cn)
+        https://api.isoyu.com/qq/qq2.asp?qq=              (头像来源qq.com)
+        https://api.isoyu.com/qq/qq2.jsp?qq=              (头像来源qq.com)
+        https://api.isoyu.com/qq/qq2.php?qq=              (头像来源qq.com)
+```  
+**调用例子:**
+```javascript
+        https://api.isoyu.com/qq/qq.asp?qq=10001
+        https://api.isoyu.com/qq/qq.jsp?qq=10001
+        https://api.isoyu.com/qq/qq.php?qq=10001
+        https://api.isoyu.com/qq/qq2.asp?qq=10001
+        https://api.isoyu.com/qq/qq2.jsp?qq=10001
+        https://api.isoyu.com/qq/qq2.php?qq=10001
+```
+**返回:**
+```头像来源qlogo.cn
 {
 	"name": "pony",
 	"img": "https://q.qlogo.cn/headimg_dl?dst_uin=10001&spec=100"
 }
 ```
 
-```javascript
+```头像来源qq.com
 {
 "name":"pony",
 "img":"http://qlogo2.store.qq.com/qzone/10001/10001/100"
@@ -1451,14 +1564,23 @@ ifm.height=document.documentElement.clientHeight;
 
 
 **接口地址:**
-        
-        长网址缩短:`https://api.isoyu.com/url/create.php
-        短网址还原:`https://api.isoyu.com/url/expand.php
-            
+```javascript 
+        长网址缩短:
+        https://api.isoyu.com/url/create.asp
+        https://api.isoyu.com/url/create.jsp
+        https://api.isoyu.com/url/create.php
+        短网址还原:
+        https://api.isoyu.com/url/expand.asp
+        https://api.isoyu.com/url/expand.jsp
+        https://api.isoyu.com/url/expand.php
+```  
 **长网址缩短例子:**
-        
+```javascript
+        https://api.isoyu.com/url/create.asp?type=t.cn&url=https://api.isoyu.com/ 
+        https://api.isoyu.com/url/create.jsp?type=t.cn&url=https://api.isoyu.com/ 
         https://api.isoyu.com/url/create.php?type=t.cn&url=https://api.isoyu.com/ 
-        
+
+```
 **返回:**
 ```javascript
 {
@@ -1468,9 +1590,12 @@ ifm.height=document.documentElement.clientHeight;
 }
 ```
 **短网址还原例子:**
-        
-        https://api.isoyu.com/url/expand.php?type=t.cn&url=http://t.cn/R9erV1d  
-        
+```javascript
+        https://api.isoyu.com/url/expand.asp?type=t.cn&url=http://t.cn/R9erV1d
+        https://api.isoyu.com/url/expand.jsp?type=t.cn&url=http://t.cn/R9erV1d
+        https://api.isoyu.com/url/expand.php?type=t.cn&url=http://t.cn/R9erV1d
+
+```
 **返回:**
 ```javascript
 {
@@ -1547,13 +1672,13 @@ gbk编码的页面URL接口： http://isoyu.com/?q={$q}&cr=gbk
 
 
 **接口地址:**
-       
-        https://api.isoyu.com/ckplayer/index.php?url=  
-            
+```javascript
+        https://api.isoyu.com/ckplayer/?url= 
+```
 **调用例子:**
-        
-        https://api.isoyu.com/ckplayer/index.php?url=https://v.qq.com/x/cover/nilk5fd4bkqdk3a.html  
-        
+```javascript
+        https://api.isoyu.com/ckplayer/?url=https://v.qq.com/x/cover/nilk5fd4bkqdk3a.html
+```
 **效果:**
 ![姬长信API](https://api.isoyu.com/img-Proxy.php?url=https://ww4.sinaimg.cn/large/005ucgoIly1g24wv89dh1j30v90gmtne.jpg)
 
@@ -1562,17 +1687,23 @@ gbk编码的页面URL接口： http://isoyu.com/?q={$q}&cr=gbk
 
 **必选参数:**
 
-      `url`    视频链接
+`url`    视频链接
 
 
 **接口地址:**
-       
-        https://api.isoyu.com/ckplayer/douyin.php?url= 
-            
+```javascript
+        https://api.isoyu.com/ckplayer/douyin.asp?url= 
+        https://api.isoyu.com/ckplayer/douyin.jsp?url=
+        https://api.isoyu.com/ckplayer/douyin.php?url=
+
+```  
 **调用例子:**
-        
+```javascript
+        https://api.isoyu.com/ckplayer/douyin.asp?url=http://v.douyin.com/2CoDUQ
+        https://api.isoyu.com/ckplayer/douyin.jsp?url=http://v.douyin.com/2CoDUQ
         https://api.isoyu.com/ckplayer/douyin.php?url=http://v.douyin.com/2CoDUQ
-        
+
+```
 **返回:**
 ```javascript
 {
