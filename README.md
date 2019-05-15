@@ -278,8 +278,6 @@ ip_images.php?signature=早安
    
 
 ```javascript
-//api.isoyu.com/ARU_GIF_S.asp
-//api.isoyu.com/ARU_GIF_S.jsp
 //api.isoyu.com/ARU_GIF_S.php
 
 ```
