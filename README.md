@@ -261,35 +261,6 @@ ip_images.php?signature=早安
    <table>
    <tr>
     <td>GIF</td>
-    <td>ARU_GIF_S.asp</td>
-    <td>ARU_GIF_L.asp</td>
-    <td>ARU_GIF_XL.asp</td>
-   </tr>
-   <tr>
-    <td>PNG</td>
-    <td>ARU_PNG_S.asp</td>
-    <td>ARU_PNG_L.asp</td>
-    <td>ARU_PNG_XL.asp</td>
-   </tr>
-   </table>
-   <table>
-   <tr>
-    <td>GIF</td>
-    <td>ARU_GIF_S.jsp</td>
-    <td>ARU_GIF_L.jsp</td>
-    <td>ARU_GIF_XL.jsp</td>
-   </tr>
-   <tr>
-    <td>PNG</td>
-    <td>ARU_PNG_S.jsp</td>
-    <td>ARU_PNG_L.jsp</td>
-    <td>ARU_PNG_XL.jsp</td>
-   </tr>
-   </table>
-
-   <table>
-   <tr>
-    <td>GIF</td>
     <td>ARU_GIF_S.php</td>
     <td>ARU_GIF_L.php</td>
     <td>ARU_GIF_XL.php</td>
@@ -302,7 +273,8 @@ ip_images.php?signature=早安
    </tr>
    </table>
    **调用例子:**
-   ![姬长信API](https://api.isoyu.com/ARU_GIF_S.php)
+  
+![姬长信API](https://api.isoyu.com/ARU_GIF_S.php)
    
 
 ```javascript
