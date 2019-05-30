@@ -1677,9 +1677,27 @@ gbk编码的页面URL接口： http://isoyu.com/?q={$q}&cr=gbk
 **返回:**
 ```javascript
 {
-	"code": 0,
-	"message": "success",
-	"videoUrl": "http://v9-dy.ixigua.com/dd889feab2e8116222b52ae684d45752/5ccad1d2/video/m/2200cdd9ab610d84c63854d21774c14e6851161aaade0000341693e2e587/?rc=ajZyeGQ6cHFwbDMzaWkzM0ApQHRAbzs1MzUzNTszNDo6OzU4PDNAKXUpQGczdylAZmxkamV6aGhkZjs0QDQyL3Ffb2BoNl8tLTEtMHNzLW8jbyNDNDAxMy0uLS0vLi4tLS4vaTpiLW8jOmAtbyNtbCtiK2p0OiMvLl4%3D",
-	"time": 1556792247
+    "status": true,
+    "nickname": "\u9ed1\u6697\u6599\u7406\u5c0f\u53a8\u5a18",
+    "awemeId": "6670695088294776068",
+    "headImage": "https:\/\/p3-dy.byteimg.com\/aweme\/720x720\/1731800054bc8f14a5052.jpeg",
+    "image": "http:\/\/p9-dy.byteimg.com\/large\/1d16500041241a5afdcf3.jpeg",
+    "videoUrl": ["http:\/\/v6-dy.ixigua.com\/b819918d129b5614a88abc068b55ea51\/5ceff813\/video\/m\/220a9f7cd8e1b624c2984759baaa6aaf33f1161a9b9b000028bc719f2420\/?rc=ajZyeGQ6cHFwbDMzaWkzM0ApQHRAb0g1OjU0ODszNDU3NTM4PDNAKXUpQGczdSlAZjN2KUBmaHV5cTFmc2hoZGY7NEA0Mi9xX29gaDZfLS0xLTBzcy1vI28jQC4yMjUtLy0tMDAvMC0uL2k6YjBwIzphLXEjOmAtbyNwYmZyaF4ranQ6Iy8uXg%3D%3D", "http:\/\/v9-dy.ixigua.com\/92dc50caa6ddedd7a7ebf3bcb5e9f798\/5ceff813\/video\/m\/220a9f7cd8e1b624c2984759baaa6aaf33f1161a9b9b000028bc719f2420\/", "https:\/\/aweme-hl.snssdk.com\/aweme\/v1\/play\/?video_id=v0300f4f0000bi9mkncmr7batu2o537g&line=0&ratio=540p&media_type=4&vr_type=0&improve_bitrate=0", "https:\/\/api-hl.amemv.com\/aweme\/v1\/play\/?video_id=v0300f4f0000bi9mkncmr7batu2o537g&line=1&ratio=540p&media_type=4&vr_type=0&improve_bitrate=0"],
+    "music_urls": ["http:\/\/p3-dy.byteimg.com\/obj\/ies-music\/1628600127981613.mp3"],
+    "info": {
+        "share_title_other": "",
+        "share_signature_url": "https:\/\/tiktokv.com\/",
+        "share_signature_desc": "TikTok: Make Every Second Count",
+        "share_title": "#\u8179\u808c \u8fd9\u8c01\u9876\u5f97\u4f4f\u554a@\u6296\u97f3\u5c0f\u52a9\u624b @\u70f9\u996a\u9b3c\u624d\u51af\u6a59\u6a59",
+        "share_weibo_desc": "#\u5728\u6296\u97f3\uff0c\u8bb0\u5f55\u7f8e\u597d\u751f\u6d3b##\u8179\u808c \u8fd9\u8c01\u9876\u5f97\u4f4f\u554a@\u6296\u97f3\u5c0f\u52a9\u624b @\u70f9\u996a\u9b3c\u624d\u51af\u6a59\u6a59",
+        "share_desc": "\u5728\u6296\u97f3\uff0c\u8bb0\u5f55\u7f8e\u597d\u751f\u6d3b",
+        "bool_persist": 0,
+        "share_title_myself": "",
+        "share_link_desc": "#\u5728\u6296\u97f3\uff0c\u8bb0\u5f55\u7f8e\u597d\u751f\u6d3b##\u8179\u808c \u8fd9\u8c01\u9876\u5f97\u4f4f\u554a@\u6296\u97f3\u5c0f\u52a9\u624b @\u70f9\u996a\u9b3c\u624d\u51af\u6a59\u6a59 %s \u590d\u5236\u6b64\u94fe\u63a5\uff0c\u6253\u5f00\u3010\u6296\u97f3\u77ed\u89c6\u9891\u3011\uff0c\u76f4\u63a5\u89c2\u770b\u89c6\u9891\uff01",
+        "share_quote": "",
+        "share_url": "https:\/\/www.iesdouyin.com\/share\/video\/6670695088294776068\/?region=CN&mid=6670746156538137357&u_code=gj49fkd1&titleType=title"
+    },
+    "time": 1559226872
 }
+
 ```
