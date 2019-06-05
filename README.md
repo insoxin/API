@@ -1653,51 +1653,67 @@ gbk编码的页面URL接口： http://isoyu.com/?q={$q}&cr=gbk
 ![姬长信API](https://api.isoyu.com/img-Proxy.php?url=https://ww4.sinaimg.cn/large/005ucgoIly1g24wv89dh1j30v90gmtne.jpg)
 
 ### 10.5 抖音去水印
+```javascript
+status:请求状态码true/false  
+message:提示文本，返回结果错误时会返回地址信息  
+nickname:抖音昵称  
+awemeId：视频资源Id
+info:视频信息 
+image:封面图片地址  
+headImage:用户头像地址  
+videoUrl:无水印地址  
+music_urls:音乐原声地址 
+time:时间戳
+```  
 请注意时间戳,视频不定期失效
 
 **必选参数:**
 
 `url`    视频链接
 
-
 **接口地址:**
 ```javascript
         https://api.isoyu.com/ckplayer/douyin.asp?url= 
         https://api.isoyu.com/ckplayer/douyin.jsp?url=
         https://api.isoyu.com/ckplayer/douyin.php?url=
-
 ```  
 **调用例子:**
 ```javascript
-        https://api.isoyu.com/ckplayer/douyin.asp?url=http://v.douyin.com/2CoDUQ
-        https://api.isoyu.com/ckplayer/douyin.jsp?url=http://v.douyin.com/2CoDUQ
-        https://api.isoyu.com/ckplayer/douyin.php?url=http://v.douyin.com/2CoDUQ
+        https://api.isoyu.com/ckplayer/douyin.asp?url=http://v.douyin.com/rYs9HU
+        https://api.isoyu.com/ckplayer/douyin.jsp?url=http://v.douyin.com/rYs9HU
+        https://api.isoyu.com/ckplayer/douyin.php?url=http://v.douyin.com/rYs9HU
 
 ```
 **返回:**
 ```javascript
 {
-    "status": true,
-    "nickname": "\u9ed1\u6697\u6599\u7406\u5c0f\u53a8\u5a18",
-    "awemeId": "6670695088294776068",
-    "headImage": "https:\/\/p3-dy.byteimg.com\/aweme\/720x720\/1731800054bc8f14a5052.jpeg",
-    "image": "http:\/\/p9-dy.byteimg.com\/large\/1d16500041241a5afdcf3.jpeg",
-    "videoUrl": ["http:\/\/v6-dy.ixigua.com\/b819918d129b5614a88abc068b55ea51\/5ceff813\/video\/m\/220a9f7cd8e1b624c2984759baaa6aaf33f1161a9b9b000028bc719f2420\/?rc=ajZyeGQ6cHFwbDMzaWkzM0ApQHRAb0g1OjU0ODszNDU3NTM4PDNAKXUpQGczdSlAZjN2KUBmaHV5cTFmc2hoZGY7NEA0Mi9xX29gaDZfLS0xLTBzcy1vI28jQC4yMjUtLy0tMDAvMC0uL2k6YjBwIzphLXEjOmAtbyNwYmZyaF4ranQ6Iy8uXg%3D%3D", "http:\/\/v9-dy.ixigua.com\/92dc50caa6ddedd7a7ebf3bcb5e9f798\/5ceff813\/video\/m\/220a9f7cd8e1b624c2984759baaa6aaf33f1161a9b9b000028bc719f2420\/", "https:\/\/aweme-hl.snssdk.com\/aweme\/v1\/play\/?video_id=v0300f4f0000bi9mkncmr7batu2o537g&line=0&ratio=540p&media_type=4&vr_type=0&improve_bitrate=0", "https:\/\/api-hl.amemv.com\/aweme\/v1\/play\/?video_id=v0300f4f0000bi9mkncmr7batu2o537g&line=1&ratio=540p&media_type=4&vr_type=0&improve_bitrate=0"],
-    "music_urls": ["http:\/\/p3-dy.byteimg.com\/obj\/ies-music\/1628600127981613.mp3"],
-    "info": {
-        "share_title_other": "",
-        "share_signature_url": "https:\/\/tiktokv.com\/",
-        "share_signature_desc": "TikTok: Make Every Second Count",
-        "share_title": "#\u8179\u808c \u8fd9\u8c01\u9876\u5f97\u4f4f\u554a@\u6296\u97f3\u5c0f\u52a9\u624b @\u70f9\u996a\u9b3c\u624d\u51af\u6a59\u6a59",
-        "share_weibo_desc": "#\u5728\u6296\u97f3\uff0c\u8bb0\u5f55\u7f8e\u597d\u751f\u6d3b##\u8179\u808c \u8fd9\u8c01\u9876\u5f97\u4f4f\u554a@\u6296\u97f3\u5c0f\u52a9\u624b @\u70f9\u996a\u9b3c\u624d\u51af\u6a59\u6a59",
-        "share_desc": "\u5728\u6296\u97f3\uff0c\u8bb0\u5f55\u7f8e\u597d\u751f\u6d3b",
-        "bool_persist": 0,
-        "share_title_myself": "",
-        "share_link_desc": "#\u5728\u6296\u97f3\uff0c\u8bb0\u5f55\u7f8e\u597d\u751f\u6d3b##\u8179\u808c \u8fd9\u8c01\u9876\u5f97\u4f4f\u554a@\u6296\u97f3\u5c0f\u52a9\u624b @\u70f9\u996a\u9b3c\u624d\u51af\u6a59\u6a59 %s \u590d\u5236\u6b64\u94fe\u63a5\uff0c\u6253\u5f00\u3010\u6296\u97f3\u77ed\u89c6\u9891\u3011\uff0c\u76f4\u63a5\u89c2\u770b\u89c6\u9891\uff01",
-        "share_quote": "",
-        "share_url": "https:\/\/www.iesdouyin.com\/share\/video\/6670695088294776068\/?region=CN&mid=6670746156538137357&u_code=gj49fkd1&titleType=title"
+    "status":true,
+    "nickname":"陳奕迅所長",
+    "awemeId":"6629588912228535555",
+    "headImage":"https://p9-dy.byteimg.com/aweme/720x720/c7a50016c177b8d83b6e.jpeg",
+    "image":"http://p1-dy.byteimg.com/large/129e100017985e14f90e6.jpeg",
+    "videoUrl":[
+        "http://v6-dy.ixigua.com/1bfeb00063e024eb6b0a1c5c1ccf461f/5cf72e65/video/m/220f880b47b03d54a789c8caed4897ab5f711610bbb50000474b6680d20e/?rc=anRmbjxrNGxqajMzO2kzM0ApQHRAb0ZHNDUzMzczNDQ1PDg5PDNAKXUpQGczdSlAZjN2KUBmaHV5cTFmc2hoZGY7NEBgY2hnbl5sYy1fLS1fLS9zcy1vI28jMTMwLjEuLy0tLjItLS0uL2k6Yi5wIzphLXEjOmAtbyNwYmZyaF4ranQ6Iy8uXg==",
+        "http://v9-dy.ixigua.com/8a340ec9e22bbe529f779171175d0852/5cf72e65/video/m/220f880b47b03d54a789c8caed4897ab5f711610bbb50000474b6680d20e/",
+        "https://aweme-hl.snssdk.com/aweme/v1/play/?video_id=v0200fb80000bg0gfio1ahq9jkkcfqcg&line=0&ratio=540p&media_type=4&vr_type=0&improve_bitrate=0",
+        "https://api-hl.amemv.com/aweme/v1/play/?video_id=v0200fb80000bg0gfio1ahq9jkkcfqcg&line=1&ratio=540p&media_type=4&vr_type=0&improve_bitrate=0"
+    ],
+    "music_urls":[
+        "http://p3-dy.byteimg.com/obj/a02a0001f6153c8784e3"
+    ],
+    "info":{
+        "share_weibo_desc":"#在抖音，记录美好生活##明日之后明日之后 游戏人生，钢琴",
+        "share_desc":"在抖音，记录美好生活",
+        "share_title":"#明日之后明日之后 游戏人生，钢琴",
+        "bool_persist":0,
+        "share_title_myself":"",
+        "share_title_other":"",
+        "share_link_desc":"#在抖音，记录美好生活##明日之后明日之后 游戏人生，钢琴 %s 复制此链接，打开【抖音短视频】，直接观看视频！",
+        "share_url":"https://www.iesdouyin.com/share/video/6629588912228535555/?region=CN&mid=6582505245845392141&u_code=gj49fkd1&titleType=title",
+        "share_quote":"",
+        "share_signature_desc":"TikTok: Make Every Second Count",
+        "share_signature_url":"https://tiktokv.com/"
     },
-    "time": 1559226872
+    "time":1559699531
 }
-
 ```
