@@ -1,6 +1,4 @@
 <?php
-/**
- */
 include 'core/main.php';
 $qq = $_GET['qq'];
 if (isset($_GET['qq'])){
