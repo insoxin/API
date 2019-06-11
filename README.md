@@ -1689,31 +1689,37 @@ time:时间戳
 {
     "status":true,
     "nickname":"陳奕迅所長",
+    "shortId":"85815699",
+    "userId":71136311811,
     "awemeId":"6629588912228535555",
-    "headImage":"https://p9-dy.byteimg.com/aweme/720x720/c7a50016c177b8d83b6e.jpeg",
-    "image":"http://p1-dy.byteimg.com/large/129e100017985e14f90e6.jpeg",
-    "videoUrl":[
-        "http://v6-dy.ixigua.com/1bfeb00063e024eb6b0a1c5c1ccf461f/5cf72e65/video/m/220f880b47b03d54a789c8caed4897ab5f711610bbb50000474b6680d20e/?rc=anRmbjxrNGxqajMzO2kzM0ApQHRAb0ZHNDUzMzczNDQ1PDg5PDNAKXUpQGczdSlAZjN2KUBmaHV5cTFmc2hoZGY7NEBgY2hnbl5sYy1fLS1fLS9zcy1vI28jMTMwLjEuLy0tLjItLS0uL2k6Yi5wIzphLXEjOmAtbyNwYmZyaF4ranQ6Iy8uXg==",
-        "http://v9-dy.ixigua.com/8a340ec9e22bbe529f779171175d0852/5cf72e65/video/m/220f880b47b03d54a789c8caed4897ab5f711610bbb50000474b6680d20e/",
-        "https://aweme-hl.snssdk.com/aweme/v1/play/?video_id=v0200fb80000bg0gfio1ahq9jkkcfqcg&line=0&ratio=540p&media_type=4&vr_type=0&improve_bitrate=0",
-        "https://api-hl.amemv.com/aweme/v1/play/?video_id=v0200fb80000bg0gfio1ahq9jkkcfqcg&line=1&ratio=540p&media_type=4&vr_type=0&improve_bitrate=0"
+    "headImage":"https://p3-dy.byteimg.com/aweme/720x720/c7a50016c177b8d83b6e.jpeg",
+    "image":"http://p3-dy.byteimg.com/large/129e100017985e14f90e6.jpeg",
+    "dynamic_cover":"https://p3-dy.byteimg.com/obj/129970000efcf6ffee755",
+    "video_Url":[
+        "http://v3-dy-z.ixigua.com/90e0b2168f0e4a546cc123758e2c5b8a/5cffc2ea/video/m/220f880b47b03d54a789c8caed4897ab5f711610bbb50000474b6680d20e/?rc=anRmbjxrNGxqajMzO2kzM0ApQHRAb0Y0NTs0OTkzNDM3NTQ5PDNAKXUpQGczdSlAZjN2KUBmaHV5cTFmc2hoZGY7NEBgY2hnbl5sYy1fLS1fLS9zczVvI28jPy8uMjQtLi0tLS0vLi0uL2k6Yi5wIzphLXEjOmAwbyNwYmZyaF4ranQ6Iy8uXg%3D%3D",
+        "http://v6-dy.ixigua.com/cb8bd094abc2dc146c145f423fd45d0e/5cffc2ea/video/m/220f880b47b03d54a789c8caed4897ab5f711610bbb50000474b6680d20e/",
+        "https://aweme.snssdk.com/aweme/v1/play/?video_id=v0200fb80000bg0gfio1ahq9jkkcfqcg&line=0&ratio=540p&media_type=4&vr_type=0&improve_bitrate=0",
+        "https://api.amemv.com/aweme/v1/play/?video_id=v0200fb80000bg0gfio1ahq9jkkcfqcg&line=1&ratio=540p&media_type=4&vr_type=0&improve_bitrate=0"
+    ],
+    "long_video":[
+
     ],
     "music_urls":[
         "http://p3-dy.byteimg.com/obj/a02a0001f6153c8784e3"
     ],
     "info":{
-        "share_weibo_desc":"#在抖音，记录美好生活##明日之后明日之后 游戏人生，钢琴",
         "share_desc":"在抖音，记录美好生活",
         "share_title":"#明日之后明日之后 游戏人生，钢琴",
         "bool_persist":0,
+        "share_signature_url":"https://tiktokv.com/",
+        "share_signature_desc":"TikTok: Make Every Second Count",
+        "share_quote":"",
+        "share_url":"https://www.iesdouyin.com/share/video/6629588912228535555/?region=CN&mid=6582505245845392141&u_code=k1076kib&titleType=title",
+        "share_weibo_desc":"#在抖音，记录美好生活##明日之后明日之后 游戏人生，钢琴",
         "share_title_myself":"",
         "share_title_other":"",
-        "share_link_desc":"#在抖音，记录美好生活##明日之后明日之后 游戏人生，钢琴 %s 复制此链接，打开【抖音短视频】，直接观看视频！",
-        "share_url":"https://www.iesdouyin.com/share/video/6629588912228535555/?region=CN&mid=6582505245845392141&u_code=gj49fkd1&titleType=title",
-        "share_quote":"",
-        "share_signature_desc":"TikTok: Make Every Second Count",
-        "share_signature_url":"https://tiktokv.com/"
+        "share_link_desc":"#在抖音，记录美好生活##明日之后明日之后 游戏人生，钢琴 %s 复制此链接，打开【抖音短视频】，直接观看视频！"
     },
-    "time":1559699531
+    "time":1560261839
 }
 ```
