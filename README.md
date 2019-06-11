@@ -1659,10 +1659,14 @@ message:提示文本，返回结果错误时会返回地址信息
 nickname:抖音昵称  
 awemeId：视频资源Id
 info:视频信息 
-image:封面图片地址  
+image:封面图片地址(静态)
 headImage:用户头像地址  
-videoUrl:无水印地址  
+video_Url:无水印地址  
 music_urls:音乐原声地址 
+dynamic_cover:动态封面图  
+long_video:长视频 
+userId:作者userId
+shortId：作者抖音Id
 time:时间戳
 ```  
 请注意时间戳,视频不定期失效
