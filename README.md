@@ -1,5 +1,5 @@
-# 姬长信API
-姬长信API 一个基于多种编程语言并运行在Docker上开源免费不限制提供生活常用,出行服务,开发工具,金融服务,通讯服务和公益大数据的平台.
+# 姬长信API For Docker
+姬长信API For Docker 一个基于多种编程语言开源免费不限制提供生活常用,出行服务,开发工具,金融服务,通讯服务和公益大数据的平台.
 https://api.isoyu.com/
 ===============
 食用方法
@@ -31,13 +31,13 @@ https://api.isoyu.com/
  + CSGO账号信息查询
  + 雅思成绩(以官为准)
 ---
-###### 须知：姬长信API将会记录你的域名、使用流量、调用次数等重要信息并存储六个月，如介意，请勿使用。[统计信息](https://api.isoyu.com)管理员邮箱admin@isoyu.com 
+###### 须知：姬长信API将会记录你的域名、使用流量、调用次数等重要信息并存储六个月，如介意，请勿使用。[统计信息](https://pan.isoyu.com/统计)管理员邮箱admin@isoyu.com 
 ---
 ###### 条款：姬长信API拥有所有运行权，在某些特定情况下，姬长信API有权利禁止你的网站调用。
 ---
 ###### 禁止用于商业用途,不接受功能性捐助!  [服务器CDN赞助](https://github.com/insoxin/donate/blob/master/README.md)       [Who has donated recently?](https://github.com/insoxin/donate/blob/master/HISTORY.md)
 ---
-###### [基于TA的作品](https://api.isoyu.com/)
+###### [基于TA的作品](https://blog.isoyu.com/inso.html)
 ---
 ## GY.公益数据
 
