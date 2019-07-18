@@ -1,5 +1,5 @@
 # These are supported funding model platforms
 
-github: insoxin, insoxin
+github: [insoxin, insoxin]
 
 custom: https://github.com/insoxin/donate/blob/master/README.md
