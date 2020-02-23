@@ -850,7 +850,7 @@ img-Proxy.php
       `/Weather/get_weather?city=广州市` 
       
   **调用例子:**
-      `//api.isoyu.comm/api/Weather/get_weather?city=广州市`
+      `//api.isoyu.com/api/Weather/get_weather?city=广州市`
   
 
   
