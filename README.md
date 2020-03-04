@@ -383,11 +383,18 @@ img-Proxy.php
 
 **返回参数说明：**
 
-|      名称  |       类型       |  说明    |
-| ------------ | -------------   | ------------| ---------|
-| url_classified| String | 图片url地址  | 
-| rating_index| Int  | 图片内容级别 1 所有人，2 青少年 ，3 为不良图片(成年人)  | 
-| rating_label  |  String |图片内容|
+                <table class="layui-table" lay-size="sm">
+                    <thead>
+                    <tr>
+                        <th>名称</th>
+                        <th>类型</th>
+                        <th>说明</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr><td>url_classified</td><td>String</td><td>图片url地址</td></tr><tr><td>rating_index</td><td>Int</td><td>图片内容级别  1 所有人，2 青少年 ，3 为不良图片(成年人)</td></tr><tr><td>rating_label</td><td>String</td><td>图片内容</td></tr>                    </tbody>
+                </table>
+
 
 
 **接口地址:**
