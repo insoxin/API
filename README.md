@@ -383,7 +383,8 @@ img-Proxy.php
 
 **返回参数说明：**
 
-                <table class="layui-table" lay-size="sm">
+
+<table class="layui-table" lay-size="sm">
                     <thead>
                     <tr>
                         <th>名称</th>
