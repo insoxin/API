@@ -366,7 +366,57 @@ img-Proxy.php
 ![姬长信API](https://api.isoyu.com/img-Proxy.php?url=https://ww4.sinaimg.cn/large/ce575088ly4g2g98s9kc6j20k00f0q4s.jpg)
 
 
+### 0.9 图片鉴黄
 
+姬长信API 结合腾讯优图的深度学习图像识别技术，推出“图片鉴黄”服务，针对 全网分发的图片进行智能扫描，有效规避您的业务涉黄风险，目前全网免费公测中。
+
+图片鉴黄服务针对 CDN 分发的图片进行扫描，得到每张图片的色情等级的评分，归类为“疑似色情图片”、“色情图片”和“正常图片”。
+
+智能图片鉴黄保留一个月内的涉黄图片处理历史记录。
+
+*60 秒内累计请求超过 120 次,封锁此IP 300 秒*
+
+**必选参数:**
+
+
+`imgurl`    图片url地址
+
+**返回参数说明：**
+
+|      名称  |       类型       |  说明    |
+| ------------ | -------------   | ------------| ---------|
+| url_classified| String | 图片url地址  | 
+| rating_index| Int  | 图片内容级别 1 所有人，2 青少年 ，3 为不良图片(成年人)  | 
+| rating_label  |  String |图片内容|
+
+
+**接口地址:**
+```javascript
+        https://api.isoyu.com/jianhuang.asp?imgurl=
+        https://api.isoyu.com/jianhuang.jsp?imgurl=
+        https://api.isoyu.com/jianhuang.php?imgurl=
+```
+**例子:**
+https://i.loli.net/2020/03/04/omXIMPkg3A1J6Uq.jpg
+
+![鉴黄举例.jpg](https://i.loli.net/2020/03/04/omXIMPkg3A1J6Uq.jpg)
+
+```javascript
+       https://api.isoyu.com/jianhuang.asp?imgurl=https://i.loli.net/2020/03/04/omXIMPkg3A1J6Uq.jpg
+       https://api.isoyu.com/jianhuang.asp?imgurl=https://i.loli.net/2020/03/04/omXIMPkg3A1J6Uq.jpg
+       https://api.isoyu.com/jianhuang.asp?imgurl=https://i.loli.net/2020/03/04/omXIMPkg3A1J6Uq.jpg
+
+```
+**返回:**
+```javascript
+{
+    "code":1,
+    "msg":"识别成功",
+    "url_classified":"https://i.loli.net/2020/03/04/omXIMPkg3A1J6Uq.jpg",
+    "rating_index":1,
+    "rating_label":"everyone"
+}
+```
 
 ## 1. 新闻模块
 
