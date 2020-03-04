@@ -31,6 +31,7 @@ https://api.isoyu.com/
  + CSGO账号信息查询
  + 雅思成绩(以官为准)
  + isbn查询
+ + 图片鉴黄
 ---
 ###### 须知：姬长信API将会记录你的域名、使用流量、调用次数等重要信息并存储六个月，如介意，请勿使用。[统计信息](https://pan.isoyu.com/统计)管理员邮箱admin@isoyu.com 
 ---
