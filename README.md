@@ -375,7 +375,7 @@ img-Proxy.php
 
 智能图片鉴黄保留一个月内的涉黄图片处理历史记录。
 
-*60 秒内累计请求超过 120 次,封锁此IP 300 秒*
+*60 秒内累计请求超过 120 次,封锁此IP 3000 秒*
 
 **必选参数:**
 
@@ -412,8 +412,8 @@ https://i.loli.net/2020/03/04/omXIMPkg3A1J6Uq.jpg
 
 ```javascript
        https://api.isoyu.com/jianhuang.asp?imgurl=https://i.loli.net/2020/03/04/omXIMPkg3A1J6Uq.jpg
-       https://api.isoyu.com/jianhuang.asp?imgurl=https://i.loli.net/2020/03/04/omXIMPkg3A1J6Uq.jpg
-       https://api.isoyu.com/jianhuang.asp?imgurl=https://i.loli.net/2020/03/04/omXIMPkg3A1J6Uq.jpg
+       https://api.isoyu.com/jianhuang.php?imgurl=https://i.loli.net/2020/03/04/omXIMPkg3A1J6Uq.jpg
+       https://api.isoyu.com/jianhuang.jsp?imgurl=https://i.loli.net/2020/03/04/omXIMPkg3A1J6Uq.jpg
 
 ```
 **返回:**
