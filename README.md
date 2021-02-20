@@ -88,7 +88,7 @@ ifm.height=document.documentElement.clientHeight;
 ```
 3.解析json https://api.isoyu.com/gy/data.js 不作多描述（浏览器直接访问会乱码，可以下载查看。charset为UTF-8）
 
-![姬长信API](https://i.loli.net/2018/04/02/5ac1eb7a3cbc7.png)
+![姬长信API](https://api.isoyu.com/img-Proxy.php?url=https://i.loli.net/2018/04/02/5ac1eb7a3cbc7.png)
 ### 2 全网通缉令数据
    **接口地址:**
    `https://api.isoyu.com/gy/tj.html`
