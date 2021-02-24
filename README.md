@@ -88,7 +88,7 @@ ifm.height=document.documentElement.clientHeight;
 ```
 3.解析json https://api.isoyu.com/gy/data.js 不作多描述（浏览器直接访问会乱码，可以下载查看。charset为UTF-8）
 
-![姬长信API](https://i.loli.net/2018/04/02/5ac1eb7a3cbc7.png)
+![姬长信API](https://api.isoyu.com/img-Proxy.php?url=https://i.loli.net/2018/04/02/5ac1eb7a3cbc7.png)
 ### 2 全网通缉令数据
    **接口地址:**
    `https://api.isoyu.com/gy/tj.html`
@@ -369,7 +369,7 @@ img-Proxy.php
 
 ### 0.9 图片鉴黄
 
-姬长信API 结合腾讯优图的深度学习图像识别技术，推出“图片鉴黄”服务，针对 全网分发的图片进行智能扫描，有效规避您的业务涉黄风险，目前全网免费公测中。
+姬长信API 结合腾讯优图的深度学习图像识别技术，推出鉴黄、鉴政、鉴暴恐等多种类型的敏感内容审核服务，有效识别违禁图片，针对 全网分发的图片进行智能扫描，有效规避您的业务涉黄风险，目前全网免费公测中。
 
 图片鉴黄服务针对 CDN 分发的图片进行扫描，得到每张图片的色情等级的评分，归类为“疑似色情图片”、“色情图片”和“正常图片”。
 
