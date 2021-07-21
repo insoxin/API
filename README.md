@@ -163,6 +163,7 @@ bing_images.php
 //api.isoyu.com/bing_images.php
 
 ```
+![姬长信API](https://api.isoyu.com/bing_images.php)
 
 ### 0.2 美女图片壁纸 
 说明:已经用了万象优图筛选，若遇到大尺度图片请记录图片id并admin@isoyu.com，我们会在第一时间删除
