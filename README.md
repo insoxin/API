@@ -37,7 +37,7 @@ https://api.isoyu.com/
 ---
 ###### 条款：姬长信API拥有所有运行权，在某些特定情况下，姬长信API有权利禁止你的网站调用。
 ---
-###### 禁止用于商业用途,不接受功能性捐助!  [服务器CDN赞助](https://github.com/insoxin/donate/blob/master/README.md)       [Who has donated recently?](https://github.com/insoxin/donate/blob/master/HISTORY.md)
+###### 禁止用于违法,商业用途,不接受功能性捐助!  [服务器CDN赞助](https://github.com/insoxin/donate/blob/master/README.md)       [Who has donated recently?](https://github.com/insoxin/donate/blob/master/HISTORY.md)
 ---
 ###### [基于TA的作品](https://blog.isoyu.com/inso.html)
 ---
