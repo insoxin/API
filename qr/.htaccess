@@ -1,6 +1,0 @@
-RewriteEngine on
-RewriteBase /
-
-#qr
-RewriteRule ^qr/(.*)_(.*)_(.*)_http:/(.*)_static\.png$ qr/index.php?m=$1&e=$2&p=$3&url=http://$4 [L]
-RewriteRule ^qr/(.*)_(.*)_(.*)_(.*)_static\.png$ qr/index.php?m=$1&e=$2&p=$3&url=$4 [L]

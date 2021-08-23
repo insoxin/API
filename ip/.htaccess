@@ -1,2 +1,0 @@
-RewriteEngine On
-RewriteRule ^ip/images/(.+?\.jpg)$ /img.php?name=$1
