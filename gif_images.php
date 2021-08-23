@@ -1,9 +1,0 @@
-<?php
-$id=rand(1,5);
-$image[1]='http://ww1.sinaimg.cn和谐/mw690/005MWrBXgw1f3sp9poxiag30dw083u0x.gif';
-$image[2]='http://ww1.sinaimg.cn和谐/mw690/883121d8gw1ezs8yqonvpg20a606nnpf.gif';
-$image[3]='http://ww1.sinaimg.cn和谐/bmiddle/005IYPIXjw1ep4ih43z0ig30a006xto5.gif';
-$image[4]='http://ww2.sinaimg.cn和谐/mw690/005MWrBXgw1f3spc5jtstg309w0awu0z.gif';
-$image[5]='http://ww1.sinaimg.cn和谐/bmiddle/cd29f1f0jw1err9uerazpg20aa09ix6p.gif';
-header("location:$image[$id]");
-?>
