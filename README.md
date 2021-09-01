@@ -12,7 +12,7 @@
 
 ---
 
-###### 禁止用于违法,商业用途,不接受功能性捐助!   [<img src="https://cdn.jsdelivr.net/gh/insoxin/API@master/images/%E5%8F%88%E6%8B%8D%E4%BA%91_logo5.png" width="7%" alt="upyun" >](https://www.upyun.com?from=isoyu)提供 CDN 赞助.
+###### 禁止用于违法,商业用途,不接受功能性捐助!    <a href="https://www.upyun.com?from=isoyu" target="_blank" rel="nofollow"><img src="https://cdn.jsdelivr.net/gh/insoxin/API@master/images/%E5%8F%88%E6%8B%8D%E4%BA%91_logo5.png" width="8%" alt="upyun" ><a>提供 CDN 赞助.
 
  [Who has donated recently?](https://github.com/insoxin/donate/blob/master/HISTORY.md)
  
