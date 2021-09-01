@@ -4,7 +4,7 @@
 
 * 须知：姬长信API将会记录你的域名、使用流量、调用次数等重要信息并存储六个月，如介意，请勿使用。[统计信息](https://api.isoyu.com)管理员邮箱admin@isoyu.com 
 * 条款：姬长信API拥有所有运行权，在某些特定情况下，姬长信API有权利禁止你的网站调用。
-* 禁止用于违法,商业用途,不接受功能性捐助!  [服务器CDN赞助](https://github.com/insoxin/donate/blob/master/README.md)
+* 禁止用于违法,商业用途,不接受功能性捐助!  
 
 [GitHub](https://github.com/insoxin/API/)
 [开始](#姬长信api-for-docker)
