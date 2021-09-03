@@ -14,7 +14,8 @@
 
 ###### 禁止用于违法,商业用途,不接受定制功能性捐助! [Who has donated recently?](https://github.com/insoxin/donate/blob/master/HISTORY.md)
 
-<a href="https://www.upyun.com?from=isoyu" target="_blank" rel="nofollow"><img src="https://cdn.jsdelivr.net/gh/insoxin/API@master/images/upyun.png" width="80" height="25" alt="upyun" ><a>提供 CDN 赞助. <a href="https://www.upyun.com/league" target="_blank" rel="nofollow">推荐使用又拍云CDN加速网站,每月免费15G流量</a>
+<a href="https://www.upyun.com/?utm_source=lianmeng&utm_medium=referral
+" target="_blank" rel="nofollow"><img src="https://cdn.jsdelivr.net/gh/insoxin/API@master/images/upyun.png" width="80" height="25" alt="upyun" ><a>提供 CDN 赞助. <a href="https://www.upyun.com/league" target="_blank" rel="nofollow">推荐使用又拍云CDN加速网站,每月免费15G流量</a>
  
 
 
