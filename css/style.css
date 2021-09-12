@@ -1,0 +1,195 @@
+.about {
+    background-color: white;
+}
+#multiple {
+    width: 100%;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.Teacher-up{
+    padding: 15px 30px;
+}
+::-webkit-scrollbar{width:5px;height:5px}::-webkit-scrollbar-track{background-color:#eaeaea;border-left:1px solid #ccc}::-webkit-scrollbar-thumb{background-color:#ccc}::-webkit-scrollbar-thumb:hover{background-color:#aaa}::scrollbar{width:5px}::scrollbar-track{background-color:#eaeaea;border-left:1px solid #ccc}::scrollbar-thumb{background-color:#ccc}::scrollbar-thumb:hover{background-color:#aaa}
+.row-container {
+    margin-right: auto;
+    margin-left: auto;
+    width: 100%;
+}
+.text-center {
+    text-align: center!important;
+}
+.about-w3ls-info {
+    margin: 0 auto;
+}
+.py-5 {
+    padding-top: 3rem!important;
+    padding-bottom: 3rem!important;
+}
+.about-w3ls-info>h3 {
+    color: #333;
+    font-size: 2.5em;
+    font-weight: 600;
+}
+#img-thumb img {
+    display: block;
+    max-width: 100%;
+    margin-top: 2em;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+    max-height: 175px;
+}
+.layui-table tr td{
+    text-align: center;
+    line-height: 36px;
+}
+.about-w3ls-info>p {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 25px;
+    font-size: 16px;
+    color: #777;
+    line-height: 1.9em;
+    letter-spacing: 1px;
+    margin-top: 1rem!important;
+    margin-bottom: 3rem!important;
+}
+.about-w3ls-info>a {
+    cursor: pointer;
+    color: #fff!important;
+    background-color: #1E9FFF;
+    border-color: #007bff;
+    display: inline-block;
+    padding: 10px 30px;
+    font-size: 14px;
+    letter-spacing: 1px;
+    border-radius: 4px;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    box-shadow: 0 12px 60px rgba(0,0,0,.2);
+    -webkit-box-shadow: 0 12px 60px rgba(0,0,0,.2);
+    -o-box-shadow: 0 12px 60px rgba(0,0,0,.2);
+    -moz-box-shadow: 0 12px 60px rgba(0,0,0,.2);
+    -ms-box-shadow: 0 12px 60px rgba(0,0,0,.2);
+    border: 2px solid transparent;
+    transition: .5s all;
+    -webkit-transition: .5s all;
+    -moz-transition: .5s all;
+    -o-transition: .5s all;
+    -ms-transition: .5s all;
+}
+.rotateIn {
+    -webkit-animation-name: rotateIn;
+    animation-name: rotateIn;
+}
+html {
+    height: 100%;
+    max-height: 100%;
+    font-size: 62.5%;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+#loading {
+    background-color: rgba(0,0,0,0.8);
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 9999;
+    margin-top: 0;
+    top: 0;
+}
+#loading-center {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+#loading-center-absolute {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    height: 200px;
+    width: 200px;
+    margin-top: -100px;
+    margin-left: -100px;
+    -ms-transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+    transform: rotate(-135deg);
+}
+
+.object {
+    -moz-border-radius: 50% 50% 50% 50%;
+    -webkit-border-radius: 50% 50% 50% 50%;
+    border-radius: 50% 50% 50% 50%;
+    position: absolute;
+    border-top: 5px solid #FFF;
+    border-bottom: 5px solid transparent;
+    border-left: 5px solid #FFF;
+    border-right: 5px solid transparent;
+    -webkit-animation: animate 2s infinite;
+    animation: animate 2s infinite;
+}
+
+#object_one {
+    left: 75px;
+    top: 75px;
+    width: 50px;
+    height: 50px;
+}
+
+#object_two {
+    left: 65px;
+    top: 65px;
+    width: 70px;
+    height: 70px;
+    -webkit-animation-delay: 0.2s;
+    animation-delay: 0.2s;
+}
+
+#object_three {
+    left: 55px;
+    top: 55px;
+    width: 90px;
+    height: 90px;
+    -webkit-animation-delay: 0.4s;
+    animation-delay: 0.4s;
+}
+
+#object_four {
+    left: 45px;
+    top: 45px;
+    width: 110px;
+    height: 110px;
+    -webkit-animation-delay: 0.6s;
+    animation-delay: 0.6s;
+}
+
+@-webkit-keyframes animate {
+    50% {
+        -ms-transform: rotate(360deg) scale(0.8);
+        -webkit-transform: rotate(360deg) scale(0.8);
+        transform: rotate(360deg) scale(0.8);
+    }
+}
+
+@keyframes animate {
+    50% {
+        -ms-transform: rotate(360deg) scale(0.8);
+        -webkit-transform: rotate(360deg) scale(0.8);
+        transform: rotate(360deg) scale(0.8);
+    }
+}
+.progress-bar {
+    height: 4px;
+    position: fixed;
+    bottom: 0;
+    z-index: 300;
+    background: linear-gradient(to right,#00BCD4 0%,#2196F3 100%);
+    opacity: .8;
+}
