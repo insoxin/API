@@ -1,6 +1,6 @@
 
 body{
-    background-image:url('/static/images/luoye.jpg');
+    background-image:url('https://api.isoyu.com/bing_images.asp');
     background-size: cover;
     /*width: 100%;*/
     /*color:#232323;*/
