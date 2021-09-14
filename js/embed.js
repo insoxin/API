@@ -97,7 +97,7 @@ layui.use(['form','upload'], function(){
 						$("#img-thumb img").attr('src',imgurl);
 						$("#cdnurl").val(imgurlcdn);
 						$("#url").val(imgurl);
-						$("#url").val(imgurlsy);
+						$("#urlsy").val(imgurlsy);
 						$("#html").val("<img src='" + imgurl + "'/>");
 						$("#markdown").val("![](" + imgurl + ")");
 						$("#bbcode").val("[img]" + imgurl + "[/img]");
