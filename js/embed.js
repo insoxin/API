@@ -43,7 +43,7 @@ layui.use(['form','upload'], function(){
 				throw new Error('upload failed');
 			}
 			filename = getFileName(filename);
-			layer.msg('腾讯反病毒引擎查杀文件中...', {icon: 16,time: 10000,shade:[0.3, "#000"]});
+			layer.msg('腾讯反病毒引擎查杀文件中...', {icon: 16,time: 2000,shade:[0.3, "#000"]});
 			var that = this;
 			$.ajax({
 				type : "POST",
