@@ -91,13 +91,17 @@ layui.use(['form','upload'], function(){
 					if(data.code == 0){
 						var imgurlcdn = 'https://cdn.pan.yyy.sg/' + predata.ossPath;
 						var imgurl = 'https://' + predata.host + '/' + predata.ossPath;
+						var imgurlsy = 'https://' + predata.host + '/' + predata.ossPath + '?x-oss-process=image/watermark,size_30,text_eXl5LnNn,color_FFFFFF,shadow_50,t_100,g_se,x_10,y_10';
+						var id = predata.id;
 						$("#img-thumb a").attr('href',imgurl);
 						$("#img-thumb img").attr('src',imgurl);
 						$("#cdnurl").val(imgurlcdn);
 						$("#url").val(imgurl);
+						$("#url").val(imgurlsy);
 						$("#html").val("<img src='" + imgurl + "'/>");
 						$("#markdown").val("![](" + imgurl + ")");
 						$("#bbcode").val("[img]" + imgurl + "[/img]");
+						$("#dlink").val(id);
 						$("#imgshow").show();
 						$("input[name=file]").val('')
 					}else{
