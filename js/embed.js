@@ -1,45 +1,3 @@
-export default {
-	data() {
-		return {
-			percentage: 0 //进度条，用户在页面上显示进度
-			loading: false
-		}
-	},
-	methods: {
-		//文件大小限制
-		handleBeforeUpload(file, fileList) {
-		  let isLimit = file.size / 1024 / 1024 <= 1000;
-		  if (!isLimit) {
-		    this.$message.warning("上传文件不超过1G");
-		    return false;
-		  }
-		},
-		
-		//进度条显示
-		handleProgeress(percent) {
-		    this.percentage = percent;
-		},
-	
-		//上传视频
-		uploadVideoHandle(event) {
-	      let file = event.file;
-	      let fileType = 3; // 图片1，音频2，视频3，文件4
-	      this.loading = true;
-	      uploadApi.upLoad
-	        .uploader(file, fileType, event)
-	        .then((res) => {
-	          //上传成功的业务逻辑处理
-	          this.loading = false;
-	          this.percentage = 0;
-	        })
-	        .catch((err) => {
-	          this.$message.error(err.message);
-	          this.loading = false;
-	        });
-	    },
-	}
-}
-import request from "@/utils/request";
 const getAliOSSCreds = (params) => {
   return request({
     url: "admin/base/getOssToken",
@@ -47,11 +5,10 @@ const getAliOSSCreds = (params) => {
     params
   });
 };
-
-export const upLoad = {
-  uploader: (item, fileType, option) => {
+function userupLoad(user)  {{
     let params = {};
     params.type = fileType;
+    
     return getAliOSSCreds(params).then((res) => {
       const Oss = require("ali-oss");
       const client = new Oss({
@@ -63,6 +20,14 @@ export const upLoad = {
         bucket: res.bucket,
         endpoint: res.endpoint
       });
+      	methods: 
+		//文件大小限制
+		 {
+		  let isLimit = file.size / 1024 / 1024 <= 1000;
+		  if (!isLimit) {
+		    this.$message.warning("上传文件不超过1G");
+		    return false;
+		  } }
       let key = res.dir + "/" + item.name;
       if (option != null) {
         return client.multipartUpload(key, item, { //切片上传
@@ -75,7 +40,7 @@ export const upLoad = {
       }
     });
   }
-};
+}
 function copyurl(node){
 	var clipboard = new ClipboardJS(".copy-btn", {
 		text: function(trigger) {
