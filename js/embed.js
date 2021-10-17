@@ -132,7 +132,7 @@ layui.use(['form','upload'], function(){
 				success : function(data) {
 					layer.closeAll();
 					if(data.code == 0){
-						var imgurlcdn = 'https://cdn.pan.yyy.sg/' + predata.ossPath;
+						var imgurlcdn = 'https://cdn.pan.360pan.ml/' + predata.ossPath;
 						var imgurl = 'https://' + predata.host + '/' + predata.ossPath;
 						var imgurlsy = 'https://' + predata.host + '/' + predata.ossPath + '?x-oss-process=image/watermark,size_30,text_eXl5LnNn,color_FFFFFF,shadow_50,t_100,g_se,x_10,y_10';
 						var id = predata.id;
