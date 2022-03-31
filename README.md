@@ -259,3 +259,24 @@
  + 相似文本检测
  + 图像智能识别
  + 待定...
+ 
+ 
+ 
+ 
+ # 安装
+
+## docker
+
+1.
+```
+docker pull insoxin/api:latest
+```
+2.
+```
+docker run -dit --name api -p 8080:80  --restart unless-stopped insoxin/api:latest
+
+```
+
+访问 IP:8080
+
+
