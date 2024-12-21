@@ -18,7 +18,6 @@ API For Docker 一个基于多种编程语言免费不限制提供生活常用,�
 
 ###### 不接受定制功能性捐助! [Who has donated recently?](https://github.com/insoxin/donate/blob/master/HISTORY.md)
 
-<a href="https://www.upyun.com/?utm_source=isoyu" target="_blank" rel="nofollow"><img src="https://gcore.jsdelivr.net/gh/insoxin/API@master/images/upyun.png" width="80" height="25" alt="upyun" ><a>提供 CDN 赞助. <a href="https://www.upyun.com/league" target="_blank" rel="nofollow">推荐使用又拍云CDN加速网站,每月免费15G流量</a>
  
 推荐[Cloudflare ](https://www.cloudflare.com/)全球加速
 
