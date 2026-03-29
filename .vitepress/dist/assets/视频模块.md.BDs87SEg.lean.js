@@ -1,0 +1,1 @@
+import{_ as i,o as a,c as t,ag as n}from"./chunks/framework.CvgP6Fyv.js";const r=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"视频模块.md","filePath":"视频模块.md"}'),h={name:"视频模块.md"};function p(l,s,k,E,e,d){return a(),t("div",null,[...s[0]||(s[0]=[n("",17)])])}const F=i(h,[["render",p]]);export{r as __pageData,F as default};

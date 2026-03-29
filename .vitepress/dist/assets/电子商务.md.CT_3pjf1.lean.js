@@ -1,0 +1,1 @@
+import{_ as s,o as t,c as n,ag as p}from"./chunks/framework.CvgP6Fyv.js";const h=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"电子商务.md","filePath":"电子商务.md"}'),e={name:"电子商务.md"};function o(l,a,d,i,u,c){return t(),n("div",null,[...a[0]||(a[0]=[p("",190)])])}const q=s(e,[["render",o]]);export{h as __pageData,q as default};

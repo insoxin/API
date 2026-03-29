@@ -1,0 +1,29 @@
+{
+  "name": "api",
+  "version": "1.0.0",
+  "description": "API For Docker 是一个基于多种编程语言的开放 API 平台，免费、不限调用，覆盖生活常用、出行服务、开发工具、金融服务、通讯服务和公益大数据等场景。 官网：<https://api.isoyu.com/>",
+  "main": "gy.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "docs:dev": "vitepress dev .",
+    "docs:build": "vitepress build .",
+    "docs:preview": "vitepress preview ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/insoxin/API.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/insoxin/API/issues"
+  },
+  "homepage": "https://github.com/insoxin/API#readme",
+  "devDependencies": {
+    "vitepress": "^1.6.4"
+  }
+}

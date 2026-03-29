@@ -1,0 +1,1 @@
+import{_ as s,o as n,c as t,ag as p}from"./chunks/framework.CvgP6Fyv.js";const q=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"实名鉴权.md","filePath":"实名鉴权.md"}'),e={name:"实名鉴权.md"};function d(l,a,o,i,r,u){return n(),t("div",null,[...a[0]||(a[0]=[p("",157)])])}const h=s(e,[["render",d]]);export{q as __pageData,h as default};

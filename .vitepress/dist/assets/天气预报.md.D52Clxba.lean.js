@@ -1,0 +1,1 @@
+import{_ as i,o as a,c as n,ag as t}from"./chunks/framework.CvgP6Fyv.js";const r=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"天气预报.md","filePath":"天气预报.md"}'),h={name:"天气预报.md"};function k(l,s,p,E,e,F){return a(),n("div",null,[...s[0]||(s[0]=[t("",11)])])}const g=i(h,[["render",k]]);export{r as __pageData,g as default};

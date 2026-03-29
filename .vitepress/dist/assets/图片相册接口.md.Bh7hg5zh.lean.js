@@ -1,0 +1,1 @@
+import{_ as i,o as a,c as t,ag as n}from"./chunks/framework.CvgP6Fyv.js";const r=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"图片相册接口.md","filePath":"图片相册接口.md"}'),h={name:"图片相册接口.md"};function p(k,s,l,E,e,o){return a(),t("div",null,[...s[0]||(s[0]=[n("",14)])])}const d=i(h,[["render",p]]);export{r as __pageData,d as default};
