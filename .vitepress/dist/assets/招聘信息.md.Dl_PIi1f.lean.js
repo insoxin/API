@@ -1,1 +1,0 @@
-import{_ as i,o as a,c as n,ag as t}from"./chunks/framework.CvgP6Fyv.js";const r=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"招聘信息.md","filePath":"招聘信息.md"}'),h={name:"招聘信息.md"};function k(p,s,l,E,e,o){return a(),n("div",null,[...s[0]||(s[0]=[t("",5)])])}const g=i(h,[["render",k]]);export{r as __pageData,g as default};

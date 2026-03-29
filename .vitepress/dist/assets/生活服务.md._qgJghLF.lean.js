@@ -1,1 +1,0 @@
-import{_ as n,o as a,c as p,ag as t}from"./chunks/framework.CvgP6Fyv.js";const r=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"生活服务.md","filePath":"生活服务.md"}'),l={name:"生活服务.md"};function e(o,s,i,u,c,q){return a(),p("div",null,[...s[0]||(s[0]=[t("",1044)])])}const h=n(l,[["render",e]]);export{r as __pageData,h as default};

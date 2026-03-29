@@ -1,1 +1,0 @@
-import{_ as s,o as n,c as t,ag as p}from"./chunks/framework.CvgP6Fyv.js";const q=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"新闻资讯.md","filePath":"新闻资讯.md"}'),e={name:"新闻资讯.md"};function l(i,a,o,d,c,u){return n(),t("div",null,[...a[0]||(a[0]=[p("",612)])])}const h=s(e,[["render",l]]);export{q as __pageData,h as default};

@@ -1,1 +1,0 @@
-import{_ as e,o as t,c as a}from"./chunks/framework.CvgP6Fyv.js";const m=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"CONTRIBUTING.md","filePath":"CONTRIBUTING.md"}'),r={name:"CONTRIBUTING.md"};function o(s,c,n,p,_,d){return t(),a("div")}const N=e(r,[["render",o]]);export{m as __pageData,N as default};

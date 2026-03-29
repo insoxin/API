@@ -1,1 +1,0 @@
-import{_ as i,o as a,c as t,ag as n}from"./chunks/framework.CvgP6Fyv.js";const g=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"公益中国.md","filePath":"公益中国.md"}'),p={name:"公益中国.md"};function h(l,s,k,e,o,r){return a(),t("div",null,[...s[0]||(s[0]=[n("",44)])])}const F=i(p,[["render",h]]);export{g as __pageData,F as default};

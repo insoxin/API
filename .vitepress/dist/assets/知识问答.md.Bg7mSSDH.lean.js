@@ -1,1 +1,0 @@
-import{_ as s,o as n,c as t,ag as p}from"./chunks/framework.CvgP6Fyv.js";const h=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"知识问答.md","filePath":"知识问答.md"}'),e={name:"知识问答.md"};function l(d,a,i,o,c,r){return n(),t("div",null,[...a[0]||(a[0]=[p("",596)])])}const q=s(e,[["render",l]]);export{h as __pageData,q as default};

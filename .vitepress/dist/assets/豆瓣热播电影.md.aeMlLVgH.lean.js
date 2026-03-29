@@ -1,1 +1,0 @@
-import{_ as i,o as a,c as n,ag as t}from"./chunks/framework.CvgP6Fyv.js";const d=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"豆瓣热播电影.md","filePath":"豆瓣热播电影.md"}'),h={name:"豆瓣热播电影.md"};function l(p,s,k,E,e,o){return a(),n("div",null,[...s[0]||(s[0]=[t("",14)])])}const g=i(h,[["render",l]]);export{d as __pageData,g as default};

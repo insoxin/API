@@ -1,1 +1,0 @@
-import{_ as s,o as a,c as t,ag as h}from"./chunks/framework.CvgP6Fyv.js";const o=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"壁纸模块.md","filePath":"壁纸模块.md"}'),p={name:"壁纸模块.md"};function l(n,i,k,e,r,g){return a(),t("div",null,[...i[0]||(i[0]=[h("",155)])])}const d=s(p,[["render",l]]);export{o as __pageData,d as default};

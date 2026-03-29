@@ -1,1 +1,0 @@
-import{_ as a,o as i,c as e,ag as p}from"./chunks/framework.CvgP6Fyv.js";const n=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"_sidebar.md","filePath":"_sidebar.md"}'),t={name:"_sidebar.md"};function r(h,l,m,f,_,s){return i(),e("div",null,[...l[0]||(l[0]=[p("",1)])])}const d=a(t,[["render",r]]);export{n as __pageData,d as default};
